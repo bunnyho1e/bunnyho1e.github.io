@@ -1,10 +1,10 @@
-# Stefan Marković / bunnyho1e
+# bunnyho1e
 
-Personal portfolio: **https://bunnyho1e.github.io/**
+Public interface: **https://bunnyho1e.github.io/**
 
 Think like an attacker. Build like an engineer. Automate the rest.
 
-A static, responsive portfolio covering offensive security, practical tooling, curated sources, AI agents, and automation. Selected public work links to [RedTeaming](https://github.com/bunnyho1e/RedTeaming) and [BlueTeaming](https://github.com/bunnyho1e/BlueTeaming). These are source collections with upstream attribution, not claims of authorship of the underlying tools. Catalog counts are a dated 23 October 2026 snapshot.
+A dark, terminal-inspired static portfolio covering offensive security, practical tooling, curated sources, AI agents, and automation. Selected public work links to [RedTeaming](https://github.com/bunnyho1e/RedTeaming) and [BlueTeaming](https://github.com/bunnyho1e/BlueTeaming). These are source collections with upstream attribution, not claims of authorship of the underlying tools. Catalog counts are a dated 23 October 2026 snapshot.
 
 ## Publishing
 
