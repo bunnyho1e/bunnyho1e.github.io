@@ -15,7 +15,7 @@ The site uses plain HTML, CSS, and JavaScript. No build step, package installati
 ## Files
 
 - `index.html`: content, metadata, and accessible page structure.
-- `site.css`: responsive layout and visual styling.
+- `terminal-v2.css`: responsive layout and visual styling.
 - `site.js`: accessible mobile navigation, keyboard-operated collection tabs, and command copying.
 - `*.woff2` and `*-OFL.txt`: self-hosted Google Fonts with their SIL Open Font License notices.
 - `404.html`, `robots.txt`, `sitemap.xml`: navigation fallback and crawler metadata.
