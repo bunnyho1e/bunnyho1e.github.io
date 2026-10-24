@@ -25,6 +25,7 @@ SOURCES = [
     {"id": "thn", "name": "The Hacker News", "category": "news", "website": "https://thehackernews.com/", "feed": "https://feeds.feedburner.com/TheHackersNews"},
     {"id": "edb", "name": "Exploit-DB", "category": "exploit", "website": "https://www.exploit-db.com/", "feed": "https://www.exploit-db.com/rss.xml"},
     {"id": "kev", "name": "CISA KEV", "category": "exploited", "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"},
+    {"id": "aikido", "name": "Aikido Blog", "category": "news", "website": "https://www.aikido.dev/blog", "feed": "https://www.aikido.dev/blog/rss.xml"},
 ]
 
 
@@ -176,7 +177,7 @@ def read_previous(path, previous_url=None):
 
 def collect(previous):
     now = utc_stamp()
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=len(SOURCES)) as executor:
         results = list(executor.map(lambda source: collect_source(source, previous, now), SOURCES))
     items = sorted([record for _, records in results for record in records], key=lambda r: (r["published_at"], r["id"]), reverse=True)
     if not items:

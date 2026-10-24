@@ -11,8 +11,8 @@
   const refresh = section.querySelector('#signal-refresh');
   const more = section.querySelector('#signal-more');
   const filters = [...section.querySelectorAll('[data-signal-source]')];
-  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV' };
-  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE' };
+  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog' };
+  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG' };
   let snapshot;
   let active = 'all';
   let limit = 6;
@@ -79,8 +79,9 @@
   }
   function showFreshness() {
     const checked = snapshot.sources.filter(source => source.status === 'ok' && Date.now() - Date.parse(source.last_success_at) < 3 * 60 * 60 * 1000).length;
-    health.textContent = checked === 3 ? '3 / 3 SOURCES SYNCED' : `${checked} / 3 SOURCES FRESH`;
-    health.dataset.fresh = String(checked === 3);
+    const total = Object.keys(names).length;
+    health.textContent = checked === total ? `${checked} / ${total} SOURCES SYNCED` : `${checked} / ${total} SOURCES FRESH`;
+    health.dataset.fresh = String(checked === total);
     const successes = snapshot.sources.map(source => Date.parse(source.last_success_at)).filter(Number.isFinite);
     timestamp.textContent = successes.length ? `Last sync: ${formatDate(Math.max(...successes))}` : 'Last sync: unavailable';
     sourceStatus.textContent = snapshot.sources.map(source => `${names[source.id]}: ${source.status === 'ok' && Date.now() - Date.parse(source.last_success_at) < 3 * 60 * 60 * 1000 ? 'synced' : source.status === 'unavailable' ? 'unavailable' : 'cached / older snapshot'}`).join(' · ');

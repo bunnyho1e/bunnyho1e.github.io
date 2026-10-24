@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T08:04:28Z",
+  "generated_at": "2026-10-24T12:22:59Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "last_attempt_at": "2026-10-24T12:22:59Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T08:04:28Z",
+      "last_success_at": "2026-10-24T12:22:59Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "last_attempt_at": "2026-10-24T12:22:59Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T08:04:28Z",
+      "last_success_at": "2026-10-24T12:22:59Z",
       "count": 18
     },
     {
@@ -31,13 +31,66 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "last_attempt_at": "2026-10-24T12:22:59Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T08:04:28Z",
+      "last_success_at": "2026-10-24T12:22:59Z",
+      "count": 18
+    },
+    {
+      "id": "aikido",
+      "name": "Aikido Blog",
+      "category": "news",
+      "website": "https://www.aikido.dev/blog",
+      "feed": "https://www.aikido.dev/blog/rss.xml",
+      "last_attempt_at": "2026-10-24T12:22:59Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T12:22:59Z",
       "count": 18
     }
   ],
   "items": [
+    {
+      "id": "992eafcb0e21b3f400ad",
+      "source": "thn",
+      "category": "news",
+      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+      "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+      "published_at": "2026-10-24T11:09:29Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ad3b897d5b25867e1833",
+      "source": "thn",
+      "category": "news",
+      "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+      "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+      "published_at": "2026-10-24T11:03:33Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c625b60ce491265d6d54",
+      "source": "thn",
+      "category": "news",
+      "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+      "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+      "published_at": "2026-10-24T10:36:33Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "3c40672147ff07af53f1",
+      "source": "thn",
+      "category": "news",
+      "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+      "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+      "published_at": "2026-10-24T09:04:24Z",
+      "cves": [],
+      "date_precision": "time"
+    },
     {
       "id": "bc0bb168fc9922ea476e",
       "source": "thn",
@@ -47,6 +100,18 @@
       "published_at": "2026-10-24T06:25:57Z",
       "cves": [
         "CVE-2026-110447"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e8c9e84d973653c1adcb",
+      "source": "aikido",
+      "category": "news",
+      "title": "Node2Shell evolves to HTTP2Shell. Brotli flaw (CVE-2026-111497) blast radius affects many libraries & apps using HTTPs.",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "published_at": "2026-10-23T20:45:00Z",
+      "cves": [
+        "CVE-2026-111497"
       ],
       "date_precision": "time"
     },
@@ -220,42 +285,24 @@
       "date_precision": "time"
     },
     {
-      "id": "23e5b20034bbb4671949",
-      "source": "thn",
+      "id": "573e0052023410f47ea8",
+      "source": "aikido",
       "category": "news",
-      "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-      "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-      "published_at": "2026-10-22T17:45:44Z",
-      "cves": [],
+      "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
+      "url": "https://www.aikido.dev/blog/node2shell-nodejs-brotli-rce-cve-2026-111497",
+      "published_at": "2026-10-22T18:11:00Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
       "date_precision": "time"
     },
     {
-      "id": "950accf38867da11c8e0",
-      "source": "thn",
+      "id": "495b8cc9052c4c151f4e",
+      "source": "aikido",
       "category": "news",
-      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-      "published_at": "2026-10-22T17:01:53Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "52436a0c9a9ed0bddcd3",
-      "source": "thn",
-      "category": "news",
-      "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
-      "url": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
-      "published_at": "2026-10-22T16:12:31Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "20b873694e52e2d1d148",
-      "source": "thn",
-      "category": "news",
-      "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-      "url": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-      "published_at": "2026-10-22T13:38:22Z",
+      "title": "eMudhra CA compromise: eight private keys, and one of them is 4",
+      "url": "https://www.aikido.dev/blog/emudhra-ca-compromise",
+      "published_at": "2026-10-22T11:53:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -268,6 +315,39 @@
       "published_at": "2026-10-22T00:00:00Z",
       "cves": [
         "CVE-2026-109618"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f8022c0a129ddd89e1d3",
+      "source": "aikido",
+      "category": "news",
+      "title": "Software supply chain security best practices for 2026",
+      "url": "https://www.aikido.dev/blog/software-supply-chain-security-best-practices",
+      "published_at": "2026-10-21T13:25:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "428aa8ed35b23596a838",
+      "source": "aikido",
+      "category": "news",
+      "title": "LiteLLM compromised again: infostealer and RAT found in version 1.107.0",
+      "url": "https://www.aikido.dev/blog/litellm-compromised-infostealer-rat",
+      "published_at": "2026-10-21T13:05:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f6f5e010aedbbedefc67",
+      "source": "aikido",
+      "category": "news",
+      "title": "PHP2Shell: Critical PHP vulnerabilities, affected versions and fixes",
+      "url": "https://www.aikido.dev/blog/critical-vulnerabilities-in-php-php2shell",
+      "published_at": "2026-10-21T01:54:00Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
       ],
       "date_precision": "time"
     },
@@ -372,6 +452,66 @@
       "date_precision": "time"
     },
     {
+      "id": "819a1f47447fb8dd0303",
+      "source": "aikido",
+      "category": "news",
+      "title": "The 10 best email security software platforms in 2026",
+      "url": "https://www.aikido.dev/blog/best-email-security-software-platforms",
+      "published_at": "2026-10-20T20:56:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ef63b755b8c3c22e5128",
+      "source": "aikido",
+      "category": "news",
+      "title": "The 9 best phishing simulation tools in 2026",
+      "url": "https://www.aikido.dev/blog/best-phishing-simulation-tools",
+      "published_at": "2026-10-20T20:25:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0bc691adb30d1444f0de",
+      "source": "aikido",
+      "category": "news",
+      "title": "The 9 best KnowBe4 alternatives in 2026",
+      "url": "https://www.aikido.dev/blog/knowbe4-alternatives",
+      "published_at": "2026-10-20T19:33:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0350abf900f06ac4a5fd",
+      "source": "aikido",
+      "category": "news",
+      "title": "The 8 best security awareness training platforms in 2026",
+      "url": "https://www.aikido.dev/blog/security-awareness-training-platforms",
+      "published_at": "2026-10-20T17:33:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0e84e0997cd31a98bc8b",
+      "source": "aikido",
+      "category": "news",
+      "title": "The 8 best Mimecast alternatives in 2026",
+      "url": "https://www.aikido.dev/blog/mimecast-alternatives",
+      "published_at": "2026-10-20T16:13:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "810b9b68147121717561",
+      "source": "aikido",
+      "category": "news",
+      "title": "Aikido launches Noon: workforce security for every employee",
+      "url": "https://www.aikido.dev/blog/noon-workforce-security",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "f1ab07ae19dfa48d6193",
       "source": "kev",
       "category": "exploited",
@@ -460,6 +600,56 @@
       "vendor": "Plex",
       "product": "Media Server",
       "ransomware": false
+    },
+    {
+      "id": "667717f44306ca2423d4",
+      "source": "aikido",
+      "category": "news",
+      "title": "Drata and Aikido: audit-ready pentesting, built into your compliance workflow",
+      "url": "https://www.aikido.dev/blog/drata-and-aikido-audit-ready-pentesting-built-into-your-compliance-workflow",
+      "published_at": "2026-10-19T11:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ace90ee2819d7586bc71",
+      "source": "aikido",
+      "category": "news",
+      "title": "Yearly pentests can’t keep up. Test more on the same budget",
+      "url": "https://www.aikido.dev/blog/more-pentesting-same-budget-ai",
+      "published_at": "2026-10-19T09:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a288dcb96ba3bb920a4c",
+      "source": "aikido",
+      "category": "news",
+      "title": "Your CVE is reachable. But is it exploitable?",
+      "url": "https://www.aikido.dev/blog/cve-reachable-vs-exploitable",
+      "published_at": "2026-10-17T22:19:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8bb89918e99cc684384a",
+      "source": "aikido",
+      "category": "news",
+      "title": "Top Escape.tech alternatives for offensive security in 2026",
+      "url": "https://www.aikido.dev/blog/escape-tech-alternatives",
+      "published_at": "2026-10-16T20:47:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "15e2e1a2e75e65edcd1c",
+      "source": "aikido",
+      "category": "news",
+      "title": "Top Horizon3 alternatives in 2026",
+      "url": "https://www.aikido.dev/blog/horizon-alternatives",
+      "published_at": "2026-10-16T19:48:00Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "fbf4db820e622ddc1e70",
@@ -595,6 +785,16 @@
       "vendor": "Microsoft",
       "product": "Windows",
       "ransomware": false
+    },
+    {
+      "id": "945197ad6cd9a02cf092",
+      "source": "aikido",
+      "category": "news",
+      "title": "Aikido Security is now CREST accredited",
+      "url": "https://www.aikido.dev/blog/aikido-security-is-now-crest-accredited",
+      "published_at": "2026-10-12T13:47:00Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "553632ea13d0fd4e94ab",
