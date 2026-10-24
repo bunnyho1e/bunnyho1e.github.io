@@ -22,6 +22,16 @@ class FeedTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             news.parse_rss(b'<!DOCTYPE rss [<!ENTITY x "test">]><rss/>', news.SOURCES[0])
 
+    def test_atom_uses_discussion_link_and_original_publication_time(self):
+        source = next(s for s in news.SOURCES if s["id"] == "netsec")
+        raw = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Research on CVE-2026-12345</title><link rel="self" href="https://www.reddit.com/api/post"/><link href="https://www.reddit.com/r/netsec/comments/example/research/"/><published>2026-10-23T10:00:00+00:00</published><updated>2026-10-24T11:00:00+00:00</updated></entry><entry><title>Update-only post</title><link rel="alternate" href="https://www.reddit.com/r/netsec/comments/second/"/><updated>2026-10-23T11:00:00Z</updated></entry><entry><title>Unsafe link</title><link href="javascript:alert(1)"/><updated>2026-10-23T11:00:00Z</updated></entry></feed>'''
+        records = news.parse_rss(raw, source)
+        self.assertEqual(len(records), 2)
+        self.assertEqual(records[0]["url"], "https://www.reddit.com/r/netsec/comments/example/research/")
+        self.assertEqual(records[0]["published_at"], "2026-10-23T10:00:00Z")
+        self.assertEqual(records[0]["cves"], ["CVE-2026-12345"])
+        self.assertEqual(records[1]["published_at"], "2026-10-23T11:00:00Z")
+
     def test_kev_uses_date_added_and_structured_ransomware_field(self):
         raw = json.dumps({"vulnerabilities": [{"cveID": "CVE-2026-12345", "vulnerabilityName": "Example flaw", "dateAdded": "2026-10-23", "vendorProject": "Example", "product": "Server", "knownRansomwareCampaignUse": "Known"}]}).encode()
         record = news.parse_kev(raw, news.SOURCES[2])[0]

@@ -11,8 +11,8 @@
   const refresh = section.querySelector('#signal-refresh');
   const more = section.querySelector('#signal-more');
   const filters = [...section.querySelectorAll('[data-signal-source]')];
-  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog' };
-  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG' };
+  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec' };
+  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST' };
   let snapshot;
   let active = 'all';
   let limit = 6;

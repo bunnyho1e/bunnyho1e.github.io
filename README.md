@@ -45,6 +45,9 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - Exploit-DB: https://www.exploit-db.com/rss.xml
 - CISA KEV: the [official CISA mirror](https://github.com/cisagov/kev-data), linked to the original [catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
 - Aikido Blog: https://www.aikido.dev/blog/rss.xml
+- Reddit r/netsec: https://www.reddit.com/r/netsec/new/.rss?limit=25
+
+r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 
 Only headline metadata, dates, CVE identifiers, and original links are displayed. CISA dates refer to `dateAdded`, not initial vulnerability disclosure. Exploit-DB entries are catalog references. Upstream authors retain ownership of their reporting and tools. No exploit payload is fetched or executed.
 

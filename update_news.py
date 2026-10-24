@@ -26,6 +26,7 @@ SOURCES = [
     {"id": "edb", "name": "Exploit-DB", "category": "exploit", "website": "https://www.exploit-db.com/", "feed": "https://www.exploit-db.com/rss.xml"},
     {"id": "kev", "name": "CISA KEV", "category": "exploited", "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"},
     {"id": "aikido", "name": "Aikido Blog", "category": "news", "website": "https://www.aikido.dev/blog", "feed": "https://www.aikido.dev/blog/rss.xml"},
+    {"id": "netsec", "name": "Reddit r/netsec", "category": "community", "website": "https://www.reddit.com/r/netsec/", "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25"},
 ]
 
 
@@ -85,7 +86,7 @@ def parse_date(value):
 
 
 def fetch_bytes(url):
-    request = urllib.request.Request(url, headers={"User-Agent": "bunnyho1e-security-feed/1.0 (+https://bunnyho1e.github.io/)", "Accept": "application/json, application/xml, text/xml;q=0.9, */*;q=0.5"})
+    request = urllib.request.Request(url, headers={"User-Agent": "bunnyho1e-security-feed/1.0 (+https://bunnyho1e.github.io/)", "Accept": "application/json, application/atom+xml, application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.5"})
     with urllib.request.urlopen(request, timeout=20) as response:
         data = response.read(MAX_BYTES + 1)
     if len(data) > MAX_BYTES:
@@ -104,6 +105,7 @@ def item(source, title, url, date, **fields):
 
 
 def parse_rss(data, source):
+    """Read headline metadata from RSS 2.0 or Atom 1.0 feeds."""
     if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
         raise ValueError("XML entities are not accepted")
     root = ET.fromstring(data)
@@ -111,6 +113,12 @@ def parse_rss(data, source):
     for entry in root.findall(".//item")[:100]:
         url = entry.findtext("{http://rssnamespace.org/feedburner/ext/1.0}origLink") or entry.findtext("link")
         record = item(source, entry.findtext("title"), url, entry.findtext("pubDate"), date_precision="time", cve_text=entry.findtext("description") or "")
+        if record:
+            parsed.append(record)
+    atom = "{http://www.w3.org/2005/Atom}"
+    for entry in root.findall(atom + "entry")[:100]:
+        url = next((link.get("href") for link in entry.findall(atom + "link") if link.get("rel", "alternate") == "alternate"), None)
+        record = item(source, entry.findtext(atom + "title"), url, entry.findtext(atom + "published") or entry.findtext(atom + "updated"), date_precision="time", cve_text=entry.findtext(atom + "summary") or entry.findtext(atom + "content") or "")
         if record:
             parsed.append(record)
     return parsed

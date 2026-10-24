@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T12:22:59Z",
+  "generated_at": "2026-10-24T12:34:14Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T12:22:59Z",
+      "last_attempt_at": "2026-10-24T12:34:14Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:22:59Z",
+      "last_success_at": "2026-10-24T12:34:14Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T12:22:59Z",
+      "last_attempt_at": "2026-10-24T12:34:14Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:22:59Z",
+      "last_success_at": "2026-10-24T12:34:14Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T12:22:59Z",
+      "last_attempt_at": "2026-10-24T12:34:14Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:22:59Z",
+      "last_success_at": "2026-10-24T12:34:14Z",
       "count": 18
     },
     {
@@ -42,9 +42,20 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T12:22:59Z",
+      "last_attempt_at": "2026-10-24T12:34:14Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:22:59Z",
+      "last_success_at": "2026-10-24T12:34:14Z",
+      "count": 18
+    },
+    {
+      "id": "netsec",
+      "name": "Reddit r/netsec",
+      "category": "community",
+      "website": "https://www.reddit.com/r/netsec/",
+      "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
+      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T12:34:14Z",
       "count": 18
     }
   ],
@@ -72,6 +83,18 @@
       "date_precision": "time"
     },
     {
+      "id": "cbabf3aa77ccad1baf32",
+      "source": "netsec",
+      "category": "community",
+      "title": "Full source release: autonomous root chain for TCL 50C721 Android TV via CVE-2022-22706 (Mali GPU page-cache write)",
+      "url": "https://www.reddit.com/r/netsec/comments/1xe5oy7/full_source_release_autonomous_root_chain_for_tcl/",
+      "published_at": "2026-10-24T10:57:59Z",
+      "cves": [
+        "CVE-2022-22706"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "c625b60ce491265d6d54",
       "source": "thn",
       "category": "news",
@@ -88,6 +111,16 @@
       "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
       "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
       "published_at": "2026-10-24T09:04:24Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "2a8954513f84bbffda76",
+      "source": "netsec",
+      "category": "community",
+      "title": "We used RCE on 3 million PCs to prevent a botnet",
+      "url": "https://www.reddit.com/r/netsec/comments/1xe25f5/we_used_rce_on_3_million_pcs_to_prevent_a_botnet/",
+      "published_at": "2026-10-24T07:18:36Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -146,12 +179,34 @@
       "date_precision": "time"
     },
     {
+      "id": "9fbbf5fb14ac24654411",
+      "source": "netsec",
+      "category": "community",
+      "title": "Imperia CMS SiteActive TEMPLATE Unauthenticated SSTI Remote Code Execution (CVE-2026-110355)",
+      "url": "https://www.reddit.com/r/netsec/comments/1xdfues/imperia_cms_siteactive_template_unauthenticated/",
+      "published_at": "2026-10-23T14:37:35Z",
+      "cves": [
+        "CVE-2026-110355"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "86d2a9024f1dc2242ae9",
       "source": "thn",
       "category": "news",
       "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
       "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
       "published_at": "2026-10-23T13:50:56Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7a832211248715bbebae",
+      "source": "netsec",
+      "category": "community",
+      "title": "EMFI adventures part 2: target characterization on STM32H5",
+      "url": "https://www.reddit.com/r/netsec/comments/1xddn1d/emfi_adventures_part_2_target_characterization_on/",
+      "published_at": "2026-10-23T13:11:19Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -297,12 +352,64 @@
       "date_precision": "time"
     },
     {
+      "id": "83573adad6fd29110f3a",
+      "source": "netsec",
+      "category": "community",
+      "title": "CVE-2026-94300: Concurrent GSS-TSIG messages corrupt memory",
+      "url": "https://www.reddit.com/r/netsec/comments/1xcnwyi/cve202694300_concurrent_gsstsig_messages_corrupt/",
+      "published_at": "2026-10-22T16:49:44Z",
+      "cves": [
+        "CVE-2026-94300"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "a1c551b785f6318fa04d",
+      "source": "netsec",
+      "category": "community",
+      "title": "Markdown Is the New Executable: Attackers Are Dropping Agent Instructions Into Your Downloads Folder From the Web",
+      "url": "https://www.reddit.com/r/netsec/comments/1xcnb6o/markdown_is_the_new_executable_attackers_are/",
+      "published_at": "2026-10-22T16:27:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "495b8cc9052c4c151f4e",
       "source": "aikido",
       "category": "news",
       "title": "eMudhra CA compromise: eight private keys, and one of them is 4",
       "url": "https://www.aikido.dev/blog/emudhra-ca-compromise",
       "published_at": "2026-10-22T11:53:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b79feb0ed9955e8cb075",
+      "source": "netsec",
+      "category": "community",
+      "title": "Custom Extensions for SmartScreen Evasion",
+      "url": "https://www.reddit.com/r/netsec/comments/1xcf5yh/custom_extensions_for_smartscreen_evasion/",
+      "published_at": "2026-10-22T10:44:10Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "273c9f93f242d9ee1d6f",
+      "source": "netsec",
+      "category": "community",
+      "title": "The PHP Foundation: Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "url": "https://www.reddit.com/r/netsec/comments/1xcegee/the_php_foundation_todays_php_security_release/",
+      "published_at": "2026-10-22T10:03:39Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "820a22d3cb9bdf39fdfe",
+      "source": "netsec",
+      "category": "community",
+      "title": "Gallery of PHP maintenance pages from today",
+      "url": "https://www.reddit.com/r/netsec/comments/1xc3p6r/gallery_of_php_maintenance_pages_from_today/",
+      "published_at": "2026-10-22T00:07:45Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -316,6 +423,28 @@
       "cves": [
         "CVE-2026-109618"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3f6829507c1698af60ad",
+      "source": "netsec",
+      "category": "community",
+      "title": "PHP2Shell (CVE-2026-109618/109619): first exploit requests arrived 5.5 hours before PHP shipped the fix, and the \"scanners\" carry Mirai-style loaders",
+      "url": "https://www.reddit.com/r/netsec/comments/1xbzwrn/php2shell_cve2026109618109619_first_exploit/",
+      "published_at": "2026-10-21T21:24:08Z",
+      "cves": [
+        "CVE-2026-109618"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "38b6a8e59eadee45dae6",
+      "source": "netsec",
+      "category": "community",
+      "title": "PHP patches for critical PHP2Shell vulnerabilities",
+      "url": "https://www.reddit.com/r/netsec/comments/1xbp0px/php_patches_for_critical_php2shell_vulnerabilities/",
+      "published_at": "2026-10-21T14:41:22Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -452,6 +581,28 @@
       "date_precision": "time"
     },
     {
+      "id": "aa08a7c6174a761028e9",
+      "source": "netsec",
+      "category": "community",
+      "title": "PHP rce CVE-2026-109618",
+      "url": "https://www.reddit.com/r/netsec/comments/1xb5g1c/php_rce_cve2026109618/",
+      "published_at": "2026-10-20T21:56:59Z",
+      "cves": [
+        "CVE-2026-109618"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ce3fb57fcdfe195e1751",
+      "source": "netsec",
+      "category": "community",
+      "title": "France had more Internet-exposed Danfoss refrigeration dashboards than the rest of the world combined before the supermarket attacks (weekly IPv4 scan data)",
+      "url": "https://www.reddit.com/r/netsec/comments/1xb45ee/france_had_more_internetexposed_danfoss/",
+      "published_at": "2026-10-20T21:04:03Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "819a1f47447fb8dd0303",
       "source": "aikido",
       "category": "news",
@@ -469,6 +620,18 @@
       "url": "https://www.aikido.dev/blog/best-phishing-simulation-tools",
       "published_at": "2026-10-20T20:25:00Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7828a574d218da11141b",
+      "source": "netsec",
+      "category": "community",
+      "title": "CVE-2026-46633: Proving exploitability of Twig sandbox bypass",
+      "url": "https://www.reddit.com/r/netsec/comments/1xb2qvz/cve202646633_proving_exploitability_of_twig/",
+      "published_at": "2026-10-20T20:08:42Z",
+      "cves": [
+        "CVE-2026-46633"
+      ],
       "date_precision": "time"
     },
     {
@@ -499,6 +662,48 @@
       "url": "https://www.aikido.dev/blog/mimecast-alternatives",
       "published_at": "2026-10-20T16:13:00Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "1749985b5e268a668cb7",
+      "source": "netsec",
+      "category": "community",
+      "title": "The OffiDocs Browser Extension Campaign",
+      "url": "https://www.reddit.com/r/netsec/comments/1xaw75e/the_offidocs_browser_extension_campaign/",
+      "published_at": "2026-10-20T16:06:02Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "fa235d6c01d069bba0a3",
+      "source": "netsec",
+      "category": "community",
+      "title": "Reversing a DPRK-linked toolkit that backdoors VS Code, Cursor, Discord and npm, with an Ethereum dead-drop C2 and a DEV#POPPER variant",
+      "url": "https://www.reddit.com/r/netsec/comments/1xatbqq/reversing_a_dprklinked_toolkit_that_backdoors_vs/",
+      "published_at": "2026-10-20T14:16:15Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d756e73d47ff943ae2f3",
+      "source": "netsec",
+      "category": "community",
+      "title": "How I got over 300 Tor exit nodes removed",
+      "url": "https://www.reddit.com/r/netsec/comments/1xasa1k/how_i_got_over_300_tor_exit_nodes_removed/",
+      "published_at": "2026-10-20T13:33:05Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f9cdfdedcd1860b9d758",
+      "source": "netsec",
+      "category": "community",
+      "title": "CVE-2026-106173 Deep-Dive: Fortinet FortiSIEM gRPC Path Traversal File Write to RCE",
+      "url": "https://www.reddit.com/r/netsec/comments/1xardr3/cve2026106173_deepdive_fortinet_fortisiem_grpc/",
+      "published_at": "2026-10-20T12:55:10Z",
+      "cves": [
+        "CVE-2026-106173"
+      ],
       "date_precision": "time"
     },
     {
