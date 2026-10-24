@@ -29,6 +29,10 @@ SOURCES = [
     {"id": "netsec", "name": "Reddit r/netsec", "category": "community", "website": "https://www.reddit.com/r/netsec/", "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25"},
     {"id": "devto", "name": "DEV Community", "category": "development", "website": "https://dev.to/", "feed": "https://dev.to/feed"},
     {"id": "wiz", "name": "Wiz Blog", "category": "news", "website": "https://www.wiz.io/blog", "feed": "https://www.wiz.io/feed/rss.xml"},
+    {"id": "securityweek", "name": "SecurityWeek", "category": "news", "website": "https://www.securityweek.com/", "feed": "https://www.securityweek.com/feed/"},
+    {"id": "bleeping", "name": "BleepingComputer", "category": "news", "website": "https://www.bleepingcomputer.com/", "feed": "https://www.bleepingcomputer.com/feed/"},
+    {"id": "wired", "name": "WIRED Security", "category": "news", "website": "https://www.wired.com/category/security/", "feed": "https://www.wired.com/feed/category/security/latest/rss"},
+    {"id": "sophos", "name": "Sophos Blog", "category": "news", "website": "https://www.sophos.com/en-us/blog", "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242"},
 ]
 
 

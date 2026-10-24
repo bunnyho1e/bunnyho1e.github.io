@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T14:51:43Z",
+  "generated_at": "2026-10-24T15:03:28Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
     },
     {
@@ -53,9 +53,9 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
     },
     {
@@ -64,9 +64,9 @@
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 12
     },
     {
@@ -75,136 +75,194 @@
       "category": "news",
       "website": "https://www.wiz.io/blog",
       "feed": "https://www.wiz.io/feed/rss.xml",
-      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T14:51:43Z",
+      "last_success_at": "2026-10-24T15:03:28Z",
       "count": 18
+    },
+    {
+      "id": "securityweek",
+      "name": "SecurityWeek",
+      "category": "news",
+      "website": "https://www.securityweek.com/",
+      "feed": "https://www.securityweek.com/feed/",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:03:28Z",
+      "count": 10
+    },
+    {
+      "id": "bleeping",
+      "name": "BleepingComputer",
+      "category": "news",
+      "website": "https://www.bleepingcomputer.com/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:03:28Z",
+      "count": 15
+    },
+    {
+      "id": "wired",
+      "name": "WIRED Security",
+      "category": "news",
+      "website": "https://www.wired.com/category/security/",
+      "feed": "https://www.wired.com/feed/category/security/latest/rss",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:03:28Z",
+      "count": 18
+    },
+    {
+      "id": "sophos",
+      "name": "Sophos Blog",
+      "category": "news",
+      "website": "https://www.sophos.com/en-us/blog",
+      "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242",
+      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:03:28Z",
+      "count": 9
     }
   ],
   "items": [
     {
-      "id": "eeac947e8cf68a71ff9c",
+      "id": "db45b57a30865ca34a3c",
       "source": "devto",
       "category": "development",
-      "title": "Laravel AI SDK 1.1 Agent Skills: Setup Guide and Gotchas",
-      "url": "https://dev.to/devtalk94/laravel-ai-sdk-11-agent-skills-setup-guide-and-gotchas-9cf",
-      "published_at": "2026-10-24T14:49:23Z",
+      "title": "Tóm tắt tài liệu kỹ thuật dài bằng AI mà không đánh rơi ý quan trọng",
+      "url": "https://dev.to/aitoolnestvn/tom-tat-tai-lieu-ky-thuat-dai-bang-ai-ma-khong-danh-roi-y-quan-trong-4jo7",
+      "published_at": "2026-10-24T14:59:17Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "e35a0540bd3682974094",
+      "id": "ae1f8d9903a26569903f",
       "source": "devto",
       "category": "development",
-      "title": "Five ways a Groovy sandbox leaked, and what that says about sandbox design",
-      "url": "https://dev.to/bianliang/five-ways-a-groovy-sandbox-leaked-and-what-that-says-about-sandbox-design-158c",
-      "published_at": "2026-10-24T14:46:04Z",
-      "cves": [
-        "CVE-2026-92122",
-        "CVE-2026-92123",
-        "CVE-2026-92124",
-        "CVE-2026-92125",
-        "CVE-2026-92129"
-      ],
-      "date_precision": "time"
-    },
-    {
-      "id": "2a305c86dbe0a07a5a5f",
-      "source": "devto",
-      "category": "development",
-      "title": "Agency Red Flags: A Developer's 10-Point Pre-Hire Checklist",
-      "url": "https://dev.to/aimencoders/agency-red-flags-a-developers-10-point-pre-hire-checklist-52fn",
-      "published_at": "2026-10-24T14:45:59Z",
+      "title": "5 Fascinating Tech Stories You Shouldn't Miss This Week (From GPU Java to GrapheneOS Wins)",
+      "url": "https://dev.to/andrei_vassallo_3b7b874f7/5-fascinating-tech-stories-you-shouldnt-miss-this-week-from-gpu-java-to-grapheneos-wins-4kdf",
+      "published_at": "2026-10-24T14:57:22Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "e93c225f3a45c91f9a65",
+      "id": "defd34db95d88d9cb44a",
       "source": "devto",
       "category": "development",
-      "title": "What If AI Didn't Just Answer Your Questions, but Helped You Actually Get Things Done?",
-      "url": "https://dev.to/pratyush_ranjan_roul/what-if-ai-didnt-just-answer-your-questions-but-helped-you-actually-get-things-done-5b3e",
-      "published_at": "2026-10-24T14:45:54Z",
+      "title": "I Matched 10,000 People to Loans. It Took Just 1 AI Call.",
+      "url": "https://dev.to/kaushaly4s5s7/i-matched-10000-people-to-loans-it-took-just-1-ai-call-1mh3",
+      "published_at": "2026-10-24T14:55:09Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "0a8c121322d5276bfec1",
+      "id": "c21bb8c44122dfe6a74d",
       "source": "devto",
       "category": "development",
-      "title": "How We Built AI-Powered Japanese Shadowing Practice",
-      "url": "https://dev.to/corodomo/how-we-built-ai-powered-japanese-shadowing-practice-5ef0",
-      "published_at": "2026-10-24T14:45:19Z",
+      "title": "160 NVMe Drives in a 4U Box: Inside Supermicro's ASG-4116S-NU160R",
+      "url": "https://dev.to/theeromi/160-nvme-drives-in-a-4u-box-inside-supermicros-asg-4116s-nu160r-2k85",
+      "published_at": "2026-10-24T14:54:49Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "b630cc0f8d651b4d8a2b",
+      "id": "f1a6859828306f9b8e3c",
       "source": "devto",
       "category": "development",
-      "title": "Why no Python configuration library covers everything",
-      "url": "https://dev.to/niccolum/why-no-python-configuration-library-covers-everything-1phe",
-      "published_at": "2026-10-24T14:45:14Z",
+      "title": "Pi 5 RAM Swaps Have Been Firmware-Locked Since 2024. Here's What That Actually Means",
+      "url": "https://dev.to/theeromi/pi-5-ram-swaps-have-been-firmware-locked-since-2024-heres-what-that-actually-means-2lgk",
+      "published_at": "2026-10-24T14:54:35Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "55c75a0876e2d4b81e24",
+      "id": "e91b38f7bc90a1c3cff6",
       "source": "devto",
       "category": "development",
-      "title": "Buried, not deleted: why your agent's memory needs negative knowledge",
-      "url": "https://dev.to/zerokool1986/buried-not-deleted-why-your-agents-memory-needs-negative-knowledge-49l7",
-      "published_at": "2026-10-24T14:45:04Z",
+      "title": "How Signal Made the Phone Number Optional, and What the Zero-Knowledge Proof Actually Protects",
+      "url": "https://dev.to/theeromi/how-signal-made-the-phone-number-optional-and-what-the-zero-knowledge-proof-actually-protects-1nne",
+      "published_at": "2026-10-24T14:54:15Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3c6a2886c13c5755092f",
+      "id": "773c5cccdb21f2537399",
       "source": "devto",
       "category": "development",
-      "title": "Sort patch versions as numbers, but keep release history explicit",
-      "url": "https://dev.to/j_game_observer/sort-patch-versions-as-numbers-but-keep-release-history-explicit-5ekl",
-      "published_at": "2026-10-24T14:44:28Z",
+      "title": "Beyond Open Banking APIs and What Developers Can Build Next",
+      "url": "https://dev.to/aiyla0101/beyond-open-banking-apis-and-what-developers-can-build-next-d2k",
+      "published_at": "2026-10-24T14:54:06Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "11a162a4eab2e0f3c9cb",
+      "id": "864b03d3f66daf9e6624",
       "source": "devto",
       "category": "development",
-      "title": "A first-screen audit checklist for developer tools, READMEs, and APIs",
-      "url": "https://dev.to/victor_guerillot_aeecd294/a-first-screen-audit-checklist-for-developer-tools-readmes-and-apis-1k95",
-      "published_at": "2026-10-24T14:44:17Z",
+      "title": "Build a Basic AI Agent From Scratch: Session Management II",
+      "url": "https://dev.to/rogiia/build-a-basic-ai-agent-from-scratch-session-management-ii-489l",
+      "published_at": "2026-10-24T14:53:34Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "002e269882c9c11d63ac",
+      "id": "3f9e6968ac92dfc58324",
       "source": "devto",
       "category": "development",
-      "title": "LocalLens — Let On-Device AI Do the Browsing Grunt Work for You",
-      "url": "https://dev.to/yuvraj_sau_cc057705e86961/locallens-let-on-device-ai-do-the-browsing-grunt-work-for-you-3fej",
-      "published_at": "2026-10-24T14:43:54Z",
+      "title": "14 Best Places to Launch Developer Tools in 2026 (Launchpads, Directories & Communities)",
+      "url": "https://dev.to/minouou/14-best-places-to-launch-developer-tools-in-2026-launchpads-directories-communities-12be",
+      "published_at": "2026-10-24T14:53:24Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "4b5e7c7c07ba451b3f23",
+      "id": "7e70cc08b2a25d98da4b",
       "source": "devto",
       "category": "development",
-      "title": "Mobile-First CSS in 2026: A Developer's Build Checklist",
-      "url": "https://dev.to/aimencoders/mobile-first-css-in-2026-a-developers-build-checklist-1fao",
-      "published_at": "2026-10-24T14:43:49Z",
+      "title": "What part of building and shipping software takes longer than it should?",
+      "url": "https://dev.to/mudbasedev/what-part-of-building-and-shipping-software-takes-longer-than-it-should-4d6l",
+      "published_at": "2026-10-24T14:52:55Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "d962b0949258461b193a",
+      "id": "8e91429630b2dd43021e",
       "source": "devto",
       "category": "development",
-      "title": "Why Dark Mode Tests Don’t Cover Windows Contrast Themes",
-      "url": "https://dev.to/svgicons/why-dark-mode-tests-dont-cover-windows-contrast-themes-gkl",
-      "published_at": "2026-10-24T14:43:13Z",
+      "title": "Building a Linux GPU Driver for the M4 Mac mini in One Month, Mostly With Coding Agents",
+      "url": "https://dev.to/theeromi/building-a-linux-gpu-driver-for-the-m4-mac-mini-in-one-month-mostly-with-coding-agents-2pkm",
+      "published_at": "2026-10-24T14:52:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "846d727e5b38fb5f562c",
+      "source": "devto",
+      "category": "development",
+      "title": "The Epistemology of Experimentation and the Machine at Booking.com",
+      "url": "https://dev.to/fundacjadobrepanstwo/the-epistemology-of-experimentation-and-the-machine-at-bookingcom-1min",
+      "published_at": "2026-10-24T14:51:49Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "53e236a4a5fee76fdd73",
+      "source": "bleeping",
+      "category": "news",
+      "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
+      "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+      "published_at": "2026-10-24T14:17:32Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "dded08d3c2286748c91a",
+      "source": "wired",
+      "category": "news",
+      "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+      "url": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
+      "published_at": "2026-10-24T12:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -285,6 +343,16 @@
       "date_precision": "time"
     },
     {
+      "id": "90203ce77e3d1bf1f5a7",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+      "published_at": "2026-10-23T20:55:05Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "e8c9e84d973653c1adcb",
       "source": "aikido",
       "category": "news",
@@ -294,6 +362,16 @@
       "cves": [
         "CVE-2026-111497"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "45d7a822a392d914ac19",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+      "published_at": "2026-10-23T18:54:41Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -327,6 +405,36 @@
       "date_precision": "time"
     },
     {
+      "id": "a7f05bd88be959a2a61b",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Microsoft: Windows Server 2016 reaches end of support in January",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+      "published_at": "2026-10-23T17:05:07Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "95b578bcff110c490ec4",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Quest Diagnostics confirms data breach exposed patient records",
+      "url": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+      "published_at": "2026-10-23T16:40:07Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e8ac0fbd53298304f26d",
+      "source": "bleeping",
+      "category": "news",
+      "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+      "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+      "published_at": "2026-10-23T15:38:05Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "9fbbf5fb14ac24654411",
       "source": "netsec",
       "category": "community",
@@ -336,6 +444,26 @@
       "cves": [
         "CVE-2026-110355"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1963352631d0e8642fe6",
+      "source": "securityweek",
+      "category": "news",
+      "title": "In Other News: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware",
+      "url": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+      "published_at": "2026-10-23T14:23:37Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f9daa419e18d2b38a263",
+      "source": "bleeping",
+      "category": "news",
+      "title": "You gave your AI agent access, but who is giving it orders?",
+      "url": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+      "published_at": "2026-10-23T14:00:10Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -359,6 +487,26 @@
       "date_precision": "time"
     },
     {
+      "id": "41e1eed0db3f4806a0b2",
+      "source": "bleeping",
+      "category": "news",
+      "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
+      "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+      "published_at": "2026-10-23T12:48:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ed2960fa4dcf8c583c27",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge",
+      "url": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+      "published_at": "2026-10-23T12:45:52Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "4018f6a0f224fd7e2293",
       "source": "thn",
       "category": "news",
@@ -377,6 +525,26 @@
       "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
       "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
       "published_at": "2026-10-23T11:11:23Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "de88029c7ef06b858c61",
+      "source": "securityweek",
+      "category": "news",
+      "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+      "url": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
+      "published_at": "2026-10-23T10:31:16Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7d4ca4b4f9f9d87d8b1e",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
+      "url": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
+      "published_at": "2026-10-23T09:58:34Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -415,6 +583,46 @@
       "date_precision": "time"
     },
     {
+      "id": "60640e4e8fba1f275195",
+      "source": "securityweek",
+      "category": "news",
+      "title": "11 Million Impacted by Capcom Data Breach",
+      "url": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+      "published_at": "2026-10-23T08:34:14Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e0d201e8f12a09b4449e",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Quest Diagnostics Data Breach Exposed ‘Certain Patient Records’",
+      "url": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+      "published_at": "2026-10-23T08:25:06Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a0efda244b536dd90221",
+      "source": "securityweek",
+      "category": "news",
+      "title": "LiteLLM Compromised in Fresh Supply Chain Attack",
+      "url": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/",
+      "published_at": "2026-10-23T08:10:46Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ef95ba94301736a9fb3b",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
+      "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+      "published_at": "2026-10-23T07:54:47Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "e34dd05610b77fb64c61",
       "source": "thn",
       "category": "news",
@@ -425,6 +633,26 @@
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "167f36fc012a606927e8",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
+      "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+      "published_at": "2026-10-23T06:39:29Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c7d982e04f82fa763cd7",
+      "source": "sophos",
+      "category": "news",
+      "title": "Is “SIEM-less” really what it sounds like?",
+      "url": "https://www.sophos.com/en-us/blog/is-siem-less-really-what-it-sounds-like",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -464,6 +692,36 @@
       "title": "ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context",
       "url": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
       "published_at": "2026-10-22T22:51:55Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "637816ff5c060544cb46",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Railway warns devs to rotate secrets after potential breach",
+      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+      "published_at": "2026-10-22T21:25:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "cf428a6677cbcc10c3f0",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Capcom confirms data breach affecting 11.7 million accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+      "published_at": "2026-10-22T20:22:45Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "4d88a5658f49b285f1d6",
+      "source": "bleeping",
+      "category": "news",
+      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+      "published_at": "2026-10-22T19:12:51Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -510,6 +768,16 @@
       "date_precision": "time"
     },
     {
+      "id": "9fd9812a8d6cb52b785a",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+      "published_at": "2026-10-22T17:18:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "83573adad6fd29110f3a",
       "source": "netsec",
       "category": "community",
@@ -528,6 +796,46 @@
       "title": "Markdown Is the New Executable: Attackers Are Dropping Agent Instructions Into Your Downloads Folder From the Web",
       "url": "https://www.reddit.com/r/netsec/comments/1xcnb6o/markdown_is_the_new_executable_attackers_are/",
       "published_at": "2026-10-22T16:27:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "1de543ff99cc54e24e35",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
+      "published_at": "2026-10-22T15:49:32Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "6347561eebf69a5892a3",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Hacker Conversations: Corey Thuen and the Evil Bit",
+      "url": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
+      "published_at": "2026-10-22T14:31:34Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8ccb96cec698383208b7",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Machine speed attacks require machine speed detection and response",
+      "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+      "published_at": "2026-10-22T14:02:12Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "82de01f77dbd718496f5",
+      "source": "bleeping",
+      "category": "news",
+      "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+      "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+      "published_at": "2026-10-22T13:09:12Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -568,6 +876,16 @@
       "title": "The PHP Foundation: Today's PHP Security Release, and How We're Strengthening PHP Security",
       "url": "https://www.reddit.com/r/netsec/comments/1xcegee/the_php_foundation_todays_php_security_release/",
       "published_at": "2026-10-22T10:03:39Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "34f583eb26e727a6db0d",
+      "source": "wired",
+      "category": "news",
+      "title": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched",
+      "url": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/",
+      "published_at": "2026-10-22T02:24:17Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -616,6 +934,26 @@
       "date_precision": "time"
     },
     {
+      "id": "96783d5e923596691675",
+      "source": "wired",
+      "category": "news",
+      "title": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
+      "url": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
+      "published_at": "2026-10-21T14:26:19Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d57eaca181c09f0ec469",
+      "source": "wired",
+      "category": "news",
+      "title": "AI Guardrails Aren’t Stopping Criminal Hackers",
+      "url": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "1eea253ec8585ed29611",
       "source": "wiz",
       "category": "news",
@@ -652,6 +990,26 @@
       "title": "LiteLLM compromised again: infostealer and RAT found in version 1.107.0",
       "url": "https://www.aikido.dev/blog/litellm-compromised-infostealer-rat",
       "published_at": "2026-10-21T13:05:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "99f5604c843e5283bbcb",
+      "source": "wired",
+      "category": "news",
+      "title": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
+      "url": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
+      "published_at": "2026-10-21T12:35:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "45de857239c12916136d",
+      "source": "wired",
+      "category": "news",
+      "title": "She Was the DEA’s Premier Crypto Detective. The Clues Led Straight to Her Own Family",
+      "url": "https://www.wired.com/story/the-deas-premier-crypto-detective-clues-led-straight-to-her-own-family/",
+      "published_at": "2026-10-21T10:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -699,6 +1057,19 @@
       "date_precision": "time"
     },
     {
+      "id": "ac8846d0b8365b77028f",
+      "source": "sophos",
+      "category": "news",
+      "title": "Proof-of-concept exploit released for PHP vulnerabilities (CVE-2026-109618, CVE-2026-109619)",
+      "url": "https://www.sophos.com/en-us/blog/proof-of-concept-exploit-released-for-php-vulnerabilities-109618-109619",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "a7a078aae5c39ce67cc3",
       "source": "edb",
       "category": "exploit",
@@ -734,6 +1105,16 @@
       "category": "exploit",
       "title": "[remote] Edimax BR-6478AC firmware v2.20 - authenticated command injection",
       "url": "https://www.exploit-db.com/exploits/52696",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "554a5638955c18fd04d1",
+      "source": "sophos",
+      "category": "news",
+      "title": "Web App Owners – You’re on Notice. Your Low-Hanging Fruit Just Got Lower",
+      "url": "https://www.sophos.com/en-us/blog/web-app-owners-your-low-hanging-fruit-just-got-lower",
       "published_at": "2026-10-21T00:00:00Z",
       "cves": [],
       "date_precision": "time"
@@ -925,6 +1306,16 @@
       "date_precision": "time"
     },
     {
+      "id": "fce1bd1a693295f47c58",
+      "source": "sophos",
+      "category": "news",
+      "title": "Why Incident Response Demand Will Grow Faster than Expected",
+      "url": "https://www.sophos.com/en-us/blog/why-incident-response-demand-will-grow-faster-than-expected",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "f1ab07ae19dfa48d6193",
       "source": "kev",
       "category": "exploited",
@@ -953,6 +1344,16 @@
       "vendor": "Siemens",
       "product": "Software Center",
       "ransomware": false
+    },
+    {
+      "id": "b881cc5fbfcf55262cf8",
+      "source": "sophos",
+      "category": "news",
+      "title": "BRONZE SANDCASTLE deploys modified Meterpreter shells",
+      "url": "https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "861197ee5b4209d6a65f",
@@ -1015,6 +1416,26 @@
       "ransomware": false
     },
     {
+      "id": "320d744de9414d2dee9e",
+      "source": "wired",
+      "category": "news",
+      "title": "OpenAI Engineer Accused of Spying on Executives Ordered to Remain in Custody",
+      "url": "https://www.wired.com/story/openai-engineer-accused-of-spying-on-executives-ordered-to-remain-in-custody/",
+      "published_at": "2026-10-19T19:49:17Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "fa64a8288a53428707cd",
+      "source": "wired",
+      "category": "news",
+      "title": "WhatsApp Help Pages Leaked Hidden Instructions for a Meta Chatbot",
+      "url": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
+      "published_at": "2026-10-19T16:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "7279cc5bebae68745868",
       "source": "wiz",
       "category": "news",
@@ -1055,12 +1476,42 @@
       "date_precision": "time"
     },
     {
+      "id": "493f921aae41b48ee793",
+      "source": "sophos",
+      "category": "news",
+      "title": "Beyond the mailbox: Graph reconnaissance and ServiceNow user enumeration in a modern identity intrusion",
+      "url": "https://www.sophos.com/en-us/blog/graph-reconnaissance-and-servicenow-user-enumeration-in-a-modern-identity-intrusion",
+      "published_at": "2026-10-19T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "38cfd5e4458eb4520da6",
+      "source": "sophos",
+      "category": "news",
+      "title": "ConnectWise Cloud Backup application abused in cross-tenant token sweep",
+      "url": "https://www.sophos.com/en-us/blog/connectwise-cloud-backup-application-abused-in-token-sweep",
+      "published_at": "2026-10-19T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "a288dcb96ba3bb920a4c",
       "source": "aikido",
       "category": "news",
       "title": "Your CVE is reachable. But is it exploitable?",
       "url": "https://www.aikido.dev/blog/cve-reachable-vs-exploitable",
       "published_at": "2026-10-17T22:19:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "6126b84d18181f64b8c9",
+      "source": "wired",
+      "category": "news",
+      "title": "Encryption Is Getting Squeezed From All Sides",
+      "url": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+      "published_at": "2026-10-17T12:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1081,6 +1532,16 @@
       "title": "Top Horizon3 alternatives in 2026",
       "url": "https://www.aikido.dev/blog/horizon-alternatives",
       "published_at": "2026-10-16T19:48:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "acf4dbec9efcc1ea7f4c",
+      "source": "wired",
+      "category": "news",
+      "title": "Chicago-Area Cops Helped HSI Spy on Minnesota Anti-ICE Activists",
+      "url": "https://www.wired.com/story/chicago-area-cops-helped-hsi-spy-on-minnesota-anti-ice-activists/",
+      "published_at": "2026-10-16T18:21:54Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1115,6 +1576,16 @@
       "ransomware": false
     },
     {
+      "id": "77f28f7619e298756754",
+      "source": "wired",
+      "category": "news",
+      "title": "‘Nightmare Scenario’: Zero-Click Spyware Is Infecting Phones via Targeted Ads",
+      "url": "https://www.wired.com/story/nightmare-scenario-zero-click-spyware-is-infecting-phones-via-targeted-ads/",
+      "published_at": "2026-10-15T10:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "ffe97124dcac347bec8b",
       "source": "kev",
       "category": "exploited",
@@ -1128,6 +1599,16 @@
       "vendor": "Atlassian",
       "product": "Multiple Products",
       "ransomware": false
+    },
+    {
+      "id": "3dd704b3b6c323880ecf",
+      "source": "sophos",
+      "category": "news",
+      "title": "Sophos ITDR expands identity protection for the AI era",
+      "url": "https://www.sophos.com/en-us/blog/sophos-itdr-ai-protection",
+      "published_at": "2026-10-15T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "8e2e4c008f1e64053e12",
@@ -1210,6 +1691,26 @@
       "ransomware": false
     },
     {
+      "id": "12854cb421444565bde0",
+      "source": "sophos",
+      "category": "news",
+      "title": "Show, don’t tell: Sophos AI at CAMLIS",
+      "url": "https://www.sophos.com/en-us/blog/show-dont-tell-sophos-ai-at-camlis",
+      "published_at": "2026-10-14T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "386dccaf670d1bad9290",
+      "source": "wired",
+      "category": "news",
+      "title": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
+      "url": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
+      "published_at": "2026-10-13T23:17:59Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "7d944a364db4faaa3f72",
       "source": "kev",
       "category": "exploited",
@@ -1250,6 +1751,46 @@
       "date_precision": "time"
     },
     {
+      "id": "be7bc8936126ea266313",
+      "source": "wired",
+      "category": "news",
+      "title": "Feds Got Warrants to Use Fake Cell Towers to Hunt Down Don Lemon’s Producer",
+      "url": "https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/",
+      "published_at": "2026-10-12T11:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ab1412964e20b0edfe93",
+      "source": "wired",
+      "category": "news",
+      "title": "AI Is Getting Really Good at Messing With Cybercriminals",
+      "url": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
+      "published_at": "2026-10-10T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "aa701a195c5c56bdb51d",
+      "source": "wired",
+      "category": "news",
+      "title": "ICE Agent at NYC Shooting Has History of Alleged Violence and Illegal Arrests",
+      "url": "https://www.wired.com/story/ice-agent-at-nyc-shooting-has-history-of-alleged-violence-and-illegal-arrests/",
+      "published_at": "2026-10-09T04:46:11Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a7565c9856add77d0324",
+      "source": "wired",
+      "category": "news",
+      "title": "The Man Behind a West Bank Telegram Channel Trying to Keep Palestinian Drivers Safe",
+      "url": "https://www.wired.com/story/the-man-behind-a-west-bank-telegram-channel-trying-to-keep-palestinian-drivers-safe/",
+      "published_at": "2026-10-08T09:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "553632ea13d0fd4e94ab",
       "source": "kev",
       "category": "exploited",
@@ -1263,6 +1804,26 @@
       "vendor": "Strapi",
       "product": "Strapi",
       "ransomware": false
+    },
+    {
+      "id": "6cca986a6eac2ea9f83b",
+      "source": "wired",
+      "category": "news",
+      "title": "Shaq Got Hacked. Now He’s Pitching for a VPN",
+      "url": "https://www.wired.com/story/how-a-weirdly-chill-celebrity-thinks-about-personal-cybersecurity/",
+      "published_at": "2026-10-07T21:31:51Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "61e5ddd1a1e33ef81d29",
+      "source": "wired",
+      "category": "news",
+      "title": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
+      "url": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
+      "published_at": "2026-10-07T15:34:33Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "0431deaa78d6a68ba761",

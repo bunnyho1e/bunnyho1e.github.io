@@ -48,6 +48,10 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - Reddit r/netsec: https://www.reddit.com/r/netsec/new/.rss?limit=25
 - DEV Community: https://dev.to/feed (the main feed, including general development topics).
 - Wiz Blog: https://www.wiz.io/feed/rss.xml
+- SecurityWeek: https://www.securityweek.com/feed/
+- BleepingComputer: https://www.bleepingcomputer.com/feed/
+- WIRED Security: https://www.wired.com/feed/category/security/latest/rss
+- Sophos Blog: https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 
