@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T15:03:28Z",
+  "generated_at": "2026-10-24T15:09:50Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -53,9 +53,9 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -64,9 +64,9 @@
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 12
     },
     {
@@ -75,9 +75,9 @@
       "category": "news",
       "website": "https://www.wiz.io/blog",
       "feed": "https://www.wiz.io/feed/rss.xml",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -86,9 +86,9 @@
       "category": "news",
       "website": "https://www.securityweek.com/",
       "feed": "https://www.securityweek.com/feed/",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 10
     },
     {
@@ -97,9 +97,9 @@
       "category": "news",
       "website": "https://www.bleepingcomputer.com/",
       "feed": "https://www.bleepingcomputer.com/feed/",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 15
     },
     {
@@ -108,9 +108,9 @@
       "category": "news",
       "website": "https://www.wired.com/category/security/",
       "feed": "https://www.wired.com/feed/category/security/latest/rss",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 18
     },
     {
@@ -119,130 +119,147 @@
       "category": "news",
       "website": "https://www.sophos.com/en-us/blog",
       "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242",
-      "last_attempt_at": "2026-10-24T15:03:28Z",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:03:28Z",
+      "last_success_at": "2026-10-24T15:09:50Z",
       "count": 9
+    },
+    {
+      "id": "checkpoint",
+      "name": "Check Point Blog",
+      "category": "news",
+      "website": "https://blog.checkpoint.com/",
+      "feed": "https://blog.checkpoint.com/feed/",
+      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:09:50Z",
+      "count": 10
     }
   ],
   "items": [
     {
-      "id": "db45b57a30865ca34a3c",
+      "id": "5f812959c06b974790c0",
       "source": "devto",
       "category": "development",
-      "title": "Tóm tắt tài liệu kỹ thuật dài bằng AI mà không đánh rơi ý quan trọng",
-      "url": "https://dev.to/aitoolnestvn/tom-tat-tai-lieu-ky-thuat-dai-bang-ai-ma-khong-danh-roi-y-quan-trong-4jo7",
-      "published_at": "2026-10-24T14:59:17Z",
+      "title": "postjson.com — A web dev tool with macOS-inspired UI paradigm",
+      "url": "https://dev.to/q_q_604af98bb2a91e754f50e/postjsoncom-a-web-dev-tool-with-macos-inspired-ui-paradigm-2eg4",
+      "published_at": "2026-10-24T15:06:36Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "ae1f8d9903a26569903f",
+      "id": "6d1ac3f1a467f7170dac",
       "source": "devto",
       "category": "development",
-      "title": "5 Fascinating Tech Stories You Shouldn't Miss This Week (From GPU Java to GrapheneOS Wins)",
-      "url": "https://dev.to/andrei_vassallo_3b7b874f7/5-fascinating-tech-stories-you-shouldnt-miss-this-week-from-gpu-java-to-grapheneos-wins-4kdf",
-      "published_at": "2026-10-24T14:57:22Z",
+      "title": "Why Token Research Still Matters in DeFi",
+      "url": "https://dev.to/mete_ay_16384b501616aae2d/why-token-research-still-matters-in-defi-1kjm",
+      "published_at": "2026-10-24T15:06:19Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "defd34db95d88d9cb44a",
+      "id": "034cc90a552271d914da",
       "source": "devto",
       "category": "development",
-      "title": "I Matched 10,000 People to Loans. It Took Just 1 AI Call.",
-      "url": "https://dev.to/kaushaly4s5s7/i-matched-10000-people-to-loans-it-took-just-1-ai-call-1mh3",
-      "published_at": "2026-10-24T14:55:09Z",
+      "title": "Why devs should design for blockchain errors, not around them",
+      "url": "https://dev.to/harvey_landyn_763d72c944f/why-devs-should-design-for-blockchain-errors-not-around-them-3me1",
+      "published_at": "2026-10-24T15:05:21Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "c21bb8c44122dfe6a74d",
+      "id": "3abd03d1b2220f80e6a4",
       "source": "devto",
       "category": "development",
-      "title": "160 NVMe Drives in a 4U Box: Inside Supermicro's ASG-4116S-NU160R",
-      "url": "https://dev.to/theeromi/160-nvme-drives-in-a-4u-box-inside-supermicros-asg-4116s-nu160r-2k85",
-      "published_at": "2026-10-24T14:54:49Z",
+      "title": "Two Ethereum Scam Schemes Exposed",
+      "url": "https://dev.to/sven_esser_94287e300ee703/two-ethereum-scam-schemes-exposed-559o",
+      "published_at": "2026-10-24T15:05:10Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "f1a6859828306f9b8e3c",
+      "id": "a0ea43c3d9a2462432bc",
       "source": "devto",
       "category": "development",
-      "title": "Pi 5 RAM Swaps Have Been Firmware-Locked Since 2024. Here's What That Actually Means",
-      "url": "https://dev.to/theeromi/pi-5-ram-swaps-have-been-firmware-locked-since-2024-heres-what-that-actually-means-2lgk",
-      "published_at": "2026-10-24T14:54:35Z",
+      "title": "Best of AI x SemiLaunch",
+      "url": "https://dev.to/bestofai/best-of-ai-x-semilaunch-54ge",
+      "published_at": "2026-10-24T15:04:45Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "e91b38f7bc90a1c3cff6",
+      "id": "641d508abca2475b973c",
       "source": "devto",
       "category": "development",
-      "title": "How Signal Made the Phone Number Optional, and What the Zero-Knowledge Proof Actually Protects",
-      "url": "https://dev.to/theeromi/how-signal-made-the-phone-number-optional-and-what-the-zero-knowledge-proof-actually-protects-1nne",
-      "published_at": "2026-10-24T14:54:15Z",
+      "title": "My PDF-to-Markdown converter learned that 'page 3' is a suggestion, and tables are a war crime",
+      "url": "https://dev.to/imapphelp/my-pdf-to-markdown-converter-learned-that-page-3-is-a-suggestion-and-tables-are-a-war-crime-2442",
+      "published_at": "2026-10-24T15:03:34Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "773c5cccdb21f2537399",
+      "id": "968b85729ed907bb2b9f",
       "source": "devto",
       "category": "development",
-      "title": "Beyond Open Banking APIs and What Developers Can Build Next",
-      "url": "https://dev.to/aiyla0101/beyond-open-banking-apis-and-what-developers-can-build-next-d2k",
-      "published_at": "2026-10-24T14:54:06Z",
+      "title": "Building a Terminal-Based GitHub Control Panel in Rust: Meet git-pulse 🚀",
+      "url": "https://dev.to/weaztoven/building-a-terminal-based-github-control-panel-in-rust-meet-git-pulse-4p9o",
+      "published_at": "2026-10-24T15:03:30Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "864b03d3f66daf9e6624",
+      "id": "a57c16ea2b90802edabb",
       "source": "devto",
       "category": "development",
-      "title": "Build a Basic AI Agent From Scratch: Session Management II",
-      "url": "https://dev.to/rogiia/build-a-basic-ai-agent-from-scratch-session-management-ii-489l",
-      "published_at": "2026-10-24T14:53:34Z",
+      "title": "Your Homepage Has 5 Seconds: A Developer's First-Impression Checklist",
+      "url": "https://dev.to/aimencoders/your-homepage-has-5-seconds-a-developers-first-impression-checklist-1dda",
+      "published_at": "2026-10-24T15:03:04Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3f9e6968ac92dfc58324",
+      "id": "9037a00960296374b8c8",
       "source": "devto",
       "category": "development",
-      "title": "14 Best Places to Launch Developer Tools in 2026 (Launchpads, Directories & Communities)",
-      "url": "https://dev.to/minouou/14-best-places-to-launch-developer-tools-in-2026-launchpads-directories-communities-12be",
-      "published_at": "2026-10-24T14:53:24Z",
+      "title": "Meu site tinha 91 visitantes. A maioria era robô (parte 2)",
+      "url": "https://dev.to/danielcamucatto/meu-site-tinha-91-visitantes-a-maioria-era-robo-parte-2-nca",
+      "published_at": "2026-10-24T15:02:46Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "7e70cc08b2a25d98da4b",
+      "id": "a2c30200cd20e4d8e9c8",
       "source": "devto",
       "category": "development",
-      "title": "What part of building and shipping software takes longer than it should?",
-      "url": "https://dev.to/mudbasedev/what-part-of-building-and-shipping-software-takes-longer-than-it-should-4d6l",
-      "published_at": "2026-10-24T14:52:55Z",
+      "title": "ZooKeeper's ACL checks were bypassed twice, in code paths that rarely get reviewed",
+      "url": "https://dev.to/facilishz/zookeepers-acl-checks-were-bypassed-twice-in-code-paths-that-rarely-get-reviewed-idn",
+      "published_at": "2026-10-24T15:02:44Z",
+      "cves": [
+        "CVE-2024-23944",
+        "CVE-2026-59739",
+        "CVE-2026-79993",
+        "CVE-2026-84439",
+        "CVE-2026-84501"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "6d40024109e53a0f1652",
+      "source": "devto",
+      "category": "development",
+      "title": "Your Claude Code Worktree Subagent Can't See Your Feature Branch. Set baseRef to head",
+      "url": "https://dev.to/gabrielanhaia/your-claude-code-worktree-subagent-cant-see-your-feature-branch-set-baseref-to-head-4ljn",
+      "published_at": "2026-10-24T15:02:38Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "8e91429630b2dd43021e",
+      "id": "12ad008bedb5a17192f6",
       "source": "devto",
       "category": "development",
-      "title": "Building a Linux GPU Driver for the M4 Mac mini in One Month, Mostly With Coding Agents",
-      "url": "https://dev.to/theeromi/building-a-linux-gpu-driver-for-the-m4-mac-mini-in-one-month-mostly-with-coding-agents-2pkm",
-      "published_at": "2026-10-24T14:52:53Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "846d727e5b38fb5f562c",
-      "source": "devto",
-      "category": "development",
-      "title": "The Epistemology of Experimentation and the Machine at Booking.com",
-      "url": "https://dev.to/fundacjadobrepanstwo/the-epistemology-of-experimentation-and-the-machine-at-bookingcom-1min",
-      "published_at": "2026-10-24T14:51:49Z",
+      "title": "Why Scanners Miss Flaws: Understanding Business Logic Vulnerabilities”",
+      "url": "https://dev.to/yusif_mammadzada_eab0c7a8/why-scanners-miss-flaws-understanding-business-logic-vulnerabilities-35gf",
+      "published_at": "2026-10-24T15:02:35Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -483,6 +500,26 @@
       "title": "EMFI adventures part 2: target characterization on STM32H5",
       "url": "https://www.reddit.com/r/netsec/comments/1xddn1d/emfi_adventures_part_2_target_characterization_on/",
       "published_at": "2026-10-23T13:11:19Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f95dd369dae6cd628091",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "Closing the Cyber Skills Gap with 300 Academic Partnerships",
+      "url": "https://blog.checkpoint.com/education/closing-the-cyber-skills-gap-with-300-academic-partnerships/",
+      "published_at": "2026-10-23T13:01:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c51a53425bef4b1bdc57",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "Infostealers Are Targeting AI: What Aokigahara Infostealer Reveals About the New Developer Attack Surface",
+      "url": "https://blog.checkpoint.com/ai-security/infostealers-are-targeting-ai-what-aokigahara-infostealer-reveals-about-the-new-developer-attack-surface/",
+      "published_at": "2026-10-23T13:00:08Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -768,6 +805,16 @@
       "date_precision": "time"
     },
     {
+      "id": "9f6d7eded4f662a9858c",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "PHP2Shell: Log4Shell at AI Speed — A CISO’s Perspective",
+      "url": "https://blog.checkpoint.com/ai-security/php2shell-log4shell-at-ai-speed-a-cisos-perspective/",
+      "published_at": "2026-10-22T18:09:32Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "9fd9812a8d6cb52b785a",
       "source": "bleeping",
       "category": "news",
@@ -775,6 +822,19 @@
       "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
       "published_at": "2026-10-22T17:18:22Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "efaf8438a345752dce20",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "PHP2Shell Update: One in ten organizations impacted as Europe bears the brunt",
+      "url": "https://blog.checkpoint.com/ai-security/php2shell-one-in-ten-organizations-impacted-as-europe-bears-the-brunt/",
+      "published_at": "2026-10-22T17:15:13Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "date_precision": "time"
     },
     {
@@ -846,6 +906,16 @@
       "title": "ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors",
       "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
       "published_at": "2026-10-22T13:05:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d00aebf4b37911aa5c3d",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "Custom Guardrails: The AI Rules No Vendor Can Write for You",
+      "url": "https://blog.checkpoint.com/ai-security/custom-guardrails-ai-agents/",
+      "published_at": "2026-10-22T13:00:18Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -964,6 +1034,19 @@
       "date_precision": "time"
     },
     {
+      "id": "a77efe23ef5af76aa796",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "PHP2Shell: Leaked Critical PHP Vulnerabilities (CVE-2026-109618 & CVE-2026-109619)",
+      "url": "https://blog.checkpoint.com/security/php2shell-what-we-know-about-the-leaked-critical-php-vulnerabilities-cve-2026-109618-cve-2026-109619/",
+      "published_at": "2026-10-21T13:46:30Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "0db92bb685e94ec1c6ad",
       "source": "wiz",
       "category": "news",
@@ -994,12 +1077,42 @@
       "date_precision": "time"
     },
     {
+      "id": "ede7c13b4311a69dba59",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "How Fraudulent Airline Support Numbers Exploit Search Results and AI-Generated Answers",
+      "url": "https://blog.checkpoint.com/research/how-fraudulent-airline-support-numbers-exploit-search-results-and-ai-generated-answers/",
+      "published_at": "2026-10-21T13:00:48Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "bab7d85c2edca984eb37",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "As AI Is Reshaping the Data Center, Security Has to Keep Up.",
+      "url": "https://blog.checkpoint.com/hybrid-mesh/as-ai-is-reshaping-the-data-center-security-has-to-keep-up/",
+      "published_at": "2026-10-21T13:00:12Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "99f5604c843e5283bbcb",
       "source": "wired",
       "category": "news",
       "title": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
       "url": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
       "published_at": "2026-10-21T12:35:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "91ba772019266831027d",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "Keeping AI Agents on Task: Check Point Advances AI Agent Safety with NVIDIA OpenShell Reference Architecture",
+      "url": "https://blog.checkpoint.com/ai-security/keeping-ai-agents-on-task-check-point-advances-ai-agent-safety-with-nvidia-openshell-reference-architecture/",
+      "published_at": "2026-10-21T11:31:24Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1280,6 +1393,16 @@
       "title": "How I got over 300 Tor exit nodes removed",
       "url": "https://www.reddit.com/r/netsec/comments/1xasa1k/how_i_got_over_300_tor_exit_nodes_removed/",
       "published_at": "2026-10-20T13:33:05Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "fe06bf62946ad795b280",
+      "source": "checkpoint",
+      "category": "news",
+      "title": "The Risk of AI-Powered Antidetect Browsers in Online Fraud and Influence Operations",
+      "url": "https://blog.checkpoint.com/security/antidetect-browsers-how-ai-is-scaling-online-fraud-and-account-takeovers/",
+      "published_at": "2026-10-20T13:00:37Z",
       "cves": [],
       "date_precision": "time"
     },

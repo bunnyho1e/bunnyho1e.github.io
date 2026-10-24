@@ -33,6 +33,7 @@ SOURCES = [
     {"id": "bleeping", "name": "BleepingComputer", "category": "news", "website": "https://www.bleepingcomputer.com/", "feed": "https://www.bleepingcomputer.com/feed/"},
     {"id": "wired", "name": "WIRED Security", "category": "news", "website": "https://www.wired.com/category/security/", "feed": "https://www.wired.com/feed/category/security/latest/rss"},
     {"id": "sophos", "name": "Sophos Blog", "category": "news", "website": "https://www.sophos.com/en-us/blog", "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242"},
+    {"id": "checkpoint", "name": "Check Point Blog", "category": "news", "website": "https://blog.checkpoint.com/", "feed": "https://blog.checkpoint.com/feed/"},
 ]
 
 

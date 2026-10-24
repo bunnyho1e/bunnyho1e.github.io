@@ -52,6 +52,7 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - BleepingComputer: https://www.bleepingcomputer.com/feed/
 - WIRED Security: https://www.wired.com/feed/category/security/latest/rss
 - Sophos Blog: https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242
+- Check Point Blog: https://blog.checkpoint.com/feed/
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 
