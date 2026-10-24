@@ -2,3 +2,5 @@ dist/
 .openai/
 .DS_Store
 __pycache__/
+.site-output/
+.feed-source-cache/

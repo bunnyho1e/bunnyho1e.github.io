@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-24T08:04:28Z",
+  "refresh_minutes": 60,
+  "sources": [
+    {
+      "id": "thn",
+      "name": "The Hacker News",
+      "category": "news",
+      "website": "https://thehackernews.com/",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T08:04:28Z",
+      "count": 18
+    },
+    {
+      "id": "edb",
+      "name": "Exploit-DB",
+      "category": "exploit",
+      "website": "https://www.exploit-db.com/",
+      "feed": "https://www.exploit-db.com/rss.xml",
+      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T08:04:28Z",
+      "count": 18
+    },
+    {
+      "id": "kev",
+      "name": "CISA KEV",
+      "category": "exploited",
+      "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
+      "last_attempt_at": "2026-10-24T08:04:28Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T08:04:28Z",
+      "count": 18
+    }
+  ],
+  "items": [
+    {
+      "id": "bc0bb168fc9922ea476e",
+      "source": "thn",
+      "category": "news",
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "published_at": "2026-10-24T06:25:57Z",
+      "cves": [
+        "CVE-2026-110447"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "9507be5fa3a650617f53",
+      "source": "thn",
+      "category": "news",
+      "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+      "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+      "published_at": "2026-10-23T18:50:13Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "5c8428babd5044cc4a34",
+      "source": "thn",
+      "category": "news",
+      "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+      "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+      "published_at": "2026-10-23T17:54:08Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c46eb85b62ef3dcb068b",
+      "source": "thn",
+      "category": "news",
+      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+      "published_at": "2026-10-23T17:50:47Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "86d2a9024f1dc2242ae9",
+      "source": "thn",
+      "category": "news",
+      "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+      "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+      "published_at": "2026-10-23T13:50:56Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "4018f6a0f224fd7e2293",
+      "source": "thn",
+      "category": "news",
+      "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+      "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+      "published_at": "2026-10-23T11:25:43Z",
+      "cves": [
+        "CVE-2026-115560"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5247c8147cbc3e447382",
+      "source": "thn",
+      "category": "news",
+      "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+      "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+      "published_at": "2026-10-23T11:11:23Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a8d151bea438f286fbdd",
+      "source": "thn",
+      "category": "news",
+      "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+      "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+      "published_at": "2026-10-23T09:36:00Z",
+      "cves": [
+        "CVE-2026-112900"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "0e72ecc34afaeb4eb614",
+      "source": "thn",
+      "category": "news",
+      "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+      "published_at": "2026-10-23T08:40:43Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d84b5aaf5bf277cd2f34",
+      "source": "thn",
+      "category": "news",
+      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+      "published_at": "2026-10-23T08:35:45Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e34dd05610b77fb64c61",
+      "source": "thn",
+      "category": "news",
+      "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+      "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+      "published_at": "2026-10-23T07:40:45Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "84520ec40a57aa6bbadf",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-110447 · Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [
+        "CVE-2026-110447"
+      ],
+      "date_precision": "day",
+      "vendor": "Collabora",
+      "product": "Collabora Online – Built-in CODE Server",
+      "ransomware": false
+    },
+    {
+      "id": "5d5e2b5d84d048b0d14d",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-114625 · Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [
+        "CVE-2026-114625"
+      ],
+      "date_precision": "day",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "ransomware": false
+    },
+    {
+      "id": "b5c13408a01da2b2598a",
+      "source": "thn",
+      "category": "news",
+      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+      "published_at": "2026-10-22T19:05:35Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e98c75c8f95b028fcc6a",
+      "source": "thn",
+      "category": "news",
+      "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "published_at": "2026-10-22T19:05:17Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "91bf424b92d69e0eca38",
+      "source": "thn",
+      "category": "news",
+      "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+      "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+      "published_at": "2026-10-22T18:12:43Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "23e5b20034bbb4671949",
+      "source": "thn",
+      "category": "news",
+      "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+      "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
+      "published_at": "2026-10-22T17:45:44Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "950accf38867da11c8e0",
+      "source": "thn",
+      "category": "news",
+      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+      "published_at": "2026-10-22T17:01:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "52436a0c9a9ed0bddcd3",
+      "source": "thn",
+      "category": "news",
+      "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
+      "url": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
+      "published_at": "2026-10-22T16:12:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "20b873694e52e2d1d148",
+      "source": "thn",
+      "category": "news",
+      "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
+      "url": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+      "published_at": "2026-10-22T13:38:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "04634f287307be2ce20a",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] PHP2Shell (CVE-2026-109618) - PHP core versions after v5.4 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52704",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-109618"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e8547fe1dd366706ad2d",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] ProSoft RLX-IFH24E v2.2.44 - Unsigned Firmware Upgrade Package Executed as Root",
+      "url": "https://www.exploit-db.com/exploits/52693",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "bf709f54fe9f042592de",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] Exasol Database 7.1.30 - command execution",
+      "url": "https://www.exploit-db.com/exploits/52695",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "bc55e3a35f8ede45ef79",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] Synametrics Syncrify 6.2 - command execution",
+      "url": "https://www.exploit-db.com/exploits/52700",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a7a078aae5c39ce67cc3",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] Keycloak 26.7.2 - Unauthenticated Account Takeover",
+      "url": "https://www.exploit-db.com/exploits/52699",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9fcb17076220ad7b6cb7",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] pizzafy-1.0 - SQLi",
+      "url": "https://www.exploit-db.com/exploits/52703",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "957bd585eafe0f831439",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] Parasoft Continuous Testing Platform 10.7.5 - JSP command execution",
+      "url": "https://www.exploit-db.com/exploits/52694",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "642e669814203e121b87",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] Edimax BR-6478AC firmware v2.20 - authenticated command injection",
+      "url": "https://www.exploit-db.com/exploits/52696",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "3dec70406520399dfba6",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] Automotive Shop Management System 1.0 - SQLi",
+      "url": "https://www.exploit-db.com/exploits/52697",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "13e0ab9a5707b2385efc",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[remote] South River Technologies Titan MFT Server 26.0.0 - code execution",
+      "url": "https://www.exploit-db.com/exploits/52701",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0b56f68d37a3f85ab188",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] Open eClass 3.15 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52698",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f1ab07ae19dfa48d6193",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-96656 · Plex Media Server External Control of File Name or Path Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-96656"
+      ],
+      "date_precision": "day",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "ransomware": false
+    },
+    {
+      "id": "ba4416dde1d1735237df",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-110936 · Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-110936"
+      ],
+      "date_precision": "day",
+      "vendor": "Siemens",
+      "product": "Software Center",
+      "ransomware": false
+    },
+    {
+      "id": "861197ee5b4209d6a65f",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-96654 · Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-96654"
+      ],
+      "date_precision": "day",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "ransomware": false
+    },
+    {
+      "id": "75fb13c01e925ec158eb",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-106931 · EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-106931"
+      ],
+      "date_precision": "day",
+      "vendor": "EG Secure Solutions",
+      "product": "SiteGuard Server Edition",
+      "ransomware": false
+    },
+    {
+      "id": "4f4412b04aebbac872b6",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-96652 · Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-96652"
+      ],
+      "date_precision": "day",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "ransomware": false
+    },
+    {
+      "id": "220e82a6437c14714f2e",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-96655 · Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-96655"
+      ],
+      "date_precision": "day",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "ransomware": false
+    },
+    {
+      "id": "fbf4db820e622ddc1e70",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-102764 · BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+      "published_at": "2026-10-16T00:00:00Z",
+      "cves": [
+        "CVE-2026-102764"
+      ],
+      "date_precision": "day",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "ransomware": false
+    },
+    {
+      "id": "8f0d8bc6aac4a22c10c3",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2025-61624 · Fortinet Multiple Products Path Traversal Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+      "published_at": "2026-10-16T00:00:00Z",
+      "cves": [
+        "CVE-2025-61624"
+      ],
+      "date_precision": "day",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "ransomware": false
+    },
+    {
+      "id": "ffe97124dcac347bec8b",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-21589 · Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+      "published_at": "2026-10-15T00:00:00Z",
+      "cves": [
+        "CVE-2026-21589"
+      ],
+      "date_precision": "day",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "ransomware": false
+    },
+    {
+      "id": "c3e82686a19d4e4ef607",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-105134 · Ahsay AhsayCBS Command Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+      "published_at": "2026-10-14T00:00:00Z",
+      "cves": [
+        "CVE-2026-105134"
+      ],
+      "date_precision": "day",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "ransomware": false
+    },
+    {
+      "id": "78c062b4fef767d106ce",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-0322 · Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+      "published_at": "2026-10-14T00:00:00Z",
+      "cves": [
+        "CVE-2026-0322"
+      ],
+      "date_precision": "day",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "ransomware": false
+    },
+    {
+      "id": "52caba65bee96a27874c",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-76519 · Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+      "published_at": "2026-10-14T00:00:00Z",
+      "cves": [
+        "CVE-2026-76519"
+      ],
+      "date_precision": "day",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "ransomware": false
+    },
+    {
+      "id": "1c96081232636995b7b0",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-105133 · Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+      "published_at": "2026-10-14T00:00:00Z",
+      "cves": [
+        "CVE-2026-105133"
+      ],
+      "date_precision": "day",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "ransomware": false
+    },
+    {
+      "id": "7d944a364db4faaa3f72",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-104935 · Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "published_at": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-104935"
+      ],
+      "date_precision": "day",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "ransomware": false
+    },
+    {
+      "id": "3fc680a0dc3c3d323695",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2026-96951 · Microsoft Windows Command Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+      "published_at": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-96951"
+      ],
+      "date_precision": "day",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "ransomware": false
+    },
+    {
+      "id": "553632ea13d0fd4e94ab",
+      "source": "kev",
+      "category": "exploited",
+      "title": "CVE-2023-22894 · Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894",
+      "published_at": "2026-10-08T00:00:00Z",
+      "cves": [
+        "CVE-2023-22894"
+      ],
+      "date_precision": "day",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "ransomware": false
+    },
+    {
+      "id": "e5ff7775c2e0ce0cdb16",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] Krayin CRM 2.2.4 - IDOR",
+      "url": "https://www.exploit-db.com/exploits/52687",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9ece1916251d2abd0503",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] TigerGraph_Community_Edition 4.2.4 - arbitrary file write",
+      "url": "https://www.exploit-db.com/exploits/52691",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "976c20bc658f97cab7ea",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] POMS oretnom23v1.0 - SQLi vulnerabilities",
+      "url": "https://www.exploit-db.com/exploits/52684",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "5c121baceb4bdfaabedc",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] WordPress 7.0.2 - Path Travesal",
+      "url": "https://www.exploit-db.com/exploits/52690",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "4b690a7d536374e8e65a",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] InvoicePlane 1.7.1 - RCE",
+      "url": "https://www.exploit-db.com/exploits/52685",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "375230276b1dd374b891",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] SuiteCRM 8.10.1 - Authenticated SSRF",
+      "url": "https://www.exploit-db.com/exploits/52686",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "346505e5e7706295e848",
+      "source": "edb",
+      "category": "exploit",
+      "title": "[webapps] Food-Ordering 1.0 - LFI",
+      "url": "https://www.exploit-db.com/exploits/52689",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    }
+  ]
+}
