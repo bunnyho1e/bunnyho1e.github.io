@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T13:37:32Z",
+  "generated_at": "2026-10-24T14:51:43Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 18
     },
     {
@@ -53,9 +53,9 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 18
     },
     {
@@ -64,130 +64,147 @@
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T13:37:32Z",
+      "last_success_at": "2026-10-24T14:51:43Z",
       "count": 12
+    },
+    {
+      "id": "wiz",
+      "name": "Wiz Blog",
+      "category": "news",
+      "website": "https://www.wiz.io/blog",
+      "feed": "https://www.wiz.io/feed/rss.xml",
+      "last_attempt_at": "2026-10-24T14:51:43Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T14:51:43Z",
+      "count": 18
     }
   ],
   "items": [
     {
-      "id": "9a9591becb6a20d64744",
+      "id": "eeac947e8cf68a71ff9c",
       "source": "devto",
       "category": "development",
-      "title": "How long a post survives on a dev.to tag: 13 tags measured",
-      "url": "https://dev.to/margotfox/how-long-a-post-survives-on-a-devto-tag-13-tags-measured-1i",
-      "published_at": "2026-10-24T13:36:22Z",
+      "title": "Laravel AI SDK 1.1 Agent Skills: Setup Guide and Gotchas",
+      "url": "https://dev.to/devtalk94/laravel-ai-sdk-11-agent-skills-setup-guide-and-gotchas-9cf",
+      "published_at": "2026-10-24T14:49:23Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "c00b540a883672d36490",
+      "id": "e35a0540bd3682974094",
       "source": "devto",
       "category": "development",
-      "title": "Tired of Slow Xcode Builds? Meet Bazel",
-      "url": "https://dev.to/hitarth/tired-of-slow-xcode-builds-meet-bazel-397g",
-      "published_at": "2026-10-24T13:35:03Z",
+      "title": "Five ways a Groovy sandbox leaked, and what that says about sandbox design",
+      "url": "https://dev.to/bianliang/five-ways-a-groovy-sandbox-leaked-and-what-that-says-about-sandbox-design-158c",
+      "published_at": "2026-10-24T14:46:04Z",
+      "cves": [
+        "CVE-2026-92122",
+        "CVE-2026-92123",
+        "CVE-2026-92124",
+        "CVE-2026-92125",
+        "CVE-2026-92129"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2a305c86dbe0a07a5a5f",
+      "source": "devto",
+      "category": "development",
+      "title": "Agency Red Flags: A Developer's 10-Point Pre-Hire Checklist",
+      "url": "https://dev.to/aimencoders/agency-red-flags-a-developers-10-point-pre-hire-checklist-52fn",
+      "published_at": "2026-10-24T14:45:59Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "d88ad4cbeeb1b8b01da9",
+      "id": "e93c225f3a45c91f9a65",
       "source": "devto",
       "category": "development",
-      "title": "How do you fit a 4B LLM in 1.24 GB? Trellis-coded 2-bit quantization, explained with real benchmarks",
-      "url": "https://dev.to/genrius_ai/how-do-you-fit-a-4b-llm-in-124-gb-trellis-coded-2-bit-quantization-explained-with-real-benchmarks-3c9g",
-      "published_at": "2026-10-24T13:33:14Z",
+      "title": "What If AI Didn't Just Answer Your Questions, but Helped You Actually Get Things Done?",
+      "url": "https://dev.to/pratyush_ranjan_roul/what-if-ai-didnt-just-answer-your-questions-but-helped-you-actually-get-things-done-5b3e",
+      "published_at": "2026-10-24T14:45:54Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "df18c73a063c0a5736d1",
+      "id": "0a8c121322d5276bfec1",
       "source": "devto",
       "category": "development",
-      "title": "GDB: View A Backtrace For All Threads",
-      "url": "https://dev.to/fayewilliams/gdb-view-a-backtrace-for-all-threads-4af7",
-      "published_at": "2026-10-24T13:32:38Z",
+      "title": "How We Built AI-Powered Japanese Shadowing Practice",
+      "url": "https://dev.to/corodomo/how-we-built-ai-powered-japanese-shadowing-practice-5ef0",
+      "published_at": "2026-10-24T14:45:19Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "a58410941d700b2d57bb",
+      "id": "b630cc0f8d651b4d8a2b",
       "source": "devto",
       "category": "development",
-      "title": "Fix: a setting shows as \"undefined\" in the browser of your Next.js app (NEXT_PUBLIC_ environment variable, tested repro, Next 16 + React 19.3)",
-      "url": "https://dev.to/theagentledger/fix-a-setting-shows-as-undefined-in-the-browser-of-your-nextjs-app-nextpublic-environment-39f6",
-      "published_at": "2026-10-24T13:32:38Z",
+      "title": "Why no Python configuration library covers everything",
+      "url": "https://dev.to/niccolum/why-no-python-configuration-library-covers-everything-1phe",
+      "published_at": "2026-10-24T14:45:14Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "e015cf9be241ca07aac0",
+      "id": "55c75a0876e2d4b81e24",
       "source": "devto",
       "category": "development",
-      "title": "A safe first AI exercise: sort an inbox, and learn one habit (tested on 18 synthetic emails)",
-      "url": "https://dev.to/theagentledger/a-safe-first-ai-exercise-sort-an-inbox-and-learn-one-habit-tested-on-18-synthetic-emails-431g",
-      "published_at": "2026-10-24T13:31:00Z",
+      "title": "Buried, not deleted: why your agent's memory needs negative knowledge",
+      "url": "https://dev.to/zerokool1986/buried-not-deleted-why-your-agents-memory-needs-negative-knowledge-49l7",
+      "published_at": "2026-10-24T14:45:04Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "e29dace0f91ed9f7f12e",
+      "id": "3c6a2886c13c5755092f",
       "source": "devto",
       "category": "development",
-      "title": "An AI ported WinQuake to C#, and per-frame hashes prove it bit-exact",
-      "url": "https://dev.to/andre_ad2623514c/an-ai-ported-winquake-to-c-and-per-frame-hashes-prove-it-bit-exact-15f1",
-      "published_at": "2026-10-24T13:30:48Z",
+      "title": "Sort patch versions as numbers, but keep release history explicit",
+      "url": "https://dev.to/j_game_observer/sort-patch-versions-as-numbers-but-keep-release-history-explicit-5ekl",
+      "published_at": "2026-10-24T14:44:28Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "83b5f0018d12e8bb137e",
+      "id": "11a162a4eab2e0f3c9cb",
       "source": "devto",
       "category": "development",
-      "title": "How to add Stripe payments to a Next.js app with checkout, webhooks, and portal",
-      "url": "https://dev.to/greedy_reader/how-to-add-stripe-payments-to-a-nextjs-app-with-checkout-webhooks-and-portal-2g6l",
-      "published_at": "2026-10-24T13:30:01Z",
+      "title": "A first-screen audit checklist for developer tools, READMEs, and APIs",
+      "url": "https://dev.to/victor_guerillot_aeecd294/a-first-screen-audit-checklist-for-developer-tools-readmes-and-apis-1k95",
+      "published_at": "2026-10-24T14:44:17Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "61d922ac1c0615b31129",
+      "id": "002e269882c9c11d63ac",
       "source": "devto",
       "category": "development",
-      "title": "We read 25 MCP servers. Here is what we found",
-      "url": "https://dev.to/antoniogm82/we-read-25-mcp-servers-here-is-what-we-found-2ngn",
-      "published_at": "2026-10-24T13:30:00Z",
+      "title": "LocalLens — Let On-Device AI Do the Browsing Grunt Work for You",
+      "url": "https://dev.to/yuvraj_sau_cc057705e86961/locallens-let-on-device-ai-do-the-browsing-grunt-work-for-you-3fej",
+      "published_at": "2026-10-24T14:43:54Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "149b50848a8c7318c943",
+      "id": "4b5e7c7c07ba451b3f23",
       "source": "devto",
       "category": "development",
-      "title": "The Bug Behind Double Bookings",
-      "url": "https://dev.to/vjrngn/the-bug-behind-double-bookings-3g20",
-      "published_at": "2026-10-24T13:30:00Z",
+      "title": "Mobile-First CSS in 2026: A Developer's Build Checklist",
+      "url": "https://dev.to/aimencoders/mobile-first-css-in-2026-a-developers-build-checklist-1fao",
+      "published_at": "2026-10-24T14:43:49Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3fdfa318928a561c6038",
+      "id": "d962b0949258461b193a",
       "source": "devto",
       "category": "development",
-      "title": "Your Agent's confirmed: true Is Not Permission.",
-      "url": "https://dev.to/__be2942592/your-agents-confirmed-true-is-not-permission-b46",
-      "published_at": "2026-10-24T13:29:24Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "23b2971aac7aea7873b7",
-      "source": "devto",
-      "category": "development",
-      "title": "Linux Security Fundamentals Every Developer Should Master",
-      "url": "https://dev.to/harsh_hak/linux-security-fundamentals-every-developer-should-master-4lhp",
-      "published_at": "2026-10-24T13:28:45Z",
+      "title": "Why Dark Mode Tests Don’t Cover Windows Contrast Themes",
+      "url": "https://dev.to/svgicons/why-dark-mode-tests-dont-cover-windows-contrast-themes-gkl",
+      "published_at": "2026-10-24T14:43:13Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -441,6 +458,16 @@
       "ransomware": false
     },
     {
+      "id": "f6feb33ee554b9419399",
+      "source": "wiz",
+      "category": "news",
+      "title": "ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context",
+      "url": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
+      "published_at": "2026-10-22T22:51:55Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "b5c13408a01da2b2598a",
       "source": "thn",
       "category": "news",
@@ -501,6 +528,16 @@
       "title": "Markdown Is the New Executable: Attackers Are Dropping Agent Instructions Into Your Downloads Folder From the Web",
       "url": "https://www.reddit.com/r/netsec/comments/1xcnb6o/markdown_is_the_new_executable_attackers_are/",
       "published_at": "2026-10-22T16:27:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a363839745bce85aace7",
+      "source": "wiz",
+      "category": "news",
+      "title": "ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors",
+      "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
+      "published_at": "2026-10-22T13:05:31Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -575,6 +612,26 @@
       "title": "PHP patches for critical PHP2Shell vulnerabilities",
       "url": "https://www.reddit.com/r/netsec/comments/1xbp0px/php_patches_for_critical_php2shell_vulnerabilities/",
       "published_at": "2026-10-21T14:41:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "1eea253ec8585ed29611",
+      "source": "wiz",
+      "category": "news",
+      "title": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet",
+      "url": "https://www.wiz.io/blog/php2shell-php-rce",
+      "published_at": "2026-10-21T13:59:59Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0db92bb685e94ec1c6ad",
+      "source": "wiz",
+      "category": "news",
+      "title": "LiteLLM Compromised, Steals Credentials",
+      "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+      "published_at": "2026-10-21T13:44:12Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -712,6 +769,16 @@
       "date_precision": "time"
     },
     {
+      "id": "952448c5e1c9ff324d27",
+      "source": "wiz",
+      "category": "news",
+      "title": "Wiz Sensor on GKE. 1-Click Runtime Protection, Now Native.",
+      "url": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
+      "published_at": "2026-10-20T22:02:42Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "aa08a7c6174a761028e9",
       "source": "netsec",
       "category": "community",
@@ -763,6 +830,16 @@
       "cves": [
         "CVE-2026-46633"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c81682e937def696abec",
+      "source": "wiz",
+      "category": "news",
+      "title": "From Phishing to LLMjacking: Threat Actors Targeting Cloud Billing Accounts for LLM Usage",
+      "url": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
+      "published_at": "2026-10-20T20:03:10Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -938,6 +1015,26 @@
       "ransomware": false
     },
     {
+      "id": "7279cc5bebae68745868",
+      "source": "wiz",
+      "category": "news",
+      "title": "Supply Chain Zero Days: Closing the Gap Between Publication and Detection",
+      "url": "https://www.wiz.io/blog/detect-supply-chain-zero-days-at-publication",
+      "published_at": "2026-10-19T14:39:29Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8ee70c0b3be8a4d6826b",
+      "source": "wiz",
+      "category": "news",
+      "title": "Loud, Fast, and Everywhere: Anatomy of a Real AI-Driven Cloud Attack",
+      "url": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
+      "published_at": "2026-10-19T11:26:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "667717f44306ca2423d4",
       "source": "aikido",
       "category": "news",
@@ -1031,6 +1128,26 @@
       "vendor": "Atlassian",
       "product": "Multiple Products",
       "ransomware": false
+    },
+    {
+      "id": "8e2e4c008f1e64053e12",
+      "source": "wiz",
+      "category": "news",
+      "title": "ASPM in the AI Era Part 1: Unified Visibility Across Your Stack",
+      "url": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
+      "published_at": "2026-10-14T20:13:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c28466fbf71f7e8a8373",
+      "source": "wiz",
+      "category": "news",
+      "title": "Securing the Mission at Machine Speed: Wiz AI Agents Arrive in Wiz for Gov",
+      "url": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
+      "published_at": "2026-10-14T11:00:02Z",
+      "cves": [],
+      "date_precision": "time"
     },
     {
       "id": "c3e82686a19d4e4ef607",
@@ -1148,6 +1265,36 @@
       "ransomware": false
     },
     {
+      "id": "0431deaa78d6a68ba761",
+      "source": "wiz",
+      "category": "news",
+      "title": "How the Wiz Red Agent caught a Fortune 500 firm’s data exposure (that other tools missed)",
+      "url": "https://www.wiz.io/blog/red-agent-financial-services-data-exposure",
+      "published_at": "2026-10-07T14:53:27Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "cf5f0157e712b5684417",
+      "source": "wiz",
+      "category": "news",
+      "title": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
+      "url": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+      "published_at": "2026-10-06T13:47:28Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b3869b644cba27325abc",
+      "source": "wiz",
+      "category": "news",
+      "title": "What’s New in Wiz Service Catalog: Smarter Discovery, Governance, and Service-Level Context",
+      "url": "https://www.wiz.io/blog/wiz-service-catalog-updates",
+      "published_at": "2026-10-05T16:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "e5ff7775c2e0ce0cdb16",
       "source": "edb",
       "category": "exploit",
@@ -1214,6 +1361,56 @@
       "title": "[webapps] Food-Ordering 1.0 - LFI",
       "url": "https://www.exploit-db.com/exploits/52689",
       "published_at": "2026-10-01T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b0b93b0e7b617e45f544",
+      "source": "wiz",
+      "category": "news",
+      "title": "Securing the Kubernetes Supply Chain: Introducing WizOS Helm Charts",
+      "url": "https://www.wiz.io/blog/wizos-helm-charts",
+      "published_at": "2026-09-30T15:52:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7b028c40113102b03c86",
+      "source": "wiz",
+      "category": "news",
+      "title": "The Blue Agent POV: Investigating Multi-Platform Data Exfiltration Across AWS and GitHub",
+      "url": "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation",
+      "published_at": "2026-09-29T12:42:40Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "64aca8e54ca4d30c0ce3",
+      "source": "wiz",
+      "category": "news",
+      "title": "Introducing the Wiz Partner Alliance Managed Service Provider Program",
+      "url": "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program",
+      "published_at": "2026-09-28T12:58:02Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "204d569576b4f2efabfe",
+      "source": "wiz",
+      "category": "news",
+      "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
+      "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+      "published_at": "2026-09-25T14:51:15Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d25ae633304f69884266",
+      "source": "wiz",
+      "category": "news",
+      "title": "Wiz Named a Leader in The Forrester Wave™: Proactive Security Platforms, Q3 2026",
+      "url": "https://www.wiz.io/blog/forrester-wave-for-proactive-security-2026",
+      "published_at": "2026-09-24T16:12:36Z",
       "cves": [],
       "date_precision": "time"
     }

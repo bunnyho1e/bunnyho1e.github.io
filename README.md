@@ -47,6 +47,7 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - Aikido Blog: https://www.aikido.dev/blog/rss.xml
 - Reddit r/netsec: https://www.reddit.com/r/netsec/new/.rss?limit=25
 - DEV Community: https://dev.to/feed (the main feed, including general development topics).
+- Wiz Blog: https://www.wiz.io/feed/rss.xml
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 

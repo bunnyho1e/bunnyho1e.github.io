@@ -28,6 +28,7 @@ SOURCES = [
     {"id": "aikido", "name": "Aikido Blog", "category": "news", "website": "https://www.aikido.dev/blog", "feed": "https://www.aikido.dev/blog/rss.xml"},
     {"id": "netsec", "name": "Reddit r/netsec", "category": "community", "website": "https://www.reddit.com/r/netsec/", "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25"},
     {"id": "devto", "name": "DEV Community", "category": "development", "website": "https://dev.to/", "feed": "https://dev.to/feed"},
+    {"id": "wiz", "name": "Wiz Blog", "category": "news", "website": "https://www.wiz.io/blog", "feed": "https://www.wiz.io/feed/rss.xml"},
 ]
 
 
