@@ -11,8 +11,8 @@
   const refresh = section.querySelector('#signal-refresh');
   const more = section.querySelector('#signal-more');
   const filters = [...section.querySelectorAll('[data-signal-source]')];
-  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec' };
-  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST' };
+  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec', devto: 'DEV Community' };
+  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST', devto: 'DEVELOPER POST' };
   let snapshot;
   let active = 'all';
   let limit = 6;
@@ -42,7 +42,7 @@
     return {
       generated_at: data.generated_at,
       sources: data.sources.filter(source => source && Object.hasOwn(names, source.id)),
-      items: data.items.filter(item => item && Object.hasOwn(names, item.source) && typeof item.title === 'string' && safeUrl(item.url) && Number.isFinite(Date.parse(item.published_at))).slice(0, 100)
+      items: data.items.filter(item => item && Object.hasOwn(names, item.source) && typeof item.title === 'string' && safeUrl(item.url) && Number.isFinite(Date.parse(item.published_at))).slice(0, 200)
     };
   }
   function makeCard(item) {

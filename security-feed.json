@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T12:34:14Z",
+  "generated_at": "2026-10-24T13:37:32Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:34:14Z",
+      "last_success_at": "2026-10-24T13:37:32Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:34:14Z",
+      "last_success_at": "2026-10-24T13:37:32Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:34:14Z",
+      "last_success_at": "2026-10-24T13:37:32Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:34:14Z",
+      "last_success_at": "2026-10-24T13:37:32Z",
       "count": 18
     },
     {
@@ -53,13 +53,144 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T12:34:14Z",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T12:34:14Z",
+      "last_success_at": "2026-10-24T13:37:32Z",
       "count": 18
+    },
+    {
+      "id": "devto",
+      "name": "DEV Community",
+      "category": "development",
+      "website": "https://dev.to/",
+      "feed": "https://dev.to/feed",
+      "last_attempt_at": "2026-10-24T13:37:32Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T13:37:32Z",
+      "count": 12
     }
   ],
   "items": [
+    {
+      "id": "9a9591becb6a20d64744",
+      "source": "devto",
+      "category": "development",
+      "title": "How long a post survives on a dev.to tag: 13 tags measured",
+      "url": "https://dev.to/margotfox/how-long-a-post-survives-on-a-devto-tag-13-tags-measured-1i",
+      "published_at": "2026-10-24T13:36:22Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c00b540a883672d36490",
+      "source": "devto",
+      "category": "development",
+      "title": "Tired of Slow Xcode Builds? Meet Bazel",
+      "url": "https://dev.to/hitarth/tired-of-slow-xcode-builds-meet-bazel-397g",
+      "published_at": "2026-10-24T13:35:03Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d88ad4cbeeb1b8b01da9",
+      "source": "devto",
+      "category": "development",
+      "title": "How do you fit a 4B LLM in 1.24 GB? Trellis-coded 2-bit quantization, explained with real benchmarks",
+      "url": "https://dev.to/genrius_ai/how-do-you-fit-a-4b-llm-in-124-gb-trellis-coded-2-bit-quantization-explained-with-real-benchmarks-3c9g",
+      "published_at": "2026-10-24T13:33:14Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "df18c73a063c0a5736d1",
+      "source": "devto",
+      "category": "development",
+      "title": "GDB: View A Backtrace For All Threads",
+      "url": "https://dev.to/fayewilliams/gdb-view-a-backtrace-for-all-threads-4af7",
+      "published_at": "2026-10-24T13:32:38Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a58410941d700b2d57bb",
+      "source": "devto",
+      "category": "development",
+      "title": "Fix: a setting shows as \"undefined\" in the browser of your Next.js app (NEXT_PUBLIC_ environment variable, tested repro, Next 16 + React 19.3)",
+      "url": "https://dev.to/theagentledger/fix-a-setting-shows-as-undefined-in-the-browser-of-your-nextjs-app-nextpublic-environment-39f6",
+      "published_at": "2026-10-24T13:32:38Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e015cf9be241ca07aac0",
+      "source": "devto",
+      "category": "development",
+      "title": "A safe first AI exercise: sort an inbox, and learn one habit (tested on 18 synthetic emails)",
+      "url": "https://dev.to/theagentledger/a-safe-first-ai-exercise-sort-an-inbox-and-learn-one-habit-tested-on-18-synthetic-emails-431g",
+      "published_at": "2026-10-24T13:31:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e29dace0f91ed9f7f12e",
+      "source": "devto",
+      "category": "development",
+      "title": "An AI ported WinQuake to C#, and per-frame hashes prove it bit-exact",
+      "url": "https://dev.to/andre_ad2623514c/an-ai-ported-winquake-to-c-and-per-frame-hashes-prove-it-bit-exact-15f1",
+      "published_at": "2026-10-24T13:30:48Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "83b5f0018d12e8bb137e",
+      "source": "devto",
+      "category": "development",
+      "title": "How to add Stripe payments to a Next.js app with checkout, webhooks, and portal",
+      "url": "https://dev.to/greedy_reader/how-to-add-stripe-payments-to-a-nextjs-app-with-checkout-webhooks-and-portal-2g6l",
+      "published_at": "2026-10-24T13:30:01Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "61d922ac1c0615b31129",
+      "source": "devto",
+      "category": "development",
+      "title": "We read 25 MCP servers. Here is what we found",
+      "url": "https://dev.to/antoniogm82/we-read-25-mcp-servers-here-is-what-we-found-2ngn",
+      "published_at": "2026-10-24T13:30:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "149b50848a8c7318c943",
+      "source": "devto",
+      "category": "development",
+      "title": "The Bug Behind Double Bookings",
+      "url": "https://dev.to/vjrngn/the-bug-behind-double-bookings-3g20",
+      "published_at": "2026-10-24T13:30:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "3fdfa318928a561c6038",
+      "source": "devto",
+      "category": "development",
+      "title": "Your Agent's confirmed: true Is Not Permission.",
+      "url": "https://dev.to/__be2942592/your-agents-confirmed-true-is-not-permission-b46",
+      "published_at": "2026-10-24T13:29:24Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "23b2971aac7aea7873b7",
+      "source": "devto",
+      "category": "development",
+      "title": "Linux Security Fundamentals Every Developer Should Master",
+      "url": "https://dev.to/harsh_hak/linux-security-fundamentals-every-developer-should-master-4lhp",
+      "published_at": "2026-10-24T13:28:45Z",
+      "cves": [],
+      "date_precision": "time"
+    },
     {
       "id": "992eafcb0e21b3f400ad",
       "source": "thn",

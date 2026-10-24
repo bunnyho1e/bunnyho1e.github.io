@@ -27,6 +27,7 @@ SOURCES = [
     {"id": "kev", "name": "CISA KEV", "category": "exploited", "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"},
     {"id": "aikido", "name": "Aikido Blog", "category": "news", "website": "https://www.aikido.dev/blog", "feed": "https://www.aikido.dev/blog/rss.xml"},
     {"id": "netsec", "name": "Reddit r/netsec", "category": "community", "website": "https://www.reddit.com/r/netsec/", "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25"},
+    {"id": "devto", "name": "DEV Community", "category": "development", "website": "https://dev.to/", "feed": "https://dev.to/feed"},
 ]
 
 

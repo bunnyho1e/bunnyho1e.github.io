@@ -46,6 +46,7 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - CISA KEV: the [official CISA mirror](https://github.com/cisagov/kev-data), linked to the original [catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
 - Aikido Blog: https://www.aikido.dev/blog/rss.xml
 - Reddit r/netsec: https://www.reddit.com/r/netsec/new/.rss?limit=25
+- DEV Community: https://dev.to/feed (the main feed, including general development topics).
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 
