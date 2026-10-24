@@ -11,8 +11,8 @@
   const refresh = section.querySelector('#signal-refresh');
   const more = section.querySelector('#signal-more');
   const filters = [...section.querySelectorAll('[data-signal-source]')];
-  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec', devto: 'DEV Community', wiz: 'Wiz Blog', securityweek: 'SecurityWeek', bleeping: 'BleepingComputer', wired: 'WIRED Security', sophos: 'Sophos Blog', checkpoint: 'Check Point Blog' };
-  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST', devto: 'DEVELOPER POST', wiz: 'SECURITY BLOG', securityweek: 'SECURITY NEWS', bleeping: 'SECURITY NEWS', wired: 'SECURITY NEWS', sophos: 'SECURITY BLOG', checkpoint: 'SECURITY BLOG' };
+  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec', devto: 'DEV Community', wiz: 'Wiz Blog', securityweek: 'SecurityWeek', bleeping: 'BleepingComputer', wired: 'WIRED Security', sophos: 'Sophos Blog', checkpoint: 'Check Point Blog', darkwebinformer: 'Dark Web Informer' };
+  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST', devto: 'DEVELOPER POST', wiz: 'SECURITY BLOG', securityweek: 'SECURITY NEWS', bleeping: 'SECURITY NEWS', wired: 'SECURITY NEWS', sophos: 'SECURITY BLOG', checkpoint: 'SECURITY BLOG', darkwebinformer: 'THREAT REPORT' };
   const maxItems = Object.keys(names).length * 25;
   let snapshot;
   let active = 'all';

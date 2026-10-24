@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T15:09:50Z",
+  "generated_at": "2026-10-24T15:56:03Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -53,9 +53,9 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -64,9 +64,9 @@
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 12
     },
     {
@@ -75,9 +75,9 @@
       "category": "news",
       "website": "https://www.wiz.io/blog",
       "feed": "https://www.wiz.io/feed/rss.xml",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -86,9 +86,9 @@
       "category": "news",
       "website": "https://www.securityweek.com/",
       "feed": "https://www.securityweek.com/feed/",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 10
     },
     {
@@ -97,9 +97,9 @@
       "category": "news",
       "website": "https://www.bleepingcomputer.com/",
       "feed": "https://www.bleepingcomputer.com/feed/",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 15
     },
     {
@@ -108,9 +108,9 @@
       "category": "news",
       "website": "https://www.wired.com/category/security/",
       "feed": "https://www.wired.com/feed/category/security/latest/rss",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 18
     },
     {
@@ -119,9 +119,9 @@
       "category": "news",
       "website": "https://www.sophos.com/en-us/blog",
       "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 9
     },
     {
@@ -130,136 +130,141 @@
       "category": "news",
       "website": "https://blog.checkpoint.com/",
       "feed": "https://blog.checkpoint.com/feed/",
-      "last_attempt_at": "2026-10-24T15:09:50Z",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:09:50Z",
+      "last_success_at": "2026-10-24T15:56:03Z",
       "count": 10
+    },
+    {
+      "id": "darkwebinformer",
+      "name": "Dark Web Informer",
+      "category": "news",
+      "website": "https://darkwebinformer.com/",
+      "feed": "https://darkwebinformer.com/rss/",
+      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "status": "ok",
+      "last_success_at": "2026-10-24T15:56:03Z",
+      "count": 15
     }
   ],
   "items": [
     {
-      "id": "5f812959c06b974790c0",
+      "id": "be031173647a8db8414e",
       "source": "devto",
       "category": "development",
-      "title": "postjson.com — A web dev tool with macOS-inspired UI paradigm",
-      "url": "https://dev.to/q_q_604af98bb2a91e754f50e/postjsoncom-a-web-dev-tool-with-macos-inspired-ui-paradigm-2eg4",
-      "published_at": "2026-10-24T15:06:36Z",
+      "title": "The Lookup Table That Beat 17 Experts: DeepSeek's Engram and the Second Axis of Sparsity",
+      "url": "https://dev.to/danielsamfdo/the-lookup-table-that-beat-17-experts-deepseeks-engram-and-the-second-axis-of-sparsity-j6c",
+      "published_at": "2026-10-24T15:55:04Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "6d1ac3f1a467f7170dac",
+      "id": "08e6a18fef0e349bb2a4",
       "source": "devto",
       "category": "development",
-      "title": "Why Token Research Still Matters in DeFi",
-      "url": "https://dev.to/mete_ay_16384b501616aae2d/why-token-research-still-matters-in-defi-1kjm",
-      "published_at": "2026-10-24T15:06:19Z",
+      "title": "How to Run a 4B LLM Locally on Windows with a Small NVIDIA GPU (3 Steps)",
+      "url": "https://dev.to/genrius_ai/how-to-run-a-4b-llm-locally-on-windows-with-a-small-nvidia-gpu-3-steps-249k",
+      "published_at": "2026-10-24T15:54:53Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "034cc90a552271d914da",
+      "id": "5636588c105a2b2c843a",
       "source": "devto",
       "category": "development",
-      "title": "Why devs should design for blockchain errors, not around them",
-      "url": "https://dev.to/harvey_landyn_763d72c944f/why-devs-should-design-for-blockchain-errors-not-around-them-3me1",
-      "published_at": "2026-10-24T15:05:21Z",
+      "title": "How to Use AI Tools for Studying Effectively",
+      "url": "https://dev.to/exactreads/how-to-use-ai-tools-for-studying-effectively-2g7m",
+      "published_at": "2026-10-24T15:54:31Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3abd03d1b2220f80e6a4",
+      "id": "795e4de20a4e53363ffe",
       "source": "devto",
       "category": "development",
-      "title": "Two Ethereum Scam Schemes Exposed",
-      "url": "https://dev.to/sven_esser_94287e300ee703/two-ethereum-scam-schemes-exposed-559o",
-      "published_at": "2026-10-24T15:05:10Z",
+      "title": "A public first-screen audit of Sloth Reads, an overnight read-later AI",
+      "url": "https://dev.to/victor_guerillot_aeecd294/a-public-first-screen-audit-of-sloth-reads-an-overnight-read-later-ai-4lfj",
+      "published_at": "2026-10-24T15:54:29Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "a0ea43c3d9a2462432bc",
+      "id": "3fded1ea1dc14f49bf8d",
       "source": "devto",
       "category": "development",
-      "title": "Best of AI x SemiLaunch",
-      "url": "https://dev.to/bestofai/best-of-ai-x-semilaunch-54ge",
-      "published_at": "2026-10-24T15:04:45Z",
+      "title": "Poor Man's Claude Pro",
+      "url": "https://dev.to/bweller/poor-mans-claude-pro-2pn0",
+      "published_at": "2026-10-24T15:52:51Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "641d508abca2475b973c",
+      "id": "98fb6b89a200feddf718",
       "source": "devto",
       "category": "development",
-      "title": "My PDF-to-Markdown converter learned that 'page 3' is a suggestion, and tables are a war crime",
-      "url": "https://dev.to/imapphelp/my-pdf-to-markdown-converter-learned-that-page-3-is-a-suggestion-and-tables-are-a-war-crime-2442",
-      "published_at": "2026-10-24T15:03:34Z",
+      "title": "SlothFlowAI",
+      "url": "https://dev.to/sartaj_77/slothflowai-3opf",
+      "published_at": "2026-10-24T15:52:19Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "968b85729ed907bb2b9f",
+      "id": "8915d160cb9674fb9925",
       "source": "devto",
       "category": "development",
-      "title": "Building a Terminal-Based GitHub Control Panel in Rust: Meet git-pulse 🚀",
-      "url": "https://dev.to/weaztoven/building-a-terminal-based-github-control-panel-in-rust-meet-git-pulse-4p9o",
-      "published_at": "2026-10-24T15:03:30Z",
+      "title": "I built an Enterprise AI Dashboard using only Vanilla JS (Zero frameworks)",
+      "url": "https://dev.to/nowii-core/i-built-an-enterprise-ai-dashboard-using-only-vanilla-js-zero-frameworks-5000",
+      "published_at": "2026-10-24T15:52:13Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "a57c16ea2b90802edabb",
+      "id": "7884a736848154f20e03",
       "source": "devto",
       "category": "development",
-      "title": "Your Homepage Has 5 Seconds: A Developer's First-Impression Checklist",
-      "url": "https://dev.to/aimencoders/your-homepage-has-5-seconds-a-developers-first-impression-checklist-1dda",
-      "published_at": "2026-10-24T15:03:04Z",
+      "title": "JavaScript Closures Explained with a Real-World Example",
+      "url": "https://dev.to/megalraja/javascript-closures-explained-with-a-real-world-example-3o81",
+      "published_at": "2026-10-24T15:50:47Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "9037a00960296374b8c8",
+      "id": "a301bb404a1e87b66624",
       "source": "devto",
       "category": "development",
-      "title": "Meu site tinha 91 visitantes. A maioria era robô (parte 2)",
-      "url": "https://dev.to/danielcamucatto/meu-site-tinha-91-visitantes-a-maioria-era-robo-parte-2-nca",
-      "published_at": "2026-10-24T15:02:46Z",
+      "title": "From DevTools to Code: Stop Manually Translating cURL Commands",
+      "url": "https://dev.to/elias_miller/from-devtools-to-code-stop-manually-translating-curl-commands-11hh",
+      "published_at": "2026-10-24T15:50:00Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "a2c30200cd20e4d8e9c8",
+      "id": "3c9200ecf87fcc0a9ef9",
       "source": "devto",
       "category": "development",
-      "title": "ZooKeeper's ACL checks were bypassed twice, in code paths that rarely get reviewed",
-      "url": "https://dev.to/facilishz/zookeepers-acl-checks-were-bypassed-twice-in-code-paths-that-rarely-get-reviewed-idn",
-      "published_at": "2026-10-24T15:02:44Z",
-      "cves": [
-        "CVE-2024-23944",
-        "CVE-2026-59739",
-        "CVE-2026-79993",
-        "CVE-2026-84439",
-        "CVE-2026-84501"
-      ],
-      "date_precision": "time"
-    },
-    {
-      "id": "6d40024109e53a0f1652",
-      "source": "devto",
-      "category": "development",
-      "title": "Your Claude Code Worktree Subagent Can't See Your Feature Branch. Set baseRef to head",
-      "url": "https://dev.to/gabrielanhaia/your-claude-code-worktree-subagent-cant-see-your-feature-branch-set-baseref-to-head-4ljn",
-      "published_at": "2026-10-24T15:02:38Z",
+      "title": "Lazylist-AI",
+      "url": "https://dev.to/faisu/lazylist-ai-4dbi",
+      "published_at": "2026-10-24T15:48:55Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "12ad008bedb5a17192f6",
+      "id": "dc058e071c862c616f3e",
       "source": "devto",
       "category": "development",
-      "title": "Why Scanners Miss Flaws: Understanding Business Logic Vulnerabilities”",
-      "url": "https://dev.to/yusif_mammadzada_eab0c7a8/why-scanners-miss-flaws-understanding-business-logic-vulnerabilities-35gf",
-      "published_at": "2026-10-24T15:02:35Z",
+      "title": "How to Convert PDFs to Markdown for RAG and Chatbots (and When Not To)",
+      "url": "https://dev.to/appierun_66/how-to-convert-pdfs-to-markdown-for-rag-and-chatbots-and-when-not-to-307d",
+      "published_at": "2026-10-24T15:48:28Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "cd2ca1e6f3e91b0d32b0",
+      "source": "devto",
+      "category": "development",
+      "title": "Cash on delivery is a ledger problem",
+      "url": "https://dev.to/derbalajr/cash-on-delivery-is-a-ledger-problem-3oec",
+      "published_at": "2026-10-24T15:47:34Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -870,6 +875,16 @@
       "date_precision": "time"
     },
     {
+      "id": "f852a00102e466578f73",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Spectator Loader Advertised as FUD Resident Loader With Anti-Analysis and Evasion Features",
+      "url": "https://darkwebinformer.com/spectator-loader-advertised-as-fud-resident-loader-with-anti-analysis-and-evasion-features/",
+      "published_at": "2026-10-22T15:23:06Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "6347561eebf69a5892a3",
       "source": "securityweek",
       "category": "news",
@@ -1357,6 +1372,16 @@
       "date_precision": "time"
     },
     {
+      "id": "5f40ba97bc2b9cad9c30",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "LOOF Data Sale Claim Includes 654K Records and 90,555 Documents in 48 GB Archive",
+      "url": "https://darkwebinformer.com/loof-data-sale-claim-includes-654k-records-and-90-555-documents-in-48-gb-archive/",
+      "published_at": "2026-10-20T17:05:07Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "0e84e0997cd31a98bc8b",
       "source": "aikido",
       "category": "news",
@@ -1549,6 +1574,26 @@
       "date_precision": "time"
     },
     {
+      "id": "7b2e5d64611954dfd836",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "ISEP France User Database Leak Claim Lists 5,088 People Across 5,091 JSON Records",
+      "url": "https://darkwebinformer.com/isep-france-user-database-leak-claim-lists-5-088-people-across-5-091-json-records/",
+      "published_at": "2026-10-19T16:39:38Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "75a28d138a179b89ea45",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "I-CAD Partial Database Sale Claim Lists 2.95 Million Records Covering 2.9 Million Animals and 50,629 Vets",
+      "url": "https://darkwebinformer.com/i-cad-partial-database-sale-claim-lists-2-95-million-records-covering-2-9-million-animals-and-50-629-vets/",
+      "published_at": "2026-10-19T16:05:02Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "fa64a8288a53428707cd",
       "source": "wired",
       "category": "news",
@@ -1669,6 +1714,66 @@
       "date_precision": "time"
     },
     {
+      "id": "c4a2dd21a7bb7d707a6c",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Conference-Space Company Breach Claim Says Access Remains Live With 6,027 Users and 115,948 Attachments",
+      "url": "https://darkwebinformer.com/conference-space-company-breach-claim-says-access-remains-live-with-6-027-users-and-115-948-attachments/",
+      "published_at": "2026-10-16T17:05:11Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7a6620d87417994fa6d6",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Cast AI Data Leak Claim Includes AWS, GCP and GitLab Backups Across 20 GB Archive",
+      "url": "https://darkwebinformer.com/cast-ai-data-leak-claim-includes-aws-gcp-and-gitlab-backups-across-20-gb-archive/",
+      "published_at": "2026-10-16T16:44:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "67c234cfc93703de6e4b",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "APICRYPT Dataset Leak Claim Lists 852,757 Records Across 60,911 Healthcare Users",
+      "url": "https://darkwebinformer.com/apicrypt-dataset-leak-claim-lists-852-757-records-across-60-911-healthcare-users/",
+      "published_at": "2026-10-16T16:34:36Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "05dafa6d20b3eae22dbd",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Beelzebub Ransomware Announces Major Rewrite and Recruitment Push for New Operators",
+      "url": "https://darkwebinformer.com/beelzebub-ransomware-announces-major-rewrite-and-recruitment-push-for-new-operators/",
+      "published_at": "2026-10-16T16:19:07Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "afcc5d9042ee32df2138",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "No-KYC “Abuse-Resistant” VPS and VDS Hosting With XMR Payments",
+      "url": "https://darkwebinformer.com/no-kyc-abuse-resistant-vps-and-vds-hosting-with-xmr-payments/",
+      "published_at": "2026-10-16T16:03:44Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "32a8e71f0c840f0f126b",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Records Stolen From Bristol Primary School in Targeted Cyberattack",
+      "url": "https://darkwebinformer.com/records-stolen-from-bristol-primary-school-in-targeted-cyberattack/",
+      "published_at": "2026-10-16T15:51:16Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "fbf4db820e622ddc1e70",
       "source": "kev",
       "category": "exploited",
@@ -1734,12 +1839,42 @@
       "date_precision": "time"
     },
     {
+      "id": "7f350dd8428c632fba63",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Taiwan Otsuka Pharmaceutical Leak Claim Lists 832 GB of Internal Company Data",
+      "url": "https://darkwebinformer.com/taiwan-otsuka-pharmaceutical-leak-claim-lists-832-gb-of-internal-company-data/",
+      "published_at": "2026-10-14T23:10:45Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "8e2e4c008f1e64053e12",
       "source": "wiz",
       "category": "news",
       "title": "ASPM in the AI Era Part 1: Unified Visibility Across Your Stack",
       "url": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
       "published_at": "2026-10-14T20:13:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b316d813227941e79601",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Ampath Laboratories Data Breach Claim Says 10 Databases Copied, Including 80M+ Admission Records",
+      "url": "https://darkwebinformer.com/ampath-laboratories-data-breach-claim-says-10-databases-copied-including-80m-admission-records/",
+      "published_at": "2026-10-14T15:31:36Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8ad9f1cb32849beb74c8",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "Climb Up Customer Dataset Offered for Sale With 151,000 Records Across 29 French Gyms",
+      "url": "https://darkwebinformer.com/climb-up-customer-dataset-offered-for-sale-with-151-000-records-across-29-french-gyms/",
+      "published_at": "2026-10-14T15:14:56Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1830,6 +1965,26 @@
       "title": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
       "url": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
       "published_at": "2026-10-13T23:17:59Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9d91267378a316644098",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "KFC Venezuela Dataset Claim Lists 1.54 Million JSON Records in 17.5 GB Archive",
+      "url": "https://darkwebinformer.com/kfc-venezuela-dataset-claim-lists-1-54-million-json-records-in-17-5-gb-archive/",
+      "published_at": "2026-10-13T17:25:48Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9b961737d5d4ff856cdd",
+      "source": "darkwebinformer",
+      "category": "news",
+      "title": "German Municipality Targeted in Suspected AI-Driven Zero-Day Attack",
+      "url": "https://darkwebinformer.com/german-municipality-targeted-in-suspected-ai-driven-zero-day-attack/",
+      "published_at": "2026-10-13T16:45:50Z",
       "cves": [],
       "date_precision": "time"
     },
