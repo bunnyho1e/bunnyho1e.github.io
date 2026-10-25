@@ -14,6 +14,7 @@
   const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec', devto: 'DEV Community', wiz: 'Wiz Blog', securityweek: 'SecurityWeek', bleeping: 'BleepingComputer', wired: 'WIRED Security', sophos: 'Sophos Blog', checkpoint: 'Check Point Blog', darkwebinformer: 'Dark Web Informer', sentinelone: 'SentinelOne' };
   const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST', devto: 'DEVELOPER POST', wiz: 'SECURITY BLOG', securityweek: 'SECURITY NEWS', bleeping: 'SECURITY NEWS', wired: 'SECURITY NEWS', sophos: 'SECURITY BLOG', checkpoint: 'SECURITY BLOG', darkwebinformer: 'THREAT REPORT', sentinelone: 'CVE DATABASE' };
   const maxItems = Object.keys(names).length * 25;
+  const recentWindow = 24 * 60 * 60 * 1000;
   let snapshot;
   let active = 'all';
   let limit = 6;
@@ -46,11 +47,26 @@
       items: data.items.filter(item => item && Object.hasOwn(names, item.source) && typeof item.title === 'string' && safeUrl(item.url) && Number.isFinite(Date.parse(item.published_at))).slice(0, maxItems)
     };
   }
+  function isRecent(value, now = Date.now()) {
+    const age = now - Date.parse(value);
+    return Number.isFinite(age) && age >= 0 && age < recentWindow;
+  }
+  function updateNewMarkers() {
+    const now = Date.now();
+    cards.querySelectorAll('.signal-card').forEach(card => {
+      const recent = isRecent(card.querySelector('time').dateTime, now);
+      card.classList.toggle('is-new', recent);
+      card.querySelector('.signal-new').hidden = !recent;
+    });
+  }
   function makeCard(item) {
     const article = node('article', 'signal-card');
     article.dataset.source = item.source;
     const top = node('div', 'signal-card-top');
-    top.append(node('span', 'signal-type', labels[item.source]), node('span', 'signal-card-source', names[item.source]));
+    const badge = node('span', 'signal-new', 'NEW');
+    badge.hidden = true;
+    badge.title = item.source === 'kev' ? 'Added to KEV within the last 24 hours' : 'Published within the last 24 hours';
+    top.append(badge, node('span', 'signal-type', labels[item.source]), node('span', 'signal-card-source', names[item.source]));
     const heading = node('h3');
     const link = node('a', '', item.title.slice(0, 240));
     link.href = safeUrl(item.url);
@@ -77,6 +93,7 @@
     if (!entries.length) cards.append(node('p', 'signal-empty', 'No matching headlines. Try a different CVE, vendor, topic, or source.'));
     more.hidden = entries.length <= limit;
     result.textContent = entries.length ? `Showing ${Math.min(limit, entries.length)} of ${entries.length} entries` : 'No matching entries';
+    updateNewMarkers();
   }
   function showFreshness() {
     const checked = snapshot.sources.filter(source => source.status === 'ok' && Date.now() - Date.parse(source.last_success_at) < 3 * 60 * 60 * 1000).length;
@@ -136,8 +153,10 @@
   more.addEventListener('click', () => { limit += 6; if (snapshot) render(); });
   refresh.addEventListener('click', load);
   document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && snapshot) updateNewMarkers();
     if (!document.hidden && Date.now() - lastChecked > 600000) load();
   });
+  setInterval(() => { if (!document.hidden && snapshot) updateNewMarkers(); }, 60000);
   setInterval(() => { if (!document.hidden) load(); }, 600000);
   load();
 })();

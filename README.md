@@ -60,6 +60,8 @@ SentinelOne uses the public **Latest CVEs** table rather than an RSS feed. Cards
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 
+Entries published within the last 24 hours have a red `NEW` badge and border. CISA uses the KEV date added. Highlighting follows the entry date, not the snapshot refresh time, and updates every minute while the page is visible. Future-dated entries are not marked new.
+
 Only headline metadata, dates, CVE identifiers, and original links are displayed. CISA dates refer to `dateAdded`, not initial vulnerability disclosure. Exploit-DB entries are catalog references. Upstream authors retain ownership of their reporting and tools. No exploit payload is fetched or executed.
 
 The browser reads a same-origin JSON snapshot. It checks for the latest published snapshot every ten minutes while visible; Refresh does the same on demand. It does not contact a public CORS proxy or the news providers from the visitor’s browser. The background workflow fetches the sources approximately hourly, including while the website is closed. It uses pinned official GitHub Actions, read-only source access, and deployment permissions limited to Pages. No PAT is stored and no content-write permission is requested.
