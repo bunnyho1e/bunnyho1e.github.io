@@ -54,6 +54,9 @@ No analytics, trackers, remote JavaScript, cookies, or contact-data collection a
 - Sophos Blog: https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242
 - Check Point Blog: https://blog.checkpoint.com/feed/
 - Dark Web Informer: https://darkwebinformer.com/rss/
+- SentinelOne Vulnerability Database: https://www.sentinelone.com/vulnerability-database/
+
+SentinelOne uses the public **Latest CVEs** table rather than an RSS feed. Cards show CVE identifiers, technology, and severity/CVSS when provided, with the publication date displayed by SentinelOne. Only the latest table is collected; the separate high-profile and top-score lists are excluded.
 
 r/netsec uses the public Atom feed of new posts; card links open the Reddit discussion. Publication dates use the original post timestamp, with the feed's update time as a fallback.
 

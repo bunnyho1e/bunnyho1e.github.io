@@ -15,7 +15,7 @@ from pathlib import Path
 import re
 import shutil
 import urllib.request
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
@@ -35,6 +35,7 @@ SOURCES = [
     {"id": "sophos", "name": "Sophos Blog", "category": "news", "website": "https://www.sophos.com/en-us/blog", "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242"},
     {"id": "checkpoint", "name": "Check Point Blog", "category": "news", "website": "https://blog.checkpoint.com/", "feed": "https://blog.checkpoint.com/feed/"},
     {"id": "darkwebinformer", "name": "Dark Web Informer", "category": "news", "website": "https://darkwebinformer.com/", "feed": "https://darkwebinformer.com/rss/"},
+    {"id": "sentinelone", "name": "SentinelOne", "category": "vulnerability", "website": "https://www.sentinelone.com/vulnerability-database/", "feed": "https://www.sentinelone.com/vulnerability-database/"},
 ]
 
 
@@ -145,6 +146,92 @@ def parse_kev(data, source):
     return parsed
 
 
+class SentinelListing(HTMLParser):
+    """Read only the first results table under SentinelOne's Latest CVEs heading."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.heading = None
+        self.latest = False
+        self.in_table = False
+        self.complete = False
+        self.cell = None
+        self.row = []
+        self.link = None
+        self.rows = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "h2":
+            self.heading = []
+        if tag == "table" and self.latest and not self.complete and attrs.get("id") == "vulndb-results-table":
+            self.in_table = True
+        if not self.in_table:
+            return
+        if tag == "tr":
+            self.row, self.link = [], None
+        elif tag in {"td", "th"}:
+            self.cell = []
+        elif tag == "a" and not self.row and self.cell is not None:
+            self.link = attrs.get("href")
+
+    def handle_data(self, data):
+        if self.heading is not None:
+            self.heading.append(data)
+        if self.in_table and self.cell is not None:
+            self.cell.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "h2" and self.heading is not None:
+            self.latest = "latest cves" in " ".join(self.heading).lower()
+            self.heading = None
+        if not self.in_table:
+            return
+        if tag in {"td", "th"} and self.cell is not None:
+            self.row.append(plain(" ".join(self.cell), 300))
+            self.cell = None
+        elif tag == "tr" and self.row:
+            self.rows.append((self.row, self.link))
+        elif tag == "table":
+            self.in_table, self.complete = False, True
+
+
+def parse_sentinel(data, source):
+    parser = SentinelListing()
+    parser.feed(data.decode("utf-8", errors="replace"))
+    if not parser.rows:
+        raise ValueError("Latest CVE table unavailable")
+    columns = [name.lower() for name in parser.rows[0][0]]
+    if not {"id", "severity", "score", "technology", "published"}.issubset(columns):
+        raise ValueError("Unexpected CVE table columns")
+    parsed = []
+    for cells, href in parser.rows[1:101]:
+        if len(cells) != len(columns) or not href:
+            continue
+        entry = dict(zip(columns, cells))
+        cve = entry["id"].upper()
+        url = safe_url(urljoin(source["website"], href))
+        if not re.fullmatch(r"CVE-\d{4}-\d{4,10}", cve) or not url:
+            continue
+        parts = urlsplit(url)
+        if parts.netloc != "www.sentinelone.com" or parts.path.rstrip("/") != "/vulnerability-database/" + cve.lower() or parts.query:
+            continue
+        try:
+            published = datetime.strptime(entry["published"], "%b %d, %Y").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        title = cve + " · " + entry["technology"]
+        severity = entry["severity"].upper()
+        if severity in {"CRITICAL", "HIGH", "MEDIUM", "LOW"}:
+            title += " · " + severity
+        score = entry["score"]
+        if re.fullmatch(r"(?:10(?:\.0)?|[0-9](?:\.[0-9])?)", score):
+            title += " · CVSS " + score
+        record = item(source, title, url, utc_stamp(published), date_precision="day", product=entry["technology"])
+        if record:
+            parsed.append(record)
+    return parsed
+
+
 def normalized_previous(previous, source):
     """Revalidate a previous snapshot instead of trusting arbitrary cached fields."""
     records = []
@@ -161,7 +248,12 @@ def collect_source(source, previous, now, fetcher=fetch_bytes):
     metadata = {**source, "last_attempt_at": now}
     try:
         data = fetcher(source["feed"])
-        records = parse_kev(data, source) if source["id"] == "kev" else parse_rss(data, source)
+        if source["id"] == "kev":
+            records = parse_kev(data, source)
+        elif source["id"] == "sentinelone":
+            records = parse_sentinel(data, source)
+        else:
+            records = parse_rss(data, source)
         records = sorted({r["id"]: r for r in records}.values(), key=lambda r: (r["published_at"], r["title"]), reverse=True)[:LIMIT]
         if not records:
             raise ValueError("Source returned no usable entries")

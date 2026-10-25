@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T15:56:03Z",
+  "generated_at": "2026-10-25T10:29:44Z",
   "refresh_minutes": 60,
   "sources": [
     {
@@ -9,9 +9,9 @@
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -20,9 +20,9 @@
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -31,9 +31,9 @@
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -42,9 +42,9 @@
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -53,9 +53,9 @@
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -64,9 +64,9 @@
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 12
     },
     {
@@ -75,9 +75,9 @@
       "category": "news",
       "website": "https://www.wiz.io/blog",
       "feed": "https://www.wiz.io/feed/rss.xml",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -86,9 +86,9 @@
       "category": "news",
       "website": "https://www.securityweek.com/",
       "feed": "https://www.securityweek.com/feed/",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 10
     },
     {
@@ -97,9 +97,9 @@
       "category": "news",
       "website": "https://www.bleepingcomputer.com/",
       "feed": "https://www.bleepingcomputer.com/feed/",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 15
     },
     {
@@ -108,9 +108,9 @@
       "category": "news",
       "website": "https://www.wired.com/category/security/",
       "feed": "https://www.wired.com/feed/category/security/latest/rss",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 18
     },
     {
@@ -119,9 +119,9 @@
       "category": "news",
       "website": "https://www.sophos.com/en-us/blog",
       "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 9
     },
     {
@@ -130,9 +130,9 @@
       "category": "news",
       "website": "https://blog.checkpoint.com/",
       "feed": "https://blog.checkpoint.com/feed/",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 10
     },
     {
@@ -141,130 +141,184 @@
       "category": "news",
       "website": "https://darkwebinformer.com/",
       "feed": "https://darkwebinformer.com/rss/",
-      "last_attempt_at": "2026-10-24T15:56:03Z",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
       "status": "ok",
-      "last_success_at": "2026-10-24T15:56:03Z",
+      "last_success_at": "2026-10-25T10:29:44Z",
       "count": 15
+    },
+    {
+      "id": "sentinelone",
+      "name": "SentinelOne",
+      "category": "vulnerability",
+      "website": "https://www.sentinelone.com/vulnerability-database/",
+      "feed": "https://www.sentinelone.com/vulnerability-database/",
+      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T10:29:44Z",
+      "count": 9
     }
   ],
   "items": [
     {
-      "id": "be031173647a8db8414e",
+      "id": "15fd501cc55821bc741e",
       "source": "devto",
       "category": "development",
-      "title": "The Lookup Table That Beat 17 Experts: DeepSeek's Engram and the Second Axis of Sparsity",
-      "url": "https://dev.to/danielsamfdo/the-lookup-table-that-beat-17-experts-deepseeks-engram-and-the-second-axis-of-sparsity-j6c",
-      "published_at": "2026-10-24T15:55:04Z",
+      "title": "Web3 UI UX Design: Trends, Challenges & AI’s Role in 2026",
+      "url": "https://dev.to/obidulla_almamun_b2db557/web3-ui-ux-design-trends-challenges-ais-role-in-2026-3fh",
+      "published_at": "2026-10-25T10:23:59Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "08e6a18fef0e349bb2a4",
+      "id": "75debff79f9d1c1147e6",
       "source": "devto",
       "category": "development",
-      "title": "How to Run a 4B LLM Locally on Windows with a Small NVIDIA GPU (3 Steps)",
-      "url": "https://dev.to/genrius_ai/how-to-run-a-4b-llm-locally-on-windows-with-a-small-nvidia-gpu-3-steps-249k",
-      "published_at": "2026-10-24T15:54:53Z",
+      "title": "A Conversation, Then the Work",
+      "url": "https://dev.to/savinduthathsara/a-conversation-then-the-work-2o8g",
+      "published_at": "2026-10-25T10:23:21Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "5636588c105a2b2c843a",
+      "id": "4ec4fcc1e87f613e7c18",
       "source": "devto",
       "category": "development",
-      "title": "How to Use AI Tools for Studying Effectively",
-      "url": "https://dev.to/exactreads/how-to-use-ai-tools-for-studying-effectively-2g7m",
-      "published_at": "2026-10-24T15:54:31Z",
+      "title": "Building UtilityFlow.in: 20 Privacy-First Browser Utilities in a Single Zero-Server App",
+      "url": "https://dev.to/santarana5/building-utilityflowin-20-privacy-first-browser-utilities-in-a-single-zero-server-app-544",
+      "published_at": "2026-10-25T10:23:08Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "795e4de20a4e53363ffe",
+      "id": "bfbd69a051bcfa2bc744",
       "source": "devto",
       "category": "development",
-      "title": "A public first-screen audit of Sloth Reads, an overnight read-later AI",
-      "url": "https://dev.to/victor_guerillot_aeecd294/a-public-first-screen-audit-of-sloth-reads-an-overnight-read-later-ai-4lfj",
-      "published_at": "2026-10-24T15:54:29Z",
+      "title": "Cat Break Agent: Because Doomscrolling Cats Is Productivity, Actually 🦥🐱",
+      "url": "https://dev.to/volatile/cat-break-agent-because-doomscrolling-cats-is-productivity-actually-l3g",
+      "published_at": "2026-10-25T10:22:23Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3fded1ea1dc14f49bf8d",
+      "id": "32ed341ead36c2af2fe3",
       "source": "devto",
       "category": "development",
-      "title": "Poor Man's Claude Pro",
-      "url": "https://dev.to/bweller/poor-mans-claude-pro-2pn0",
-      "published_at": "2026-10-24T15:52:51Z",
+      "title": "Building a TCG price API solo: asking price is not sold price",
+      "url": "https://dev.to/flipzi/building-a-tcg-price-api-solo-asking-price-is-not-sold-price-22n5",
+      "published_at": "2026-10-25T10:21:47Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "98fb6b89a200feddf718",
+      "id": "c807a55dc8f12a5f71bc",
       "source": "devto",
       "category": "development",
-      "title": "SlothFlowAI",
-      "url": "https://dev.to/sartaj_77/slothflowai-3opf",
-      "published_at": "2026-10-24T15:52:19Z",
+      "title": "security-audit-skill: a Chinese translation of Cloudflare's coding-agent audit skill",
+      "url": "https://dev.to/sun_young_517829fc09d0c05/security-audit-skill-a-chinese-translation-of-cloudflares-coding-agent-audit-skill-3b7g",
+      "published_at": "2026-10-25T10:21:45Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "8915d160cb9674fb9925",
+      "id": "1ab0ecc85e25664224e4",
       "source": "devto",
       "category": "development",
-      "title": "I built an Enterprise AI Dashboard using only Vanilla JS (Zero frameworks)",
-      "url": "https://dev.to/nowii-core/i-built-an-enterprise-ai-dashboard-using-only-vanilla-js-zero-frameworks-5000",
-      "published_at": "2026-10-24T15:52:13Z",
+      "title": "From preference string to executed library: the Plex TranscoderH264Options write",
+      "url": "https://dev.to/stark_zhuang_df5076f35c68/from-preference-string-to-executed-library-the-plex-transcoderh264options-write-3o4c",
+      "published_at": "2026-10-25T10:20:53Z",
+      "cves": [
+        "CVE-2026-96652",
+        "CVE-2026-96656"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "94fa824b0262f53c8f6a",
+      "source": "devto",
+      "category": "development",
+      "title": "Pinlight: I was too lazy to read a 40-page datasheet, so I built an interactive electronics tutor",
+      "url": "https://dev.to/afreenorbit/pinlight-i-was-too-lazy-to-read-a-40-page-datasheet-so-i-built-an-interactive-electronics-tutor-46ff",
+      "published_at": "2026-10-25T10:19:59Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "7884a736848154f20e03",
+      "id": "4560b7f7533a10436d7e",
       "source": "devto",
       "category": "development",
-      "title": "JavaScript Closures Explained with a Real-World Example",
-      "url": "https://dev.to/megalraja/javascript-closures-explained-with-a-real-world-example-3o81",
-      "published_at": "2026-10-24T15:50:47Z",
+      "title": "opensource",
+      "url": "https://dev.to/sun_young_517829fc09d0c05/opensource-5b56",
+      "published_at": "2026-10-25T10:18:59Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "a301bb404a1e87b66624",
+      "id": "7eed8afae4dc3b9fd753",
       "source": "devto",
       "category": "development",
-      "title": "From DevTools to Code: Stop Manually Translating cURL Commands",
-      "url": "https://dev.to/elias_miller/from-devtools-to-code-stop-manually-translating-curl-commands-11hh",
-      "published_at": "2026-10-24T15:50:00Z",
+      "title": "I Built a Firefox Dark Mode Extension That Schedules Itself by Sunset — Here's Why",
+      "url": "https://dev.to/weatherclockdash/i-built-a-firefox-dark-mode-extension-that-schedules-itself-by-sunset-heres-why-647",
+      "published_at": "2026-10-25T10:18:45Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3c9200ecf87fcc0a9ef9",
+      "id": "f33e9e5a8db69b80b6fc",
       "source": "devto",
       "category": "development",
-      "title": "Lazylist-AI",
-      "url": "https://dev.to/faisu/lazylist-ai-4dbi",
-      "published_at": "2026-10-24T15:48:55Z",
+      "title": "AI API acceptance checks: response, token usage and billing",
+      "url": "https://dev.to/felix198902/ai-api-acceptance-checks-response-token-usage-and-billing-5h36",
+      "published_at": "2026-10-25T10:18:34Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "dc058e071c862c616f3e",
+      "id": "3536b217353f8ac3095f",
       "source": "devto",
       "category": "development",
-      "title": "How to Convert PDFs to Markdown for RAG and Chatbots (and When Not To)",
-      "url": "https://dev.to/appierun_66/how-to-convert-pdfs-to-markdown-for-rag-and-chatbots-and-when-not-to-307d",
-      "published_at": "2026-10-24T15:48:28Z",
+      "title": "Building an Area Chart for Credit Coverage Trends",
+      "url": "https://dev.to/paohaijiao/building-an-area-chart-for-credit-coverage-trends-29lh",
+      "published_at": "2026-10-25T10:18:01Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "cd2ca1e6f3e91b0d32b0",
-      "source": "devto",
-      "category": "development",
-      "title": "Cash on delivery is a ledger problem",
-      "url": "https://dev.to/derbalajr/cash-on-delivery-is-a-ledger-problem-3oec",
-      "published_at": "2026-10-24T15:47:34Z",
+      "id": "801eda9feca6cc35f0e0",
+      "source": "netsec",
+      "category": "community",
+      "title": "Breaking the AWS MCP Python Sandbox",
+      "url": "https://www.reddit.com/r/netsec/comments/1xevj5i/breaking_the_aws_mcp_python_sandbox/",
+      "published_at": "2026-10-25T07:02:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8cce1af16cf92b94f9bf",
+      "source": "thn",
+      "category": "news",
+      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+      "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+      "published_at": "2026-10-25T06:54:29Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "00c057d08e58b1805452",
+      "source": "aikido",
+      "category": "news",
+      "title": "Adding Aikido AI pentesting to your existing security stack",
+      "url": "https://www.aikido.dev/blog/ai-pentesting-existing-security-stack",
+      "published_at": "2026-10-24T19:46:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f2ab85a1f8ee1baf16bc",
+      "source": "netsec",
+      "category": "community",
+      "title": "How LLM-Based Penetration Testing Harnesses Work",
+      "url": "https://www.reddit.com/r/netsec/comments/1xee9z1/how_llmbased_penetration_testing_harnesses_work/",
+      "published_at": "2026-10-24T17:17:43Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -308,18 +362,6 @@
       "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
       "published_at": "2026-10-24T11:03:33Z",
       "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "cbabf3aa77ccad1baf32",
-      "source": "netsec",
-      "category": "community",
-      "title": "Full source release: autonomous root chain for TCL 50C721 Android TV via CVE-2022-22706 (Mali GPU page-cache write)",
-      "url": "https://www.reddit.com/r/netsec/comments/1xe5oy7/full_source_release_autonomous_root_chain_for_tcl/",
-      "published_at": "2026-10-24T10:57:59Z",
-      "cves": [
-        "CVE-2022-22706"
-      ],
       "date_precision": "time"
     },
     {
@@ -788,16 +830,6 @@
       "date_precision": "time"
     },
     {
-      "id": "91bf424b92d69e0eca38",
-      "source": "thn",
-      "category": "news",
-      "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-      "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-      "published_at": "2026-10-22T18:12:43Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
       "id": "573e0052023410f47ea8",
       "source": "aikido",
       "category": "news",
@@ -983,6 +1015,123 @@
       "published_at": "2026-10-22T00:07:45Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "fcb48697148fdd5a36e6",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-114603 · Opentelemetry · MEDIUM · CVSS 5.3",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-114603/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-114603"
+      ],
+      "date_precision": "day",
+      "product": "Opentelemetry"
+    },
+    {
+      "id": "ef3836adfbf9605e536c",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115494 · Knime · MEDIUM · CVSS 5.3",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115494/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115494"
+      ],
+      "date_precision": "day",
+      "product": "Knime"
+    },
+    {
+      "id": "db902e1a5cc4c1ff8549",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115450 · Marcoscamara01 Ecommerce Template · HIGH · CVSS 7.1",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115450/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115450"
+      ],
+      "date_precision": "day",
+      "product": "Marcoscamara01 Ecommerce Template"
+    },
+    {
+      "id": "d9df47dbc86fed5e3028",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115482 · Lsquic · HIGH · CVSS 7.5",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115482/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115482"
+      ],
+      "date_precision": "day",
+      "product": "Lsquic"
+    },
+    {
+      "id": "768940327d00a72ac3c4",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115453 · Marcoscamara01 Ecommerce Template · HIGH · CVSS 7.1",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115453/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115453"
+      ],
+      "date_precision": "day",
+      "product": "Marcoscamara01 Ecommerce Template"
+    },
+    {
+      "id": "5f41632482e3995af276",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115454 · Knime · MEDIUM · CVSS 5.3",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115454/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115454"
+      ],
+      "date_precision": "day",
+      "product": "Knime"
+    },
+    {
+      "id": "25f007e3332e89e6b707",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-94482 · Next.js · HIGH · CVSS 8.2",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-94482/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-94482"
+      ],
+      "date_precision": "day",
+      "product": "Next.js"
+    },
+    {
+      "id": "237cb83ae1c353748942",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-115496 · Knime · MEDIUM · CVSS 6.9",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-115496/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-115496"
+      ],
+      "date_precision": "day",
+      "product": "Knime"
+    },
+    {
+      "id": "19abe3ea87a3c0df3394",
+      "source": "sentinelone",
+      "category": "vulnerability",
+      "title": "CVE-2026-51954 · Webasyst",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-51954/",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [
+        "CVE-2026-51954"
+      ],
+      "date_precision": "day",
+      "product": "Webasyst"
     },
     {
       "id": "04634f287307be2ce20a",
@@ -1429,18 +1578,6 @@
       "url": "https://blog.checkpoint.com/security/antidetect-browsers-how-ai-is-scaling-online-fraud-and-account-takeovers/",
       "published_at": "2026-10-20T13:00:37Z",
       "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "f9cdfdedcd1860b9d758",
-      "source": "netsec",
-      "category": "community",
-      "title": "CVE-2026-106173 Deep-Dive: Fortinet FortiSIEM gRPC Path Traversal File Write to RCE",
-      "url": "https://www.reddit.com/r/netsec/comments/1xardr3/cve2026106173_deepdive_fortinet_fortisiem_grpc/",
-      "published_at": "2026-10-20T12:55:10Z",
-      "cves": [
-        "CVE-2026-106173"
-      ],
       "date_precision": "time"
     },
     {
@@ -2017,16 +2154,6 @@
       "vendor": "Microsoft",
       "product": "Windows",
       "ransomware": false
-    },
-    {
-      "id": "945197ad6cd9a02cf092",
-      "source": "aikido",
-      "category": "news",
-      "title": "Aikido Security is now CREST accredited",
-      "url": "https://www.aikido.dev/blog/aikido-security-is-now-crest-accredited",
-      "published_at": "2026-10-12T13:47:00Z",
-      "cves": [],
-      "date_precision": "time"
     },
     {
       "id": "be7bc8936126ea266313",

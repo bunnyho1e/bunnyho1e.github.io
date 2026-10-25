@@ -39,6 +39,37 @@ class FeedTests(unittest.TestCase):
         self.assertTrue(record["ransomware"])
         self.assertEqual(record["url"], "https://nvd.nist.gov/vuln/detail/CVE-2026-12345")
 
+    def test_sentinel_uses_only_latest_table_and_published_dates(self):
+        source = next(s for s in news.SOURCES if s["id"] == "sentinelone")
+        raw = b'''<h2><span>Latest CVEs.</span> Most recently published vulnerabilities.</h2>
+        <table id="vulndb-results-table"><thead><tr><th>ID</th><th>Severity</th><th>Score</th><th>Technology</th><th>Published</th></tr></thead><tbody>
+        <tr><td><a href="/vulnerability-database/cve-2026-12345/">CVE-2026-12345</a></td><td>HIGH</td><td>8.2</td><td><span>Example &amp; Server</span></td><td>Oct 22, 2026</td></tr>
+        <tr><td><a href="https://www.sentinelone.com/vulnerability-database/cve-2026-12346/">CVE-2026-12346</a></td><td>NONE</td><td>--</td><td>Other</td><td>Oct 21, 2026</td></tr>
+        </tbody></table><h2>High Profile CVEs.</h2><table id="vulndb-results-table"><tr><td><a href="/vulnerability-database/cve-2026-99999/">CVE-2026-99999</a></td><td>CRITICAL</td><td>10.0</td><td>Older</td><td>Oct 24, 2026</td></tr></table>
+        <script>"CVE-2026-99998"</script>'''
+        metadata, records = news.collect_source(source, {}, "2026-10-25T10:00:00Z", lambda _: raw)
+        self.assertEqual(metadata["status"], "ok")
+        self.assertEqual(len(records), 2)
+        self.assertEqual(records[0]["title"], "CVE-2026-12345 \u00b7 Example & Server \u00b7 HIGH \u00b7 CVSS 8.2")
+        self.assertEqual(records[0]["cves"], ["CVE-2026-12345"])
+        self.assertEqual(records[0]["published_at"], "2026-10-22T00:00:00Z")
+        self.assertEqual(records[0]["date_precision"], "day")
+        self.assertEqual(records[1]["title"], "CVE-2026-12346 \u00b7 Other")
+
+    def test_sentinel_rejects_foreign_links_mismatched_cves_and_invalid_dates(self):
+        source = next(s for s in news.SOURCES if s["id"] == "sentinelone")
+        header = '<h2>Latest CVEs.</h2><table id="vulndb-results-table"><tr><th>ID</th><th>Severity</th><th>Score</th><th>Technology</th><th>Published</th></tr>'
+        rows = [
+            ('https://example.com/vulnerability-database/cve-2026-12345/', 'Oct 22, 2026'),
+            ('javascript:alert(1)', 'Oct 22, 2026'),
+            ('/vulnerability-database/cve-2026-12346/', 'Oct 22, 2026'),
+            ('/vulnerability-database/cve-2026-12345/', 'not a date'),
+        ]
+        raw = header + ''.join(f'<tr><td><a href="{href}">CVE-2026-12345</a></td><td>HIGH</td><td>8.2</td><td>Example</td><td>{date}</td></tr>' for href, date in rows) + '</table>'
+        self.assertEqual(news.parse_sentinel(raw.encode(), source), [])
+        with self.assertRaises(ValueError):
+            news.parse_sentinel(b'<h2>Latest CVEs.</h2><table id="vulndb-results-table"><tr><th>Changed layout</th></tr></table>', source)
+
     def test_failure_preserves_cached_records_and_actual_success_time(self):
         source = news.SOURCES[0]
         old = "2026-10-23T10:00:00Z"
