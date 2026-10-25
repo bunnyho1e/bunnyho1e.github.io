@@ -87,6 +87,77 @@ class FeedTests(unittest.TestCase):
         self.assertEqual(metadata["status"], "unavailable")
         self.assertEqual(records, [])
 
+    def test_rdf_reads_debian_dates_and_preserves_day_precision(self):
+        source = next(s for s in news.SOURCES if s["id"] == "debian")
+        raw = b'''<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"><item><title>DSA-1234 security update</title><link>https://lists.debian.org/advisory</link><dc:date>2026-10-24</dc:date><description>CVE-2026-12345</description></item></rdf:RDF>'''
+        record = news.parse_rss(raw, source)[0]
+        self.assertEqual(record["published_at"], "2026-10-24T00:00:00Z")
+        self.assertEqual(record["date_precision"], "day")
+        self.assertEqual(record["cves"], ["CVE-2026-12345"])
+
+    def test_php_atom_uses_release_page_instead_of_download(self):
+        source = next(s for s in news.SOURCES if s["id"] == "php")
+        raw = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>PHP security release</title><id>http://php.net/releases/8_5_12.php</id><published>2026-10-21T00:00:00Z</published><link rel="enclosure" href="https://www.php.net/distributions/php.tar.gz"/></entry></feed>'''
+        record = news.parse_rss(raw, source)[0]
+        self.assertEqual(record["url"], "https://php.net/releases/8_5_12.php")
+
+    def test_security_feed_filter_excludes_general_framework_news(self):
+        source = next(s for s in news.SOURCES if s["id"] == "django")
+        raw = b'''<rss><channel><item><title>Community news</title><link>https://www.djangoproject.com/news</link><pubDate>Fri, 23 Oct 2026 10:00:00 +0000</pubDate></item><item><title>Security release</title><link>https://www.djangoproject.com/fix</link><pubDate>Fri, 23 Oct 2026 10:00:00 +0000</pubDate></item></channel></rss>'''
+        records = news.parse_rss(raw, source)
+        self.assertEqual([r["title"] for r in records], ["Security release"])
+
+    def test_github_advisories_exclude_withdrawn_and_use_disclosure_date(self):
+        source = next(s for s in news.SOURCES if s["id"] == "nextjs")
+        entry = {"summary": "Example vulnerability", "cve_id": "CVE-2026-12345", "html_url": "https://github.com/vercel/next.js/security/advisories/GHSA-example", "published_at": "2026-10-20T10:00:00Z", "updated_at": "2026-10-25T12:00:00Z"}
+        entries = [entry, {**entry, "withdrawn_at": "2026-10-21T00:00:00Z"}, {**entry, "html_url": "javascript:alert(1)"}]
+        records = news.parse_github(json.dumps(entries).encode(), source)
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["published_at"], entry["published_at"])
+        self.assertEqual(records[0]["cves"], ["CVE-2026-12345"])
+        with self.assertRaises(ValueError):
+            news.parse_github(b'{"message":"API limit"}', source)
+
+    def test_github_announcements_skip_pull_requests_and_use_issue_creation(self):
+        source = next(s for s in news.SOURCES if s["id"] == "dotnet")
+        entry = {"title": ".NET security update", "html_url": "https://github.com/dotnet/announcements/issues/1", "created_at": "2026-10-20T10:00:00Z", "updated_at": "2026-10-25T12:00:00Z"}
+        records = news.parse_github(json.dumps([entry, {**entry, "pull_request": {"url": "https://github.com/example"}}]).encode(), source)
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["published_at"], entry["created_at"])
+
+    def test_httpd_keeps_distinct_cve_links_and_public_fix_dates(self):
+        source = next(s for s in news.SOURCES if s["id"] == "httpd")
+        raw = ''.join('<dt><h3 id="'+cve+'">'+cve+': Example flaw</h3></dt><dd><table><tr><td>Report received</td><td>2026-01-01</td></tr><tr><td>Update 2.4.69 released</td><td>2026-10-01</td></tr></table></dd>' for cve in ['CVE-2026-12345','CVE-2026-12346'])
+        records = news.parse_httpd(raw.encode(), source)
+        self.assertEqual(len(records), 2)
+        self.assertNotEqual(records[0]["id"], records[1]["id"])
+        self.assertTrue(records[0]["url"].endswith('#CVE-2026-12345'))
+        self.assertEqual(records[0]["published_at"], '2026-10-01T00:00:00Z')
+        self.assertEqual(news.parse_httpd(raw.replace('Update 2.4.69 released','Report received').encode(),source), [])
+
+    def test_go_bounds_requests_rejects_invalid_ids_and_keeps_publication_date(self):
+        source = next(s for s in news.SOURCES if s["id"] == "go")
+        entries = [{"id": "GO-2026-"+str(1000+i), "modified":"2026-10-25T12:00:00Z"} for i in range(100)]
+        entries.insert(0,{"id":"../../untrusted","modified":"2026-10-26T12:00:00Z"})
+        requested=[]
+        def fetch(url):
+            requested.append(url)
+            key=url.rsplit('/',1)[-1][:-5]
+            return json.dumps({"id":key,"published":"2026-01-01T00:00:00Z","summary":"Example advisory","aliases":["CVE-2026-12345"]}).encode()
+        records=news.parse_go(json.dumps(entries).encode(),source,fetch)
+        self.assertEqual(len(requested),news.LIMIT)
+        self.assertEqual(len(records),news.LIMIT)
+        self.assertTrue(all(url.startswith('https://vuln.go.dev/ID/GO-2026-') for url in requested))
+        self.assertEqual(records[0]["published_at"],'2026-01-01T00:00:00Z')
+
+    def test_symfony_category_uses_dated_vendor_advisories_only(self):
+        source = next(s for s in news.SOURCES if s["id"] == "symfony")
+        raw = '''<main><h2><a href="/blog/cve-2026-12345-example">CVE-2026-12345 Example flaw</a></h2><div>October 15, 2026</div><h2><a href="https://example.com/blog/cve-2026-12346-foreign">CVE-2026-12346 Foreign</a></h2><div>October 16, 2026</div><h2><a href="/blog/community">Community news</a></h2><div>October 17, 2026</div></main>'''
+        records=news.parse_symfony(raw.encode(),source)
+        self.assertEqual(len(records),1)
+        self.assertEqual(records[0]["published_at"],'2026-10-15T00:00:00Z')
+        self.assertEqual(records[0]["date_precision"],'day')
+
 
 if __name__ == "__main__":
     unittest.main()

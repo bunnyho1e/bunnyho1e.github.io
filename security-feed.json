@@ -1,284 +1,699 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T10:29:44Z",
+  "generated_at": "2026-10-25T19:32:00Z",
   "refresh_minutes": 60,
   "sources": [
     {
       "id": "thn",
       "name": "The Hacker News",
+      "group": "News & research",
       "category": "news",
       "website": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "edb",
       "name": "Exploit-DB",
+      "group": "Vulnerability databases",
       "category": "exploit",
       "website": "https://www.exploit-db.com/",
       "feed": "https://www.exploit-db.com/rss.xml",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "kev",
       "name": "CISA KEV",
+      "group": "Vulnerability databases",
       "category": "exploited",
       "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "aikido",
       "name": "Aikido Blog",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.aikido.dev/blog",
       "feed": "https://www.aikido.dev/blog/rss.xml",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "netsec",
       "name": "Reddit r/netsec",
+      "group": "News & research",
       "category": "community",
       "website": "https://www.reddit.com/r/netsec/",
       "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "devto",
       "name": "DEV Community",
+      "group": "News & research",
       "category": "development",
       "website": "https://dev.to/",
       "feed": "https://dev.to/feed",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 12
     },
     {
       "id": "wiz",
       "name": "Wiz Blog",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.wiz.io/blog",
       "feed": "https://www.wiz.io/feed/rss.xml",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "securityweek",
       "name": "SecurityWeek",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.securityweek.com/",
       "feed": "https://www.securityweek.com/feed/",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 10
     },
     {
       "id": "bleeping",
       "name": "BleepingComputer",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.bleepingcomputer.com/",
       "feed": "https://www.bleepingcomputer.com/feed/",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 15
     },
     {
       "id": "wired",
       "name": "WIRED Security",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.wired.com/category/security/",
       "feed": "https://www.wired.com/feed/category/security/latest/rss",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 18
     },
     {
       "id": "sophos",
       "name": "Sophos Blog",
+      "group": "News & research",
       "category": "news",
       "website": "https://www.sophos.com/en-us/blog",
       "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 9
     },
     {
       "id": "checkpoint",
       "name": "Check Point Blog",
+      "group": "News & research",
       "category": "news",
       "website": "https://blog.checkpoint.com/",
       "feed": "https://blog.checkpoint.com/feed/",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 10
     },
     {
       "id": "darkwebinformer",
       "name": "Dark Web Informer",
+      "group": "News & research",
       "category": "news",
       "website": "https://darkwebinformer.com/",
       "feed": "https://darkwebinformer.com/rss/",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 15
     },
     {
       "id": "sentinelone",
       "name": "SentinelOne",
+      "group": "Vulnerability databases",
       "category": "vulnerability",
       "website": "https://www.sentinelone.com/vulnerability-database/",
       "feed": "https://www.sentinelone.com/vulnerability-database/",
-      "last_attempt_at": "2026-10-25T10:29:44Z",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
       "status": "ok",
-      "last_success_at": "2026-10-25T10:29:44Z",
+      "last_success_at": "2026-10-25T19:30:07Z",
       "count": 9
+    },
+    {
+      "id": "httpd",
+      "name": "Apache HTTP Server",
+      "group": "Servers & infrastructure",
+      "category": "advisory",
+      "website": "https://httpd.apache.org/security/vulnerabilities_24.html",
+      "feed": "https://httpd.apache.org/security/vulnerabilities_24.html",
+      "parser": "httpd",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "msrc",
+      "name": "Windows / Microsoft MSRC",
+      "group": "Operating systems",
+      "category": "advisory",
+      "website": "https://msrc.microsoft.com/update-guide/en-us/",
+      "feed": "https://api.msrc.microsoft.com/update-guide/rss",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "kernel",
+      "name": "Linux kernel CVEs",
+      "group": "Operating systems",
+      "category": "advisory",
+      "website": "https://lore.kernel.org/linux-cve-announce/",
+      "feed": "https://lore.kernel.org/linux-cve-announce/new.atom",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu Security Notices",
+      "group": "Operating systems",
+      "category": "advisory",
+      "website": "https://ubuntu.com/security/notices",
+      "feed": "https://ubuntu.com/security/notices/rss.xml",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 10
+    },
+    {
+      "id": "debian",
+      "name": "Debian Security Tracker",
+      "group": "Operating systems",
+      "category": "advisory",
+      "website": "https://security-tracker.debian.org/tracker/",
+      "feed": "https://www.debian.org/security/dsa-long",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "group": "Languages & runtimes",
+      "category": "release",
+      "website": "https://www.php.net/ChangeLog-8.php",
+      "feed": "https://www.php.net/releases/feed.php",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 4
+    },
+    {
+      "id": "python",
+      "name": "Python / CPython",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://www.python.org/dev/security/",
+      "feed": "https://mail.python.org/archives/list/security-announce@python.org/feed/",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "pypa",
+      "name": "Python packages / PyPA",
+      "group": "Languages & runtimes",
+      "category": "database_update",
+      "website": "https://github.com/pypa/advisory-database",
+      "feed": "https://github.com/pypa/advisory-database/commits/main.atom",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js / JavaScript",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://nodejs.org/en/blog/vulnerability",
+      "feed": "https://nodejs.org/en/feed/vulnerability.xml",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "dotnet",
+      "name": "C# / .NET",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://github.com/dotnet/announcements/labels/Security",
+      "feed": "https://api.github.com/repos/dotnet/announcements/issues?labels=Security&state=all&per_page=18",
+      "parser": "github_issues",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "go",
+      "name": "Go Vulnerability Database",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://pkg.go.dev/vuln/",
+      "feed": "https://vuln.go.dev/index/vulns.json",
+      "parser": "go",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "rust",
+      "name": "Rust / RustSec",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://rustsec.org/advisories/",
+      "feed": "https://rustsec.org/feed.xml",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "group": "Languages & runtimes",
+      "category": "advisory",
+      "website": "https://www.ruby-lang.org/en/security/",
+      "feed": "https://www.ruby-lang.org/en/feeds/news.rss",
+      "match": "security|CVE-",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 6
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "group": "Frameworks",
+      "category": "advisory",
+      "website": "https://github.com/vercel/next.js/security/advisories",
+      "feed": "https://api.github.com/repos/vercel/next.js/security-advisories?per_page=18",
+      "parser": "github_advisories",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "group": "Frameworks",
+      "category": "advisory",
+      "website": "https://www.djangoproject.com/weblog/",
+      "feed": "https://www.djangoproject.com/rss/weblog/",
+      "match": "security",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 3
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "group": "Frameworks",
+      "category": "advisory",
+      "website": "https://spring.io/security/",
+      "feed": "https://spring.io/security.atom",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "group": "Frameworks",
+      "category": "advisory",
+      "website": "https://github.com/laravel/framework/security/advisories",
+      "feed": "https://api.github.com/repos/laravel/framework/security-advisories?per_page=18",
+      "parser": "github_advisories",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 11
+    },
+    {
+      "id": "symfony",
+      "name": "Symfony",
+      "group": "Frameworks",
+      "category": "advisory",
+      "website": "https://symfony.com/blog/category/security-advisories",
+      "feed": "https://symfony.com/blog/category/security-advisories",
+      "parser": "symfony",
+      "last_attempt_at": "2026-10-25T19:31:53Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:31:53Z",
+      "count": 10
+    },
+    {
+      "id": "github",
+      "name": "GitHub Advisory Database",
+      "group": "Vulnerability databases",
+      "category": "advisory",
+      "website": "https://github.com/advisories",
+      "feed": "https://api.github.com/advisories?per_page=18&sort=published&direction=desc",
+      "parser": "github_advisories",
+      "last_attempt_at": "2026-10-25T19:30:07Z",
+      "status": "ok",
+      "last_success_at": "2026-10-25T19:30:07Z",
+      "count": 18
     }
   ],
   "items": [
     {
-      "id": "15fd501cc55821bc741e",
+      "id": "4935d55a73dbe638e0a0",
       "source": "devto",
       "category": "development",
-      "title": "Web3 UI UX Design: Trends, Challenges & AI’s Role in 2026",
-      "url": "https://dev.to/obidulla_almamun_b2db557/web3-ui-ux-design-trends-challenges-ais-role-in-2026-3fh",
-      "published_at": "2026-10-25T10:23:59Z",
+      "title": "SlothDigest: Let a Local 4B AI Read Your 400 Unread WhatsApp Messages While You Sleep",
+      "url": "https://dev.to/ronit_solanki/slothdigest-let-a-local-4b-ai-read-your-400-unread-whatsapp-messages-while-you-sleep-3k8k",
+      "published_at": "2026-10-25T19:22:00Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "75debff79f9d1c1147e6",
+      "id": "04e276d85ae616730410",
       "source": "devto",
       "category": "development",
-      "title": "A Conversation, Then the Work",
-      "url": "https://dev.to/savinduthathsara/a-conversation-then-the-work-2o8g",
-      "published_at": "2026-10-25T10:23:21Z",
+      "title": "Honest Review: Momentum, Tabliss, Daily.dev, and Weather & Clock Dashboard",
+      "url": "https://dev.to/weatherclockdash/honest-review-momentum-tabliss-dailydev-and-weather-clock-dashboard-4mf",
+      "published_at": "2026-10-25T19:21:52Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "4ec4fcc1e87f613e7c18",
+      "id": "0efec84a79cba2cd521d",
       "source": "devto",
       "category": "development",
-      "title": "Building UtilityFlow.in: 20 Privacy-First Browser Utilities in a Single Zero-Server App",
-      "url": "https://dev.to/santarana5/building-utilityflowin-20-privacy-first-browser-utilities-in-a-single-zero-server-app-544",
-      "published_at": "2026-10-25T10:23:08Z",
+      "title": "Slow Steady",
+      "url": "https://dev.to/rishabh12005/slow-steady-1872",
+      "published_at": "2026-10-25T19:21:49Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "bfbd69a051bcfa2bc744",
+      "id": "191ece7cc29121fb0f14",
       "source": "devto",
       "category": "development",
-      "title": "Cat Break Agent: Because Doomscrolling Cats Is Productivity, Actually 🦥🐱",
-      "url": "https://dev.to/volatile/cat-break-agent-because-doomscrolling-cats-is-productivity-actually-l3g",
-      "published_at": "2026-10-25T10:22:23Z",
+      "title": "World Clocks for Remote Teams: Why Ambient Beats On-Demand",
+      "url": "https://dev.to/weatherclockdash/world-clocks-for-remote-teams-why-ambient-beats-on-demand-1mca",
+      "published_at": "2026-10-25T19:21:44Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "32ed341ead36c2af2fe3",
+      "id": "551fa60d1cd5eb24c726",
       "source": "devto",
       "category": "development",
-      "title": "Building a TCG price API solo: asking price is not sold price",
-      "url": "https://dev.to/flipzi/building-a-tcg-price-api-solo-asking-price-is-not-sold-price-22n5",
-      "published_at": "2026-10-25T10:21:47Z",
+      "title": "Structured outputs that do not break: schemas, Zod and a repair retry",
+      "url": "https://dev.to/ahmad_dogar_7d098f5e48f72/structured-outputs-that-do-not-break-schemas-zod-and-a-repair-retry-53fo",
+      "published_at": "2026-10-25T19:21:21Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "c807a55dc8f12a5f71bc",
+      "id": "d2d6d752d31fdb8fb748",
       "source": "devto",
       "category": "development",
-      "title": "security-audit-skill: a Chinese translation of Cloudflare's coding-agent audit skill",
-      "url": "https://dev.to/sun_young_517829fc09d0c05/security-audit-skill-a-chinese-translation-of-cloudflares-coding-agent-audit-skill-3b7g",
-      "published_at": "2026-10-25T10:21:45Z",
+      "title": "I built an AI that reads your handwriting, so you never have to retype notes again",
+      "url": "https://dev.to/handwritingtotext/i-built-an-ai-that-reads-your-handwriting-so-you-never-have-to-retype-notes-again-2h0o",
+      "published_at": "2026-10-25T19:20:46Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "1ab0ecc85e25664224e4",
+      "id": "a1564c991d7d5be893b7",
       "source": "devto",
       "category": "development",
-      "title": "From preference string to executed library: the Plex TranscoderH264Options write",
-      "url": "https://dev.to/stark_zhuang_df5076f35c68/from-preference-string-to-executed-library-the-plex-transcoderh264options-write-3o4c",
-      "published_at": "2026-10-25T10:20:53Z",
+      "title": "CVE-2026-70571: a stack overflow in Exchange Server, and the mail perimeter that keeps it reachable",
+      "url": "https://dev.to/stark_zhuang_df5076f35c68/cve-2026-70571-a-stack-overflow-in-exchange-server-and-the-mail-perimeter-that-keeps-it-reachable-2i2m",
+      "published_at": "2026-10-25T19:20:41Z",
       "cves": [
-        "CVE-2026-96652",
-        "CVE-2026-96656"
+        "CVE-2026-70279",
+        "CVE-2026-70571"
       ],
       "date_precision": "time"
     },
     {
-      "id": "94fa824b0262f53c8f6a",
+      "id": "d2b2787485689c3dc7ae",
       "source": "devto",
       "category": "development",
-      "title": "Pinlight: I was too lazy to read a 40-page datasheet, so I built an interactive electronics tutor",
-      "url": "https://dev.to/afreenorbit/pinlight-i-was-too-lazy-to-read-a-40-page-datasheet-so-i-built-an-interactive-electronics-tutor-46ff",
-      "published_at": "2026-10-25T10:19:59Z",
+      "title": "The 730-Hour Wake-Up Call: What I'm Building Instead of Scrolling",
+      "url": "https://dev.to/vinksgoyal/the-730-hour-wake-up-call-what-im-building-instead-of-scrolling-4pi0",
+      "published_at": "2026-10-25T19:20:13Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "4560b7f7533a10436d7e",
+      "id": "a0a978d673394803fe7e",
       "source": "devto",
       "category": "development",
-      "title": "opensource",
-      "url": "https://dev.to/sun_young_517829fc09d0c05/opensource-5b56",
-      "published_at": "2026-10-25T10:18:59Z",
+      "title": "A Practical Security Framework for Evaluating Firefox Extensions",
+      "url": "https://dev.to/weatherclockdash/a-practical-security-framework-for-evaluating-firefox-extensions-57a9",
+      "published_at": "2026-10-25T19:20:08Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "7eed8afae4dc3b9fd753",
+      "id": "9871275b536e245900bf",
       "source": "devto",
       "category": "development",
-      "title": "I Built a Firefox Dark Mode Extension That Schedules Itself by Sunset — Here's Why",
-      "url": "https://dev.to/weatherclockdash/i-built-a-firefox-dark-mode-extension-that-schedules-itself-by-sunset-heres-why-647",
-      "published_at": "2026-10-25T10:18:45Z",
+      "title": "Framer vs. Webflow vs. WordPress: Which is Best for High-Ticket Brands?",
+      "url": "https://dev.to/saiiddesigns/framer-vs-webflow-vs-wordpress-which-is-best-for-high-ticket-brands-a11",
+      "published_at": "2026-10-25T19:19:49Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "f33e9e5a8db69b80b6fc",
+      "id": "1caab052dfaeae24fa26",
       "source": "devto",
       "category": "development",
-      "title": "AI API acceptance checks: response, token usage and billing",
-      "url": "https://dev.to/felix198902/ai-api-acceptance-checks-response-token-usage-and-billing-5h36",
-      "published_at": "2026-10-25T10:18:34Z",
+      "title": "How to Audit and Fix Firefox Memory Usage (Step-by-Step)",
+      "url": "https://dev.to/weatherclockdash/how-to-audit-and-fix-firefox-memory-usage-step-by-step-1nne",
+      "published_at": "2026-10-25T19:19:37Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "3536b217353f8ac3095f",
+      "id": "80bf027ddf307a41c324",
       "source": "devto",
       "category": "development",
-      "title": "Building an Area Chart for Credit Coverage Trends",
-      "url": "https://dev.to/paohaijiao/building-an-area-chart-for-credit-coverage-trends-29lh",
-      "published_at": "2026-10-25T10:18:01Z",
+      "title": "Why I Replaced My Weather App Tab with a Firefox New Tab Extension",
+      "url": "https://dev.to/weatherclockdash/why-i-replaced-my-weather-app-tab-with-a-firefox-new-tab-extension-ff",
+      "published_at": "2026-10-25T19:19:31Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "56e2b4375967197de366",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": ".NET October 2026 out-of-band security updates",
+      "url": "https://github.com/dotnet/announcements/issues/496",
+      "published_at": "2026-10-25T19:06:41Z",
+      "cves": [
+        "CVE-2026-102870",
+        "CVE-2026-111497",
+        "CVE-2026-114148",
+        "CVE-2026-70197"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f8c0044399a7b9f04e26",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-114148 | .NET Elevation of Privilege Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/495",
+      "published_at": "2026-10-25T19:06:13Z",
+      "cves": [
+        "CVE-2026-114148"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "4addc0abf6c931bae0c1",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-111497 | .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/494",
+      "published_at": "2026-10-25T19:06:12Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f1ca216b9770fb982866",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-70197 | .NET and Visual Studio Remote Code Execution Vulnerability | October 25, 2026 OOB update",
+      "url": "https://github.com/dotnet/announcements/issues/493",
+      "published_at": "2026-10-25T18:50:05Z",
+      "cves": [
+        "CVE-2026-70197"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f2460838477e647489bf",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-102870 | ASP.NET Core Remote Code Execution Vulnerability | October 25, 2026 OOB update",
+      "url": "https://github.com/dotnet/announcements/issues/492",
+      "published_at": "2026-10-25T18:01:49Z",
+      "cves": [
+        "CVE-2026-102870"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "316b6c9c8bded8fca144",
+      "source": "wiz",
+      "category": "news",
+      "title": "Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles",
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "published_at": "2026-10-25T17:55:33Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d4e42c774b914aded532",
+      "source": "thn",
+      "category": "news",
+      "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+      "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+      "published_at": "2026-10-25T17:44:09Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "3a5c99d22fa4c4bd8f3a",
+      "source": "thn",
+      "category": "news",
+      "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+      "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+      "published_at": "2026-10-25T17:19:46Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "34f96796528ada2c8c90",
+      "source": "bleeping",
+      "category": "news",
+      "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+      "published_at": "2026-10-25T15:49:38Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "022abb427d784ff1269f",
+      "source": "wiz",
+      "category": "news",
+      "title": "Broccoli2shell: Everything You Need To Know About The Critical Brotli Decoder Vulnerability",
+      "url": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+      "published_at": "2026-10-25T14:46:53Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "db89e915548c9d547ed4",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+      "published_at": "2026-10-25T14:00:00Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "afa4dad165fa5634ed07",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
+      "published_at": "2026-10-25T14:00:00Z",
+      "cves": [
+        "CVE-2026-102870"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7d93b9b35894fcc94844",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-114148 ASP.NET Core Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114148",
+      "published_at": "2026-10-25T14:00:00Z",
+      "cves": [
+        "CVE-2026-114148"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7727e3cab022c97f1195",
+      "source": "securityweek",
+      "category": "news",
+      "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
+      "url": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
+      "published_at": "2026-10-25T11:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -320,6 +735,18 @@
       "url": "https://www.reddit.com/r/netsec/comments/1xee9z1/how_llmbased_penetration_testing_harnesses_work/",
       "published_at": "2026-10-24T17:17:43Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0c1b89825519281f5903",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-115557] Distrust compromised intermediate certificates in ssl module",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/FNAJMZV6XQYLVPABNINDMF3VF66AYLW4/",
+      "published_at": "2026-10-24T14:20:01Z",
+      "cves": [
+        "CVE-2026-115557"
+      ],
       "date_precision": "time"
     },
     {
@@ -407,6 +834,232 @@
       "date_precision": "time"
     },
     {
+      "id": "ef899fcc5e95bfbe70e3",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6583-1 libheif - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00499.html",
+      "published_at": "2026-10-24T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
+      "id": "63eeaf80f1f4137ebe26",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-112937 · filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name",
+      "url": "https://github.com/advisories/GHSA-jqc4-5cvw-7w85",
+      "published_at": "2026-10-23T22:28:41Z",
+      "cves": [
+        "CVE-2026-112937"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "840c2cae18def0593d5b",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-112913 · filelock: ReadWriteLock on Windows acts on SQLite side files another local user places beside its database",
+      "url": "https://github.com/advisories/GHSA-9vhv-jxww-xfm5",
+      "published_at": "2026-10-23T22:28:19Z",
+      "cves": [
+        "CVE-2026-112913"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7d96db3a980155716467",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-112907 · filelock: On Windows an oplock on a soft lock's marker holds SoftFileLock.acquire() past its timeout and blocks the stale break",
+      "url": "https://github.com/advisories/GHSA-567q-5qvw-pf92",
+      "published_at": "2026-10-23T22:27:32Z",
+      "cves": [
+        "CVE-2026-112907"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "40785607a3bac91e9e69",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113713 · virtualenv: Temporary app-data can leave dangling seed package links",
+      "url": "https://github.com/advisories/GHSA-4f8h-vr72-p32c",
+      "published_at": "2026-10-23T22:26:57Z",
+      "cves": [
+        "CVE-2026-113713"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "07444781be3fd5c8d760",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113717 · virtualenv: Pip seeding with download omits wheel digest verification",
+      "url": "https://github.com/advisories/GHSA-cx28-75q4-x26q",
+      "published_at": "2026-10-23T22:26:04Z",
+      "cves": [
+        "CVE-2026-113717"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e097ad443f9c1356ab33",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113714 · virtualenv: Downloaded wheel selection and caching precede verification",
+      "url": "https://github.com/advisories/GHSA-494p-63j8-28p3",
+      "published_at": "2026-10-23T22:25:22Z",
+      "cves": [
+        "CVE-2026-113714"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d2d59449af29ca76831c",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113718 · virtualenv: Xonsh activation literals depend on the script decoding codec",
+      "url": "https://github.com/advisories/GHSA-394h-qwmc-48pf",
+      "published_at": "2026-10-23T22:24:43Z",
+      "cves": [
+        "CVE-2026-113718"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "914378f9001cb235413a",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113720 · virtualenv: Seeded files retain permissions from an older cache",
+      "url": "https://github.com/advisories/GHSA-fc2g-4w5p-6whm",
+      "published_at": "2026-10-23T22:23:11Z",
+      "cves": [
+        "CVE-2026-113720"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c09acb41617e9de401fe",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113723 · virtualenv: Bash prompt values can change meaning under older compatibility modes",
+      "url": "https://github.com/advisories/GHSA-6w3r-xr62-4xcp",
+      "published_at": "2026-10-23T22:21:57Z",
+      "cves": [
+        "CVE-2026-113723"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "da3bd2ec768b3f967c99",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113715 · virtualenv: Venv configuration readback can reinterpret path boundaries",
+      "url": "https://github.com/advisories/GHSA-qmx5-4p3x-wvqf",
+      "published_at": "2026-10-23T22:20:43Z",
+      "cves": [
+        "CVE-2026-113715"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "cb3e827e0361c71b8688",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113719 · virtualenv: Seed replacement does not contain metadata deletion paths",
+      "url": "https://github.com/advisories/GHSA-hhxq-47xx-j5xx",
+      "published_at": "2026-10-23T22:19:15Z",
+      "cves": [
+        "CVE-2026-113719"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "aa12189eac1e56d36dec",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-109461 · MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint",
+      "url": "https://github.com/advisories/GHSA-xcx6-jx8p-x3h5",
+      "published_at": "2026-10-23T22:16:44Z",
+      "cves": [
+        "CVE-2026-109461"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2374550f5bcf2e6675f1",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-109869 · undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
+      "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c",
+      "published_at": "2026-10-23T22:14:31Z",
+      "cves": [
+        "CVE-2026-109869"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c25af307bfc88b933190",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-109924 · undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
+      "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685",
+      "published_at": "2026-10-23T22:13:29Z",
+      "cves": [
+        "CVE-2026-109924"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "be80feb864290942285f",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-109841 · undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
+      "url": "https://github.com/advisories/GHSA-f72v-6w45-q472",
+      "published_at": "2026-10-23T22:12:57Z",
+      "cves": [
+        "CVE-2026-109841"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "12a512b39878ba37673c",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-115897 · Serialize JavaScript: Cross-site scripting (XSS) via unescaped",
+      "url": "https://github.com/advisories/GHSA-m5mm-p8h7-m29v",
+      "published_at": "2026-10-23T22:09:52Z",
+      "cves": [
+        "CVE-2026-115897"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "49f744f9d07a415b16ec",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-113872 · multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown",
+      "url": "https://github.com/advisories/GHSA-q7qp-rjg7-q26m",
+      "published_at": "2026-10-23T22:08:22Z",
+      "cves": [
+        "CVE-2026-113872"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "4f14dcc5ea043b6c5fb7",
+      "source": "github",
+      "category": "advisory",
+      "title": "CVE-2026-115886 · MLflow: SSRF on unauthenticated MLflow servers via third-party scorer kwargs in the scorer invoke, register, and GenAI evaluate endpoints",
+      "url": "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5",
+      "published_at": "2026-10-23T22:07:26Z",
+      "cves": [
+        "CVE-2026-115886"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "90203ce77e3d1bf1f5a7",
       "source": "bleeping",
       "category": "news",
@@ -420,12 +1073,22 @@
       "id": "e8c9e84d973653c1adcb",
       "source": "aikido",
       "category": "news",
-      "title": "Node2Shell evolves to HTTP2Shell. Brotli flaw (CVE-2026-111497) blast radius affects many libraries & apps using HTTPs.",
+      "title": "Node2Shell evolves to HTTP2Shell. Brotli flaw (CVE-2026-111497) blast radius affects many libraries & apps using HTTP.",
       "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
       "published_at": "2026-10-23T20:45:00Z",
       "cves": [
         "CVE-2026-111497"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "98d8dfaf5c3ff15f4241",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Assign IDs",
+      "url": "https://github.com/pypa/advisory-database/commit/df0ddaf939c51c423a3ba3924c14847be05e66cd",
+      "published_at": "2026-10-23T18:55:15Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -445,6 +1108,26 @@
       "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
       "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
       "published_at": "2026-10-23T18:50:13Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7ae65bec27cf4869e654",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/ef151628ec36b20fa0438a244a2c581cde3297e8",
+      "published_at": "2026-10-23T18:32:21Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "909de8286245d95d4880",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Auto import",
+      "url": "https://github.com/pypa/advisory-database/commit/42748114f01e188eba31e38efcc54eb53b2ae57a",
+      "published_at": "2026-10-23T18:26:10Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -531,12 +1214,56 @@
       "date_precision": "time"
     },
     {
+      "id": "fbd83163527a9f6eba13",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-83862 Windows Network Load Balancing Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+      "published_at": "2026-10-23T14:00:00Z",
+      "cves": [
+        "CVE-2026-83862"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "26bb1b6f85d46e103227",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-102208 Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+      "published_at": "2026-10-23T14:00:00Z",
+      "cves": [
+        "CVE-2026-102208"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "86d2a9024f1dc2242ae9",
       "source": "thn",
       "category": "news",
       "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
       "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
       "published_at": "2026-10-23T13:50:56Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "72e09639aa649fc82b33",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Assign IDs",
+      "url": "https://github.com/pypa/advisory-database/commit/2f7ab29931fe247ddba4aad657896cf8ce8d0a92",
+      "published_at": "2026-10-23T13:23:59Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "94b2157c9d0ee3f3c7d1",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "new advisory brotli pypi package related to Node&Python2Shell (#403)",
+      "url": "https://github.com/pypa/advisory-database/commit/0828045177e685291850469f9a9a7fd8bd187fa5",
+      "published_at": "2026-10-23T13:21:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -581,12 +1308,258 @@
       "date_precision": "time"
     },
     {
+      "id": "10b725e125c5990441b6",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99082: KVM: x86: Use active memslots for the per-vCPU MMIO cache",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102314-CVE-2026-99082-e5b1@gregkh/",
+      "published_at": "2026-10-23T12:47:09Z",
+      "cves": [
+        "CVE-2026-99082"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "8c141b642c8d230ce08f",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99087: dm-integrity: fix NULL pointer dereference when the 'R' flag is used",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102317-CVE-2026-99087-48e1@gregkh/",
+      "published_at": "2026-10-23T12:46:56Z",
+      "cves": [
+        "CVE-2026-99087"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3e9e5b46e61d07280651",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99086: dm-integrity: validate the superblock on resume",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102317-CVE-2026-99086-0ada@gregkh/",
+      "published_at": "2026-10-23T12:46:46Z",
+      "cves": [
+        "CVE-2026-99086"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3b66d23c359fb893ddb3",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99085: sched_ext: Fix CPU hotplug hang when a dying CPU's tasks sit in the BPF scheduler",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102317-CVE-2026-99085-99e4@gregkh/",
+      "published_at": "2026-10-23T12:46:40Z",
+      "cves": [
+        "CVE-2026-99085"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d43a898fd29bda7ab398",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99084: readdir: take no inode lock on an immutable directory",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102316-CVE-2026-99084-217a@gregkh/",
+      "published_at": "2026-10-23T12:46:33Z",
+      "cves": [
+        "CVE-2026-99084"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f60187f9c4bf18284f17",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99083: ksmbd: fix heap out-of-bounds write in krb5_authenticate()",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102316-CVE-2026-99083-29cb@gregkh/",
+      "published_at": "2026-10-23T12:46:27Z",
+      "cves": [
+        "CVE-2026-99083"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "ed2960fa4dcf8c583c27",
       "source": "securityweek",
       "category": "news",
       "title": "Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge",
       "url": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
       "published_at": "2026-10-23T12:45:52Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "a9be81a0b2adc8cfd672",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99049: gpio: xilinx: fix runtime PM leak on request error path",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102328-CVE-2026-99049-a4f1@gregkh/",
+      "published_at": "2026-10-23T12:45:04Z",
+      "cves": [
+        "CVE-2026-99049"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5f4f31893cd6f41e4f20",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99058: workqueue: Fix NULL current_pwq deref in chained work check",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102330-CVE-2026-99058-dee6@gregkh/",
+      "published_at": "2026-10-23T12:45:01Z",
+      "cves": [
+        "CVE-2026-99058"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3451e2acc72bafa82957",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99057: xen/netfront: don't leak the skb when xennet_fill_frags() fails",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102330-CVE-2026-99057-9b53@gregkh/",
+      "published_at": "2026-10-23T12:44:57Z",
+      "cves": [
+        "CVE-2026-99057"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "9d018c9af1688f89e819",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99056: strparser: make sure __strp_recv isn't running before tearing down the parser",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102330-CVE-2026-99056-7abf@gregkh/",
+      "published_at": "2026-10-23T12:44:48Z",
+      "cves": [
+        "CVE-2026-99056"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "cee09d8894b1e5f095a7",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99055: tcp: reject net_iov in zerocopy receive mapping hints",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102330-CVE-2026-99055-394a@gregkh/",
+      "published_at": "2026-10-23T12:44:44Z",
+      "cves": [
+        "CVE-2026-99055"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "398c114f52143ff4b0bb",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99054: tipc: destroy topsrv workqueues before closing connections",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102330-CVE-2026-99054-8f17@gregkh/",
+      "published_at": "2026-10-23T12:44:39Z",
+      "cves": [
+        "CVE-2026-99054"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "02b31f855fc53dca5753",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99053: tipc: hold a reference to nodes found by link name",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102329-CVE-2026-99053-922f@gregkh/",
+      "published_at": "2026-10-23T12:44:33Z",
+      "cves": [
+        "CVE-2026-99053"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "4d2bc53d01f3bfecbb50",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99081: bnxt_en: fix DMA mapping length for padded small packets",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102336-CVE-2026-99081-e8cb@gregkh/",
+      "published_at": "2026-10-23T12:44:20Z",
+      "cves": [
+        "CVE-2026-99081"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "610a2576ef7b43de170b",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99080: fs: Free any excess xarray nodes in clear_inode()",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102336-CVE-2026-99080-12f4@gregkh/",
+      "published_at": "2026-10-23T12:44:16Z",
+      "cves": [
+        "CVE-2026-99080"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "be45eb01735f4a9f8574",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99079: net/mlx5e: Prevent stale XSK buffer release on refill retry",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102335-CVE-2026-99079-fd28@gregkh/",
+      "published_at": "2026-10-23T12:44:13Z",
+      "cves": [
+        "CVE-2026-99079"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "942539507e6442566193",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99052: selinux: preserve NATIVE_LABELS on already-initialized sb in set_mnt_opts",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102329-CVE-2026-99052-2c48@gregkh/",
+      "published_at": "2026-10-23T12:44:08Z",
+      "cves": [
+        "CVE-2026-99052"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1f98a107a2c25d8b9c12",
+      "source": "kernel",
+      "category": "advisory",
+      "title": "CVE-2026-99078: net/mlx5e: Prevent stale XSK buffer release on MPWQE refill retry",
+      "url": "https://lore.kernel.org/linux-cve-announce/2026102335-CVE-2026-99078-198e@gregkh/",
+      "published_at": "2026-10-23T12:44:03Z",
+      "cves": [
+        "CVE-2026-99078"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e4d92ef58a961a61c970",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0386: Unsoundness in tokio",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0386.html",
+      "published_at": "2026-10-23T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "5c844e9050756dc3817e",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0385: Vulnerability in ctutils",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0385.html",
+      "published_at": "2026-10-23T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "565ae02124997d08796b",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0387: Vulnerability in crypto-bigint",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0387.html",
+      "published_at": "2026-10-23T12:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -707,6 +1680,16 @@
       "date_precision": "time"
     },
     {
+      "id": "f239e64b90be3797b503",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/3823ca2946751817904642b6601364d889aeb223",
+      "published_at": "2026-10-23T07:53:52Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "e34dd05610b77fb64c61",
       "source": "thn",
       "category": "news",
@@ -730,6 +1713,86 @@
       "date_precision": "time"
     },
     {
+      "id": "524225f6b04ab37ff78c",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Ruby 3.3.13 Released",
+      "url": "https://www.ruby-lang.org/en/news/2026/10/23/ruby-3-3-13-released/",
+      "published_at": "2026-10-23T04:24:46Z",
+      "cves": [
+        "CVE-2026-110264",
+        "CVE-2026-80212",
+        "CVE-2026-80213",
+        "CVE-2026-89078",
+        "CVE-2026-93577",
+        "CVE-2026-97229"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c84d0cbfec56e2fbefd0",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Ruby 3.4.12 Released",
+      "url": "https://www.ruby-lang.org/en/news/2026/10/23/ruby-3-4-12-released/",
+      "published_at": "2026-10-23T03:50:27Z",
+      "cves": [
+        "CVE-2026-110264",
+        "CVE-2026-89078",
+        "CVE-2026-93577",
+        "CVE-2026-97229"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "dc546e3372e716aad8dd",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Regexp compilation fixes related to GitLab's CVE-2026-89078, CVE-2026-93577, CVE-2026-97229 and CVE-2026-110264",
+      "url": "https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/",
+      "published_at": "2026-10-23T03:11:22Z",
+      "cves": [
+        "CVE-2022-28738",
+        "CVE-2024-27282",
+        "CVE-2026-110264",
+        "CVE-2026-89078",
+        "CVE-2026-93577",
+        "CVE-2026-97229"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "b388c9b42f71e1982bc3",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Ruby 4.0.9 Released",
+      "url": "https://www.ruby-lang.org/en/news/2026/10/23/ruby-4-0-9-released/",
+      "published_at": "2026-10-23T03:11:22Z",
+      "cves": [
+        "CVE-2026-110264",
+        "CVE-2026-89078",
+        "CVE-2026-93577",
+        "CVE-2026-97229"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d3aa6a505d6e58339dfb",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6581-1 unbound - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00497.html",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [
+        "CVE-2026-109125",
+        "CVE-2026-35501",
+        "CVE-2026-50106",
+        "CVE-2026-96405",
+        "CVE-2026-97206"
+      ],
+      "date_precision": "day"
+    },
+    {
       "id": "c7d982e04f82fa763cd7",
       "source": "sophos",
       "category": "news",
@@ -738,6 +1801,26 @@
       "published_at": "2026-10-23T00:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "be9c9bd79ee8f61aed55",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6582-1 brotli - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00498.html",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
+      "id": "ace8216849b45dae6610",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6580-1 erlang - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00496.html",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
     },
     {
       "id": "84520ec40a57aa6bbadf",
@@ -770,6 +1853,16 @@
       "ransomware": false
     },
     {
+      "id": "28f870c319243d326436",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6579-1 roundcube - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00495.html",
+      "published_at": "2026-10-23T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "f6feb33ee554b9419399",
       "source": "wiz",
       "category": "news",
@@ -790,6 +1883,19 @@
       "date_precision": "time"
     },
     {
+      "id": "0a0782812046fef1bf2b",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-114583] tarfile.tar_filter path traversal bypass allows writing outside the extraction directory",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/43JOWPRAV5DI3VZ4FUEUAZOHCATXXOCK/",
+      "published_at": "2026-10-22T20:35:28Z",
+      "cves": [
+        "CVE-2026-114583",
+        "CVE-2026-7774"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "cf428a6677cbcc10c3f0",
       "source": "bleeping",
       "category": "news",
@@ -800,32 +1906,22 @@
       "date_precision": "time"
     },
     {
+      "id": "14c2dbc3c56da15b2de0",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8954-1: zlib vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-8954-1",
+      "published_at": "2026-10-22T19:54:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "4d88a5658f49b285f1d6",
       "source": "bleeping",
       "category": "news",
       "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
       "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
       "published_at": "2026-10-22T19:12:51Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "b5c13408a01da2b2598a",
-      "source": "thn",
-      "category": "news",
-      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-      "published_at": "2026-10-22T19:05:35Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "e98c75c8f95b028fcc6a",
-      "source": "thn",
-      "category": "news",
-      "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-      "published_at": "2026-10-22T19:05:17Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -907,22 +2003,22 @@
       "date_precision": "time"
     },
     {
+      "id": "212280812193d64d12c5",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8953-1: OpenVPN vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-8953-1",
+      "published_at": "2026-10-22T15:38:41Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "f852a00102e466578f73",
       "source": "darkwebinformer",
       "category": "news",
       "title": "Spectator Loader Advertised as FUD Resident Loader With Anti-Analysis and Evasion Features",
       "url": "https://darkwebinformer.com/spectator-loader-advertised-as-fud-resident-loader-with-anti-analysis-and-evasion-features/",
       "published_at": "2026-10-22T15:23:06Z",
-      "cves": [],
-      "date_precision": "time"
-    },
-    {
-      "id": "6347561eebf69a5892a3",
-      "source": "securityweek",
-      "category": "news",
-      "title": "Hacker Conversations: Corey Thuen and the Evil Bit",
-      "url": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-      "published_at": "2026-10-22T14:31:34Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -937,13 +2033,99 @@
       "date_precision": "time"
     },
     {
-      "id": "82de01f77dbd718496f5",
-      "source": "bleeping",
-      "category": "news",
-      "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-      "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-      "published_at": "2026-10-22T13:09:12Z",
-      "cves": [],
+      "id": "f2a3fc1e8fe093f95c4d",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-97785"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "dd979fb5c594323fded8",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-96251"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c5211c0617cb3ad31d67",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-105014"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ab005c52565a288b3789",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-83938"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "9aa8ea434e542f1574e7",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-108456"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "93c528fd2f995c1f45cb",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-96185"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2933a7909ed7a40733d4",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-110063"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1fb65d30b503f1f9581f",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+      "published_at": "2026-10-22T14:00:00Z",
+      "cves": [
+        "CVE-2026-96303"
+      ],
       "date_precision": "time"
     },
     {
@@ -963,6 +2145,33 @@
       "title": "Custom Guardrails: The AI Rules No Vendor Can Write for You",
       "url": "https://blog.checkpoint.com/ai-security/custom-guardrails-ai-agents/",
       "published_at": "2026-10-22T13:00:18Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c5ab7a6bb65aa554ecec",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8952-1: Tornado vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8952-1",
+      "published_at": "2026-10-22T12:07:23Z",
+      "cves": [
+        "CVE-2023-54397",
+        "CVE-2024-14029",
+        "CVE-2026-103262",
+        "CVE-2026-103263",
+        "CVE-2026-91990",
+        "CVE-2026-91992"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "eb644525e2b332efe679",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0384: Vulnerability in tokio",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0384.html",
+      "published_at": "2026-10-22T12:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1043,6 +2252,16 @@
       "product": "Knime"
     },
     {
+      "id": "e0eb3390b5f34b22cea4",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6534-3 webkit2gtk - regression update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00492.html",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "db902e1a5cc4c1ff8549",
       "source": "sentinelone",
       "category": "vulnerability",
@@ -1069,6 +2288,16 @@
       "product": "Lsquic"
     },
     {
+      "id": "bd6752175c0403b4950f",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6578-1 aide - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00494.html",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "768940327d00a72ac3c4",
       "source": "sentinelone",
       "category": "vulnerability",
@@ -1093,6 +2322,16 @@
       ],
       "date_precision": "day",
       "product": "Knime"
+    },
+    {
+      "id": "58581a6ec28aabdbfee5",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6577-1 chromium - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00493.html",
+      "published_at": "2026-10-22T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
     },
     {
       "id": "25f007e3332e89e6b707",
@@ -1146,6 +2385,35 @@
       "date_precision": "time"
     },
     {
+      "id": "52fce6402e9c15ba805a",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday, October 21, 2026 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+      "published_at": "2026-10-21T22:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0d9c987b6475a136598c",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8890-2: libsoup vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8890-2",
+      "published_at": "2026-10-21T21:36:06Z",
+      "cves": [
+        "CVE-2026-4271",
+        "CVE-2026-5119",
+        "CVE-2026-6324",
+        "CVE-2026-66339",
+        "CVE-2026-77014",
+        "CVE-2026-77680",
+        "CVE-2026-85197",
+        "CVE-2026-85534"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "3f6829507c1698af60ad",
       "source": "netsec",
       "category": "community",
@@ -1154,6 +2422,82 @@
       "published_at": "2026-10-21T21:24:08Z",
       "cves": [
         "CVE-2026-109618"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "a11aea6186d82df60858",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8951-1: c-ares vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8951-1",
+      "published_at": "2026-10-21T18:20:42Z",
+      "cves": [
+        "CVE-2020-22217",
+        "CVE-2022-4904",
+        "CVE-2026-69184",
+        "CVE-2026-69186"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c2ce0157e5e0b4890364",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8947-1: NSS update",
+      "url": "https://ubuntu.com/security/notices/USN-8947-1",
+      "published_at": "2026-10-21T17:40:27Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0952caca422aef675660",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8950-1: poppler vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-8950-1",
+      "published_at": "2026-10-21T16:53:02Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9aa7a36546f76d17b5f6",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8930-2: U-Boot vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8930-2",
+      "published_at": "2026-10-21T15:57:11Z",
+      "cves": [
+        "CVE-2026-74220",
+        "CVE-2026-74221",
+        "CVE-2026-74222",
+        "CVE-2026-74225"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "29ea975a01421ced87c4",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8949-1: Ghostscript vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8949-1",
+      "published_at": "2026-10-21T15:39:32Z",
+      "cves": [
+        "CVE-2026-101258",
+        "CVE-2026-103226"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f92ca21369e29e2012d3",
+      "source": "ubuntu",
+      "category": "advisory",
+      "title": "USN-8948-2: PHP vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-8948-2",
+      "published_at": "2026-10-21T15:33:58Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
       ],
       "date_precision": "time"
     },
@@ -1178,6 +2522,18 @@
       "date_precision": "time"
     },
     {
+      "id": "f6946c5ccaab9c3617be",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85868",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [
+        "CVE-2026-85868"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "d57eaca181c09f0ec469",
       "source": "wired",
       "category": "news",
@@ -1185,6 +2541,54 @@
       "url": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
       "published_at": "2026-10-21T14:00:00Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "8ba8742701a0c3d4617d",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-69902 Windows NTFS Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69902",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [
+        "CVE-2026-69902"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7813fd9890a5d28eb4da",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61359",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [
+        "CVE-2026-61359"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "6e869a3c973c83a36988",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97783",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [
+        "CVE-2026-97783"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "103eba498e32ea7fc31c",
+      "source": "msrc",
+      "category": "advisory",
+      "title": "CVE-2026-83709 Windows NTLM Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83709",
+      "published_at": "2026-10-21T14:00:00Z",
+      "cves": [
+        "CVE-2026-83709"
+      ],
       "date_precision": "time"
     },
     {
@@ -1291,6 +2695,16 @@
       "date_precision": "time"
     },
     {
+      "id": "ceb763b5b0b0f4d76f40",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/9a8aa073f2b8fbb331c6bb22b30929f16bef23ed",
+      "published_at": "2026-10-21T09:46:10Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "f6f5e010aedbbedefc67",
       "source": "aikido",
       "category": "news",
@@ -1304,11 +2718,43 @@
       "date_precision": "time"
     },
     {
+      "id": "4830c393c14ac6460990",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6809 · Distrust compromised intermediate certificates in crypto/x509",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6809",
+      "published_at": "2026-10-21T00:27:29Z",
+      "cves": [
+        "CVE-2026-111943"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f66c80014a2e9bef05e3",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6574-1 php8.4 - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00489.html",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "e8547fe1dd366706ad2d",
       "source": "edb",
       "category": "exploit",
       "title": "[remote] ProSoft RLX-IFH24E v2.2.44 - Unsigned Firmware Upgrade Package Executed as Root",
       "url": "https://www.exploit-db.com/exploits/52693",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d201bce1bf66a62db114",
+      "source": "php",
+      "category": "release",
+      "title": "PHP 8.5.12 released!",
+      "url": "https://php.net/releases/8_5_12.php",
       "published_at": "2026-10-21T00:00:00Z",
       "cves": [],
       "date_precision": "time"
@@ -1357,6 +2803,22 @@
       "date_precision": "time"
     },
     {
+      "id": "a26f6e90041c88fefc20",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6575-1 nginx - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00490.html",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [
+        "CVE-2026-15176",
+        "CVE-2026-93479",
+        "CVE-2026-95101",
+        "CVE-2026-97205",
+        "CVE-2026-97629"
+      ],
+      "date_precision": "day"
+    },
+    {
       "id": "9fcb17076220ad7b6cb7",
       "source": "edb",
       "category": "exploit",
@@ -1367,11 +2829,41 @@
       "date_precision": "time"
     },
     {
+      "id": "9cf0e1273986ff011d6a",
+      "source": "php",
+      "category": "release",
+      "title": "PHP 8.4.27 released!",
+      "url": "https://php.net/releases/8_4_27.php",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "957bd585eafe0f831439",
       "source": "edb",
       "category": "exploit",
       "title": "[remote] Parasoft Continuous Testing Platform 10.7.5 - JSP command execution",
       "url": "https://www.exploit-db.com/exploits/52694",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "88dac160390bc78347cf",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6573-1 firefox-esr - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00488.html",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
+      "id": "733754d9a571d136a48c",
+      "source": "php",
+      "category": "release",
+      "title": "PHP 8.2.35 released!",
+      "url": "https://php.net/releases/8_2_35.php",
       "published_at": "2026-10-21T00:00:00Z",
       "cves": [],
       "date_precision": "time"
@@ -1397,6 +2889,16 @@
       "date_precision": "time"
     },
     {
+      "id": "5080b4454d804227261b",
+      "source": "php",
+      "category": "release",
+      "title": "PHP 8.3.36 released!",
+      "url": "https://php.net/releases/8_3_36.php",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "3dec70406520399dfba6",
       "source": "edb",
       "category": "exploit",
@@ -1405,6 +2907,16 @@
       "published_at": "2026-10-21T00:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "396ea2ce5ecfd4c6c933",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6576-1 bind9 - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00491.html",
+      "published_at": "2026-10-21T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
     },
     {
       "id": "13e0ab9a5707b2385efc",
@@ -1437,6 +2949,16 @@
       "date_precision": "time"
     },
     {
+      "id": "f1128fe56f7971ed99a4",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Assign IDs",
+      "url": "https://github.com/pypa/advisory-database/commit/6a2a436f433448120e95cef10efe2d030625697c",
+      "published_at": "2026-10-20T21:58:56Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "aa08a7c6174a761028e9",
       "source": "netsec",
       "category": "community",
@@ -1446,6 +2968,26 @@
       "cves": [
         "CVE-2026-109618"
       ],
+      "date_precision": "time"
+    },
+    {
+      "id": "cdb29b4c777755729715",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/0ce57e9eed424bdf9784275a770eec01a78effd7",
+      "published_at": "2026-10-20T21:55:08Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "9bb7cbd3febb510c2203",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "bring in emsign CA key compromise related advisories (#399)",
+      "url": "https://github.com/pypa/advisory-database/commit/80675d233345b48d1bc5a0392cbcaad61dfc17ef",
+      "published_at": "2026-10-20T21:53:02Z",
+      "cves": [],
       "date_precision": "time"
     },
     {
@@ -1561,6 +3103,16 @@
       "date_precision": "time"
     },
     {
+      "id": "584f4510112561404918",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][GHSA-6q48-6c7w-9gw2] CRITICAL security update for certifi, removal of emSign root certificate",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/LSEJ6DOJPIHHNNRS43GROPIH2EPJRUDS/",
+      "published_at": "2026-10-20T14:03:26Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "d756e73d47ff943ae2f3",
       "source": "netsec",
       "category": "community",
@@ -1581,12 +3133,206 @@
       "date_precision": "time"
     },
     {
+      "id": "e8276c1d3b824f84737d",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0382: Vulnerability in rustls-webpki",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0382.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "daa962645be127fc2704",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0383: Vulnerability in webpki-root-certs",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0383.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b40a75ed413134ac9cd6",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0377: Vulnerability in wasmtime-wasi-http",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0377.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "810b9b68147121717561",
       "source": "aikido",
       "category": "news",
       "title": "Aikido launches Noon: workforce security for every employee",
       "url": "https://www.aikido.dev/blog/noon-workforce-security",
       "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "66b0f0ad8a25934b4c3f",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0380: Vulnerability in wasmtime",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0380.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "5615c2fdb02ad876c102",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0375: Vulnerability in wasmtime-wasi-http",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0375.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "43aa926ef8f6a98b75f4",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0378: Vulnerability in wasmtime",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0378.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "26afdbbca90365adb34a",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0374: basic-toml is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0374.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "19d88f88b8efa339be2b",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0381: Vulnerability in webpki-roots",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0381.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "18e1cce96410a2d4f16a",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0379: Vulnerability in wasmtime",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0379.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "0c78d46ace9d1413bff0",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0376: Vulnerability in wasmtime-wasi-http",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0376.html",
+      "published_at": "2026-10-20T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "eb61565cd9e8dd5ce755",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6671 · Homer: Hardcoded Default Admin Password 'sipcapture' With No Forced Change on First Login in github.com/sipcapture/homer-app",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6671",
+      "published_at": "2026-10-20T00:20:56Z",
+      "cves": [
+        "CVE-2026-62252"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "cebb3a93fb61b661f957",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6673 · Homer: Complete Authentication Bypass When coordinator.jwt.secret Is Empty (Default) in github.com/sipcapture/homer-app",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6673",
+      "published_at": "2026-10-20T00:20:56Z",
+      "cves": [
+        "CVE-2026-62253"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "becaf01e749de87545f1",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6672 · Homer: Authenticated SQL Injection via Unvalidated rawquery Field in /api/v4/statistics/query in github.com/sipcapture/homer-app",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6672",
+      "published_at": "2026-10-20T00:20:56Z",
+      "cves": [
+        "CVE-2026-62251"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ee28f443680c925d9dd9",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6670 · Coraza: Truncated multipart body bypasses MULTIPART_STRICT_ERROR (rule 200003) via silent io.ErrUnexpectedEOF handling in github.com/corazawaf/coraza",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6670",
+      "published_at": "2026-10-20T00:20:51Z",
+      "cves": [
+        "CVE-2026-41508"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "daa2255c8c7d2faec138",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6668 · Coraza: Silent argument drop at ArgumentLimit allows bypass of ARGS-targeted rules via parameter flooding in github.com/corazawaf/coraza",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6668",
+      "published_at": "2026-10-20T00:20:51Z",
+      "cves": [
+        "CVE-2026-41510"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "29906ac6e996ad10a179",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6667 · External Secrets Operator: label enforcement bypass in webhook generator enables secret exfiltration in github.com/external-secrets/external-secrets",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6667",
+      "published_at": "2026-10-20T00:20:51Z",
+      "cves": [
+        "CVE-2026-26287"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2732ab700c80436db17a",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6669 · Coraza: Native audit-log format allows CRLF injection and log forgery via request body and header fields in github.com/corazawaf/coraza",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6669",
+      "published_at": "2026-10-20T00:20:51Z",
+      "cves": [
+        "CVE-2026-41504"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "50f67bfab1b4ff935f3c",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6651 · Pinning a CA certificate via pinnedPeerCertSha256 can lead to the success of MITM attacks in github.com/xtls/xray-core",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6651",
+      "published_at": "2026-10-20T00:20:45Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1614,6 +3360,16 @@
       "vendor": "Plex",
       "product": "Media Server",
       "ransomware": false
+    },
+    {
+      "id": "cd2f7756149ad338ad36",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6572-1 ca-certificates - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00487.html",
+      "published_at": "2026-10-20T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
     },
     {
       "id": "ba4416dde1d1735237df",
@@ -1701,6 +3457,114 @@
       "ransomware": false
     },
     {
+      "id": "5cf96d080f768b222325",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6786 · TOTP / passkey enrolment requires no re-authentication, enabling persistent account takeover in github.com/0xJacky/Nginx-UI",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6786",
+      "published_at": "2026-10-19T21:08:39Z",
+      "cves": [
+        "CVE-2026-84313"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "223a9bf8adfcb2e443c6",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6773 · Casdoor SSO callback uses a constant state parameter (login CSRF) in github.com/0xJacky/Nginx-UI",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6773",
+      "published_at": "2026-10-19T21:08:39Z",
+      "cves": [
+        "CVE-2026-84312"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c11cba356e6162f59fa0",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6765 · GitHub CLI allows path traversal through unescaped request URL components in github.com/cli/cli",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6765",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-64653"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "b366c1bc9bf41b89d3af",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6768 · Terragrunt catalog predictable temp symlink clobber in github.com/gruntwork-io/terragrunt",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6768",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-64672"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7c326ecc7cc66dc669b2",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6772 · Gotify: Insufficiently Protected Password Change endpoint in github.com/gotify/server",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6772",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-102603"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5edff8f94afd4418d18c",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6771 · Nginx UI: Account Takeover via Missing `RequireSecureSession` on User Management Endpoint in github.com/0xJacky/Nginx-UI",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6771",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-84314"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "459bffae41b9944b83cc",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6770 · Podman: The `podman run` command can be instructed to disable almost all sandboxing by image annotation in github.com/containers/podman",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6770",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-94603"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "31c599e6447d6ab4e8b1",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6766 · GitHub CLI partially discloses authentication tokens in `gh auth status` output in github.com/cli/cli",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6766",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-64652"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "0052049cd901a7d53365",
+      "source": "go",
+      "category": "advisory",
+      "title": "GO-2026-6767 · GitHub CLI allows attestation verification bypass through unescaped regex metacharacters in github.com/cli/cli",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6767",
+      "published_at": "2026-10-19T21:08:35Z",
+      "cves": [
+        "CVE-2026-64655"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "320d744de9414d2dee9e",
       "source": "wired",
       "category": "news",
@@ -1747,6 +3611,40 @@
       "title": "Supply Chain Zero Days: Closing the Gap Between Publication and Detection",
       "url": "https://www.wiz.io/blog/detect-supply-chain-zero-days-at-publication",
       "published_at": "2026-10-19T14:39:29Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "5728ba3cda5c0e428ffe",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2026-114508 · Unauthorized Data Destruction",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-5wcm-3v2w-8362",
+      "published_at": "2026-10-19T13:33:01Z",
+      "cves": [
+        "CVE-2026-114508"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "bd94b99da14b4d3e3b0c",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2026-114509 · Token-based API guard Auth Bypass",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-f9x3-7vq9-cph6",
+      "published_at": "2026-10-19T13:32:50Z",
+      "cves": [
+        "CVE-2026-114509"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c18c4b2d2f2705522ca4",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/5c44987f92f3949de6f51a5b3652403737300646",
+      "published_at": "2026-10-19T12:14:17Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1801,12 +3699,112 @@
       "date_precision": "time"
     },
     {
+      "id": "7d9f06f72feda7973b58",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Assign IDs",
+      "url": "https://github.com/pypa/advisory-database/commit/a8810dcf9b0d3ce4f0d2db53fd30198f7afce289",
+      "published_at": "2026-10-18T13:35:55Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "2d218543994dde6ecba0",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/bcb0d0cdbe32551e629e9a5056942e9bcc1fc911",
+      "published_at": "2026-10-18T13:22:48Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "096e6141a0ea44fa0df8",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Auto import",
+      "url": "https://github.com/pypa/advisory-database/commit/21c52b07945b1a4693d728473845580dd9b751ec",
+      "published_at": "2026-10-18T13:20:14Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "d765a04e87af8aead3c1",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6570-1 haproxy - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00485.html",
+      "published_at": "2026-10-18T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
+      "id": "a5a53eeaddaf36dfec33",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6567-2 cifs-utils - regression update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00484.html",
+      "published_at": "2026-10-18T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
+      "id": "442ecc91fb720bf221eb",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6571-1 xen - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00486.html",
+      "published_at": "2026-10-18T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "a288dcb96ba3bb920a4c",
       "source": "aikido",
       "category": "news",
       "title": "Your CVE is reachable. But is it exploitable?",
       "url": "https://www.aikido.dev/blog/cve-reachable-vs-exploitable",
       "published_at": "2026-10-17T22:19:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "f8c3584f9eb947f90509",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0371: zbus_names is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0371.html",
+      "published_at": "2026-10-17T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c65775fa972a652b7d69",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0372: zvariant_derive is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0372.html",
+      "published_at": "2026-10-17T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "b3c5c0aca75cc8edabd7",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0373: Vulnerability in ammonia",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0373.html",
+      "published_at": "2026-10-17T12:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "896d3c143d5952c1186b",
+      "source": "rust",
+      "category": "advisory",
+      "title": "RUSTSEC-2026-0370: zvariant is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0370.html",
+      "published_at": "2026-10-17T12:00:00Z",
       "cves": [],
       "date_precision": "time"
     },
@@ -1911,6 +3909,46 @@
       "date_precision": "time"
     },
     {
+      "id": "5e7b46c3de6f48c59b8c",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/7b933650aa6a2e494ba48b9719a4a8b99ec3d9cc",
+      "published_at": "2026-10-16T11:09:18Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "22ab989ed6ea91f63e7f",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Assign IDs",
+      "url": "https://github.com/pypa/advisory-database/commit/f8e82a4f64060b70c0604c81a6c7314fc6183485",
+      "published_at": "2026-10-16T10:40:39Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "4f51ec68acc73024efbc",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Analysis",
+      "url": "https://github.com/pypa/advisory-database/commit/89cfb1f49b230189ccb914100ad8dfe92cd42765",
+      "published_at": "2026-10-16T10:26:53Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7e0a8dcd5d504741542a",
+      "source": "pypa",
+      "category": "database_update",
+      "title": "Auto import",
+      "url": "https://github.com/pypa/advisory-database/commit/75748a9c6def37d14dfb4eefcc09cbd9f1284789",
+      "published_at": "2026-10-16T10:24:58Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "fbf4db820e622ddc1e70",
       "source": "kev",
       "category": "exploited",
@@ -1926,6 +3964,16 @@
       "ransomware": false
     },
     {
+      "id": "9715ffa7c6c29806a812",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6568-1 linux - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00482.html",
+      "published_at": "2026-10-16T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
+    },
+    {
       "id": "8f0d8bc6aac4a22c10c3",
       "source": "kev",
       "category": "exploited",
@@ -1939,6 +3987,16 @@
       "vendor": "Fortinet",
       "product": "Multiple Products",
       "ransomware": false
+    },
+    {
+      "id": "3f24489249083d8c16ac",
+      "source": "debian",
+      "category": "advisory",
+      "title": "DSA-6569-1 apache2 - security update",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00483.html",
+      "published_at": "2026-10-16T00:00:00Z",
+      "cves": [],
+      "date_precision": "day"
     },
     {
       "id": "77f28f7619e298756754",
@@ -1966,6 +4024,30 @@
       "ransomware": false
     },
     {
+      "id": "cdb736ed94dc2ee4bead",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-109413 Unbounded Recursion in the YAML Inline Lexer Lets a Single Document Crash the Process",
+      "url": "https://symfony.com/blog/cve-2026-109413-unbounded-recursion-in-the-yaml-inline-lexer-lets-a-single-document-crash-the-process",
+      "published_at": "2026-10-15T00:00:00Z",
+      "cves": [
+        "CVE-2026-109413"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "80a55294f272749f3ca1",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-108082 ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
+      "url": "https://symfony.com/blog/cve-2026-108082-redos-in-headerutils-split-reachable-through-the-cache-control-request-header",
+      "published_at": "2026-10-15T00:00:00Z",
+      "cves": [
+        "CVE-2026-108082"
+      ],
+      "date_precision": "day"
+    },
+    {
       "id": "3dd704b3b6c323880ecf",
       "source": "sophos",
       "category": "news",
@@ -1974,6 +4056,18 @@
       "published_at": "2026-10-15T00:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "2e7800a08153a58ffc77",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-109449 Unbounded Nesting in the Expression Parser Lets Untrusted Expressions Crash the Process",
+      "url": "https://symfony.com/blog/cve-2026-109449-unbounded-nesting-in-the-expression-parser-lets-untrusted-expressions-crash-the-process",
+      "published_at": "2026-10-15T00:00:00Z",
+      "cves": [
+        "CVE-2026-109449"
+      ],
+      "date_precision": "day"
     },
     {
       "id": "7f350dd8428c632fba63",
@@ -1993,6 +4087,38 @@
       "url": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
       "published_at": "2026-10-14T20:13:53Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "239b4af65e28bb6c497d",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "GHSA-p3m5-59mp-jv5r · Denial of Service in App Router using Server Actions",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-p3m5-59mp-jv5r",
+      "published_at": "2026-10-14T17:47:43Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "daaf038bbbe897aaa7b3",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "GHSA-673q-mjm6-r5xr · Unauthenticated Remote Code Execution in `use cache` functions returning typed arrays",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-673q-mjm6-r5xr",
+      "published_at": "2026-10-14T17:47:07Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e10d12b55fa093a91f96",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-96889 · Unauthenticated Remote Code Execution in Image Optimization API when SVG files are used",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-2464-fhr4-w9xw",
+      "published_at": "2026-10-14T17:46:48Z",
+      "cves": [
+        "CVE-2026-96889"
+      ],
       "date_precision": "time"
     },
     {
@@ -2106,6 +4232,162 @@
       "date_precision": "time"
     },
     {
+      "id": "54faf0f3c94038eef6ca",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96960 | .NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/490",
+      "published_at": "2026-10-13T18:30:18Z",
+      "cves": [
+        "CVE-2026-96960"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "08648df60ba56471604c",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96959 | .NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/489",
+      "published_at": "2026-10-13T18:30:12Z",
+      "cves": [
+        "CVE-2026-96959"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "6619d8fe435fa7ec1616",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96958 | .NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/488",
+      "published_at": "2026-10-13T18:30:06Z",
+      "cves": [
+        "CVE-2026-96958"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "900325be5c0a444700d6",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96957 | .NET SDK Security Feature Bypass Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/487",
+      "published_at": "2026-10-13T18:30:01Z",
+      "cves": [
+        "CVE-2026-96957"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "09f7a05413d09a5994f9",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96238 | .NET SDK Security Feature Bypass Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/486",
+      "published_at": "2026-10-13T18:29:57Z",
+      "cves": [
+        "CVE-2026-96238"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c56df256cecb61fb3985",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96237 | .NET SDK Remote Code Execution Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/485",
+      "published_at": "2026-10-13T18:29:52Z",
+      "cves": [
+        "CVE-2026-96237"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "19ea5256d5720e51bb8c",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96236 | ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/484",
+      "published_at": "2026-10-13T18:29:47Z",
+      "cves": [
+        "CVE-2026-96236"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "0518e613db48b6ea7408",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96235 | .NET and Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/483",
+      "published_at": "2026-10-13T18:29:42Z",
+      "cves": [
+        "CVE-2026-96235"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3532ee76ee5ed1bf9f33",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96234 | .NET and Visual Studio Information Disclosure Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/482",
+      "published_at": "2026-10-13T18:29:37Z",
+      "cves": [
+        "CVE-2026-96234"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "c6ca6d3ee3db705eec1a",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96233 | .NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/481",
+      "published_at": "2026-10-13T18:29:32Z",
+      "cves": [
+        "CVE-2026-96233"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "987c45241aa932e688ef",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96232 | .NET and Visual Studio Information Disclosure Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/480",
+      "published_at": "2026-10-13T18:29:27Z",
+      "cves": [
+        "CVE-2026-96232"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "978c6a6c0ee9b69bea1a",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96231 | .NET and Visual Studio Elevation of Privilege Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/479",
+      "published_at": "2026-10-13T18:29:22Z",
+      "cves": [
+        "CVE-2026-96231"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "810f1916ce510b035ad8",
+      "source": "dotnet",
+      "category": "advisory",
+      "title": "Microsoft Security Advisory CVE-2026-96230 | ASP.NET Core Remote Code Execution Vulnerability",
+      "url": "https://github.com/dotnet/announcements/issues/478",
+      "published_at": "2026-10-13T18:29:17Z",
+      "cves": [
+        "CVE-2026-96230"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "9d91267378a316644098",
       "source": "darkwebinformer",
       "category": "news",
@@ -2186,6 +4468,16 @@
       "date_precision": "time"
     },
     {
+      "id": "5aed72aed2f93f7c5237",
+      "source": "django",
+      "category": "advisory",
+      "title": "Django security reporting update",
+      "url": "https://www.djangoproject.com/weblog/2026/oct/08/django-security-reporting-update/",
+      "published_at": "2026-10-08T11:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
       "id": "a7565c9856add77d0324",
       "source": "wired",
       "category": "news",
@@ -2251,6 +4543,23 @@
       "date_precision": "time"
     },
     {
+      "id": "ea9b4b3b3bf1edbf0e4d",
+      "source": "django",
+      "category": "advisory",
+      "title": "Django security releases issued: 6.1.2, 6.0.9, and 5.2.18",
+      "url": "https://www.djangoproject.com/weblog/2026/oct/06/security-releases/",
+      "published_at": "2026-10-06T13:00:00Z",
+      "cves": [
+        "CVE-2026-15307",
+        "CVE-2026-15830",
+        "CVE-2026-77050",
+        "CVE-2026-84429",
+        "CVE-2026-87890",
+        "CVE-2026-87975"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "b3869b644cba27325abc",
       "source": "wiz",
       "category": "news",
@@ -2259,6 +4568,19 @@
       "published_at": "2026-10-05T16:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "fcef40f6168203fc3ed0",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-57941 (moderate): Apache HTTP Server: mod_http2 use-after-free / wild write via shared session->bbtmp re-entrancy",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-57941",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-57941"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
     },
     {
       "id": "e5ff7775c2e0ce0cdb16",
@@ -2271,6 +4593,58 @@
       "date_precision": "time"
     },
     {
+      "id": "e33dd2a85f2cd4895deb",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-73637 (low): mod_auth_digest DoS attack",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-73637",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-73637"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "d97a2a09927be411ad19",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-58415 (low): mod_dav_fs property database read access",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-58415",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-58415"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "bb9afc9440adab9921e5",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-47360 (low): mod_session: Session cookie not removed during internal redirect",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-47360",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-47360"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "a1e4d5951a7059f9e350",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-63045 (low): mod_proxy_ftp PASV address handling",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-63045",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-63045"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
       "id": "9ece1916251d2abd0503",
       "source": "edb",
       "category": "exploit",
@@ -2279,6 +4653,19 @@
       "published_at": "2026-10-01T00:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "9c2ff3033d7da07cbe9d",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-93546 (moderate): mod_dav_fs namespace overflow",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-93546",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-93546"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
     },
     {
       "id": "976c20bc658f97cab7ea",
@@ -2291,6 +4678,84 @@
       "date_precision": "time"
     },
     {
+      "id": "966000dfaa434d4a1201",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-59685 (moderate): Out-of-Bounds Write in ap_directory_walk() Canonical-Name Rewrite on CASE_BLIND_FILESYSTEM",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-59685",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-59685"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "94b82ee640a83b730221",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-63292 (moderate): mod_vhost_alias stack overflow",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-63292",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-63292"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "8b4fb14b10262fb4d6c2",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-63718 (low): mod_proxy_uwsgi Transfer-Encoding response smuggling",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-63718",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-63718"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "86ba425fa2f21455f557",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-46729 (low): mod_heartmonitor denial of service",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-46729",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-46729"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "7ccdc74aa2fe77ebbb20",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-56153 (low): mod_charset_lite: Heap overflow in finish_partial_char",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-56153",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-56153"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "6414d67ca9b4f382f874",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-48005 (low): mod_auth_digest reauthentication attack",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-48005",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-48005"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
       "id": "5c121baceb4bdfaabedc",
       "source": "edb",
       "category": "exploit",
@@ -2301,6 +4766,19 @@
       "date_precision": "time"
     },
     {
+      "id": "54e0c50d9a2704f0ef54",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-73636 (low): mod_auth_digest one-time-nonce replay attack",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-73636",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-73636"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
       "id": "4b690a7d536374e8e65a",
       "source": "edb",
       "category": "exploit",
@@ -2309,6 +4787,45 @@
       "published_at": "2026-10-01T00:00:00Z",
       "cves": [],
       "date_precision": "time"
+    },
+    {
+      "id": "475cf88445f85a6137f1",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-79768 (low): mod_userdir information disclosure",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-79768",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-79768"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "426dd8bf7204b102c73f",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-63686 (low): mod_xml2enc crash on charset conversion failure",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-63686",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-63686"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "40b2d298ad19b5fbd2ec",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-56154 (low): mod_rewrite use-after-free via %{LA-U:HTTP:...}",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-56154",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-56154"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
     },
     {
       "id": "375230276b1dd374b891",
@@ -2331,6 +4848,140 @@
       "date_precision": "time"
     },
     {
+      "id": "27c2ec8db68d5bda45ee",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-56449 (low): mod_proxy_html: crash in dump_content",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-56449",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-56449"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "16c20124d48e06accf49",
+      "source": "httpd",
+      "category": "advisory",
+      "title": "CVE-2026-59797 (low): mod_ssl SSLRequire allows .htaccess ap_expr file-function",
+      "url": "https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2026-59797",
+      "published_at": "2026-10-01T00:00:00Z",
+      "cves": [
+        "CVE-2026-59797"
+      ],
+      "date_precision": "day",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "id": "71fa87a2c16a7ba760da",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94483 · Server-Side Request Forgery in Image Optimization",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-cjq9-62q9-8jv4",
+      "published_at": "2026-09-30T16:15:36Z",
+      "cves": [
+        "CVE-2026-94483"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "abccf8a76eabcfbc5647",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94485 · Information disclosure in Next.js App Router metadata image routes via dynamicParams bypass",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-f87g-xv8r-7p7x",
+      "published_at": "2026-09-30T16:14:44Z",
+      "cves": [
+        "CVE-2026-94485"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "cb685534520fc5e4a88b",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94544 · Pending `use cache` fill can leak Draft Mode content into regular responses and persisted pages",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-3w37-wq28-93x7",
+      "published_at": "2026-09-30T16:14:35Z",
+      "cves": [
+        "CVE-2026-94544"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2fb103a48a4baad2a6b8",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-103004 · Cache leak across root param values in nested 'use cache' functions",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-h694-7cp9-m8p3",
+      "published_at": "2026-09-30T16:14:26Z",
+      "cves": [
+        "CVE-2026-103004"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e728d1a68b06fcd8c1d3",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94543 · Cache poisoning of SSG and ISR pages in self-hosted Next.js applications",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-4jqv-mc3x-m676",
+      "published_at": "2026-09-30T16:14:22Z",
+      "cves": [
+        "CVE-2026-94543"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5d7040ef8e02bf5b3b95",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94484 · Cache poisoning in Next.js SSG/ISR rendering leads to cross-user content substitution and persistent denial of service",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-mcj8-r9mp-w47p",
+      "published_at": "2026-09-30T16:14:19Z",
+      "cves": [
+        "CVE-2026-94484"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1d7a1f3c3460a15bfd11",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94486 · Information disclosure in the Next.js development server's Model Context Protocol endpoint",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-39w2-rjm5-chcv",
+      "published_at": "2026-09-30T16:14:15Z",
+      "cves": [
+        "CVE-2026-94486"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "fcf9df5de88d9cec1b98",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-19445] Use-after-free of a server-side SSLContext when sni_callback switches contexts",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/QMQIUQB6WGGC3MI7I3WKQXOYOBDSPPS3/",
+      "published_at": "2026-09-30T16:10:08Z",
+      "cves": [
+        "CVE-2026-19445"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ca431b5a4ce6ed2fc97b",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-19553] SSLContext.wrap_bio() missing validation of server_hostname parameter",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/QNZRG3YOAMTHDCMVCICXGY6YEFPY2VDL/",
+      "published_at": "2026-09-30T16:08:09Z",
+      "cves": [
+        "CVE-2026-19553"
+      ],
+      "date_precision": "time"
+    },
+    {
       "id": "b0b93b0e7b617e45f544",
       "source": "wiz",
       "category": "news",
@@ -2338,6 +4989,18 @@
       "url": "https://www.wiz.io/blog/wizos-helm-charts",
       "published_at": "2026-09-30T15:52:31Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "ecff9a2a0e9162b1af59",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-12345] Race condition in tempfile.TemporaryDirectory cleanup allows deleting files outside the temporary directory",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/WBHGJXKKLB7X3ZJF7NYE6M65DCUWW6QT/",
+      "published_at": "2026-09-29T17:28:51Z",
+      "cves": [
+        "CVE-2026-12345"
+      ],
       "date_precision": "time"
     },
     {
@@ -2361,23 +5024,857 @@
       "date_precision": "time"
     },
     {
-      "id": "204d569576b4f2efabfe",
-      "source": "wiz",
-      "category": "news",
-      "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
-      "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
-      "published_at": "2026-09-25T14:51:15Z",
+      "id": "44da8b0b01a33ded36dc",
+      "source": "django",
+      "category": "advisory",
+      "title": "DSF member of the month - Ken Whitesell",
+      "url": "https://www.djangoproject.com/weblog/2026/sep/24/dsf-member-of-the-month-ken-whitesell/",
+      "published_at": "2026-09-24T14:13:21Z",
       "cves": [],
       "date_precision": "time"
     },
     {
-      "id": "d25ae633304f69884266",
-      "source": "wiz",
-      "category": "news",
-      "title": "Wiz Named a Leader in The Forrester Wave™: Proactive Security Platforms, Q3 2026",
-      "url": "https://www.wiz.io/blog/forrester-wave-for-proactive-security-2026",
-      "published_at": "2026-09-24T16:12:36Z",
+      "id": "71482703ebfa06325b74",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-94545 · Remote Code Execution in next/og ImageResponse",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j",
+      "published_at": "2026-09-22T17:03:51Z",
+      "cves": [
+        "CVE-2026-94545"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ffb4e53064aa43a5b87c",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-82049] tarfile extraction filters allow file modification and content disclosure via hard link to symlink",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/EFJWGAZJA56AKSBR2WHMHQZO7RRLZPRH/",
+      "published_at": "2026-09-14T16:59:38Z",
+      "cves": [
+        "CVE-2026-82049"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2700b3567b3b22257397",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-87910] tarfile hardlink fallback ignores custom extraction filter rejection via None",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/57TBTLL2W6APMZR3A25B2YV7GL3EPTDJ/",
+      "published_at": "2026-09-11T12:24:10Z",
+      "cves": [
+        "CVE-2026-87910"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "3696096613a2135809b5",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2026-102279 · XSS in Debug Page Information",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-jh5r-qr3c-85q8",
+      "published_at": "2026-09-10T09:56:39Z",
+      "cves": [
+        "CVE-2026-102279"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "41dfa3d410a66a41eef9",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Security advisories: CVE-2026-80212 and CVE-2026-80213",
+      "url": "https://www.ruby-lang.org/en/news/2026/08/27/multiple-vulnerabilities-in-resolv/",
+      "published_at": "2026-08-27T00:00:00Z",
+      "cves": [
+        "CVE-2026-80212",
+        "CVE-2026-80213"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5bd27f60a76f0979e1bc",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "GHSA-2xp9-vwfh-vxw4 · Unauthenticated Remote Code Execution in Image Optimization API when AVIF files are used",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-2xp9-vwfh-vxw4",
+      "published_at": "2026-08-25T16:16:28Z",
       "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "452217acf6d85b99a1b5",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-75604 · Unauthenticated Remote Code Execution on windows-hosted servers",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-p293-qw3h-jr36",
+      "published_at": "2026-08-25T16:15:42Z",
+      "cves": [
+        "CVE-2026-75604"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "35990bc7a6f503a9537b",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-15310] Memory exhaustion in zipfile in bzip2/LZMA/Zstandard decompression",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/YUHXURX2WZGKGNA4ANYBQS2VZRYQ5JNK/",
+      "published_at": "2026-08-25T14:51:43Z",
+      "cves": [
+        "CVE-2026-15310"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ebd0e8f5d7b229959b9f",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59278 - MEDIUM - In Spring for Apache Kafka, SSRF via DNS resolution triggered by untrusted java.net types in header mapper default trusted packages",
+      "url": "https://spring.io/security/cve-2026-59278",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59278"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "e530bf6ed7b0b1dc615d",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47887 - MEDIUM - Spring Framework Open Redirect in UrlFileNameViewController",
+      "url": "https://spring.io/security/cve-2026-47887",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47887"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "db3af843bfe883874f15",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59275 - MEDIUM - Remote JVM termination: nested-array Java deserialization bypasses allowlist, triggers StackOverflowError, default JavaLangErrorHandler calls System.exit(99)",
+      "url": "https://spring.io/security/cve-2026-59275",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59275"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d919c980fc3d1299cc7f",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59280 - MEDIUM - Spring Framework Path Traversal via Backslash in SpringTemplateLoader",
+      "url": "https://spring.io/security/cve-2026-59280",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59280"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "b76037274271dd360fde",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59270 - CRITICAL - Spring Security embedded UnboundID LDAP server exposes well-known administrative bind DN on all network interfaces",
+      "url": "https://spring.io/security/cve-2026-59270",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59270"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "b6926e2bb6d012570da4",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59276 - MEDIUM - Timing Attack via Non-Constant-Time Comparison of Sensitive Values",
+      "url": "https://spring.io/security/cve-2026-59276",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59276"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "b5d2d520e1acb92cfadb",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59274 - MEDIUM - Unbounded decompression in UnZipTransformer enables zip-bomb DoS",
+      "url": "https://spring.io/security/cve-2026-59274",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59274"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "a39f5f6ff5c1dc28588e",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59272 - MEDIUM - Log4j2 AmqpAppender disables TLS hostname verification by default",
+      "url": "https://spring.io/security/cve-2026-59272",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59272"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "9d43890e2e3678557e8b",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47892 - MEDIUM - Spring Framework Header Predicate Bypass in WebFlux Functional Endpoints",
+      "url": "https://spring.io/security/cve-2026-47892",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47892"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "8463c3833d98c1fff108",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47886 - MEDIUM - Spring Framework Denial of Service via Unbounded Exponentiation in SpEL Expressions",
+      "url": "https://spring.io/security/cve-2026-47886",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47886"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "668e16a8c5910a0f7c6a",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47894 - MEDIUM - Spring Cloud Config Server Native Environment Repository Exposure",
+      "url": "https://spring.io/security/cve-2026-47894",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47894"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "62d4d694c6acef063495",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47889 - MEDIUM - Spring Framework sameSite Attribute Dropped in JettyCoreServerHttpResponse",
+      "url": "https://spring.io/security/cve-2026-47889",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47889"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "606e6f8de07054503015",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59279 - HIGH - Unbounded persistent session allocation via repeated initialize requests",
+      "url": "https://spring.io/security/cve-2026-59279",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59279"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5f3217f267c2cae8da9c",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47888 - MEDIUM - Spring Framework Memory Leak via SETUP Frame in RSocketMessageHandler",
+      "url": "https://spring.io/security/cve-2026-47888",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47888"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2bc59343f081604d2813",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47890 - LOW - Spring Framework Server Sent Event stream corruption while rendering fragments",
+      "url": "https://spring.io/security/cve-2026-47890",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47890"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "223103c7301e0369ebb1",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47893 - LOW - Spring Framework Request Headers Included in Exception Reasons in HandshakeWebsocketService",
+      "url": "https://spring.io/security/cve-2026-47893",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47893"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1ee18d54cb9a2e6ae6f9",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-47891 - MEDIUM - Spring Framework maxInMemorySize Bypassed in Jaxb2Decoder",
+      "url": "https://spring.io/security/cve-2026-47891",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-47891"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1e8a0edce27a5ce6b792",
+      "source": "spring",
+      "category": "advisory",
+      "title": "cve-2026-59271 - MEDIUM - Admin password disclosed in BrokerNotAliveException message",
+      "url": "https://spring.io/security/cve-2026-59271",
+      "published_at": "2026-08-20T00:00:00Z",
+      "cves": [
+        "CVE-2026-59271"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "a630233ed7a7de6c4c3e",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-19672] tarfile extraction filter bypass allows creation of directories outside the destination",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/J2WT2ALRWEXQJOB3C7Q2HYWUXP3CINWO/",
+      "published_at": "2026-08-19T13:56:06Z",
+      "cves": [
+        "CVE-2026-19672"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2d29976ac6fc53cd8817",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-15806] urllib.request.HTTPPasswordMgr credentials for one URL scheme sent over another scheme",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/3OKPE5S75KDNA7FY7AI3PL2MXM2X5RB3/",
+      "published_at": "2026-08-18T15:38:30Z",
+      "cves": [
+        "CVE-2026-15806"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "440ddd8538547121df0e",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-17084] StringPrep algorithm considered Unicode codepoint attributes outside Unicode 3.2.0",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/EUHHTC6EV7HCLSUHP25C5VHSV4V2MUZN/",
+      "published_at": "2026-08-18T13:55:39Z",
+      "cves": [
+        "CVE-2026-17084"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "6ddb8e34721e9c14c2cf",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-18503] Super-linear CPU usage for unbounded input to csv.Sniffer.sniff()",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/KQ7NBMCPAZJHRROQXJQE4GMXGLD5KHBS/",
+      "published_at": "2026-08-10T13:42:11Z",
+      "cves": [
+        "CVE-2026-18503"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "d4b830643bd001f20747",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-13346] pip absolute path traversal during download from malicious package indexes",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/L2BNQGGVQCEV7DROOORQ7WFKKFF2OOQX/",
+      "published_at": "2026-07-29T18:35:14Z",
+      "cves": [
+        "CVE-2026-13346"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "39a90c3eb5e832ae76db",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday, July 29, 2026 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "published_at": "2026-07-29T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "73dfe0d99a37b028c7ef",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce]CVE-2026-6879 Quadratic Behavior in xml.etree.ElementPath Index Predicates",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/7YMZ6DDZVR26TJJBVO3RDNBAVGHNYAKR/",
+      "published_at": "2026-07-28T11:41:28Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "ffdeefcaa3bde2436a05",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-64649 · Server-Side Request Forgery in Server Actions on custom servers",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-89xv-2m56-2m9x",
+      "published_at": "2026-07-21T16:03:06Z",
+      "cves": [
+        "CVE-2026-64649"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "8f880fc9931f899b6a53",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-64648 · Cache confusion of response bodies for requests with bodies",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-68g3-v927-f742",
+      "published_at": "2026-07-21T16:03:02Z",
+      "cves": [
+        "CVE-2026-64648"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "2f4729e0fa4f36e085e4",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-64646 · Unbounded Server Action payload in Edge runtime",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-4c39-4ccg-62r3",
+      "published_at": "2026-07-21T16:02:59Z",
+      "cves": [
+        "CVE-2026-64646"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "92dfa93a595be03e5b9a",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-64645 · Server-Side Request Forgery in rewrites via attacker-controlled destination hostname",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-p9j2-gv94-2wf4",
+      "published_at": "2026-07-21T16:02:54Z",
+      "cves": [
+        "CVE-2026-64645"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "5287527bc054d06b4da4",
+      "source": "nextjs",
+      "category": "advisory",
+      "title": "CVE-2026-64642 · Middleware / Proxy bypass in App Router applications using Turbopack and single locale",
+      "url": "https://github.com/vercel/next.js/security/advisories/GHSA-6gpp-xcg3-4w24",
+      "published_at": "2026-07-21T16:02:47Z",
+      "cves": [
+        "CVE-2026-64642"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "0e26ba1fd16105a99206",
+      "source": "ruby",
+      "category": "advisory",
+      "title": "Ruby 3.3.12 Released",
+      "url": "https://www.ruby-lang.org/en/news/2026/07/16/ruby-3-3-12-released/",
+      "published_at": "2026-07-16T05:08:11Z",
+      "cves": [
+        "CVE-2026-41316",
+        "CVE-2026-42245",
+        "CVE-2026-42246",
+        "CVE-2026-42256",
+        "CVE-2026-42257",
+        "CVE-2026-42258",
+        "CVE-2026-47240",
+        "CVE-2026-47241"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "1b8a4003455433f3db20",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-15308] Incremental HTMLParser allows CPU-exhaustion DoS via repeated unterminated markup declarations",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/F6453LWKSHKCTWFLCOURWPLETNUIW2Z5/",
+      "published_at": "2026-07-09T17:08:21Z",
+      "cves": [
+        "CVE-2026-15308"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7511666501a8ee24769b",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-4360] Tarfile.extract doesn't fully respect filter parameter",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/TWZW2PC2AZOV6FENIHFSRC63OM7MBGSB/",
+      "published_at": "2026-06-30T11:45:44Z",
+      "cves": [
+        "CVE-2026-4360"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "430c605fe4cf6b7c9ba4",
+      "source": "python",
+      "category": "advisory",
+      "title": "[Security-announce][CVE-2026-11972] tarfile opened in streaming mode mishandles EOF",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/message/AXPSKKTSRKXTTJULW3XSIC74WZNAAPPB/",
+      "published_at": "2026-06-23T22:01:35Z",
+      "cves": [
+        "CVE-2026-11972"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "eb40efad6659e3d6983c",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-55878 Path Traversal in symfony/ux-toolkit Allows Arbitrary File Write and Read via Crafted Recipe Manifest",
+      "url": "https://symfony.com/blog/cve-2026-55878-path-traversal-in-symfony-ux-toolkit-allows-arbitrary-file-write-and-read-via-crafted-recipe-manifest",
+      "published_at": "2026-06-19T00:00:00Z",
+      "cves": [
+        "CVE-2026-55878"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "b862bbc07be80e593511",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-55877 XSS in symfony/ux-icons via unsanitized SVG content in local files and Iconify on-demand responses",
+      "url": "https://symfony.com/blog/cve-2026-55877-xss-in-symfony-ux-icons-via-unsanitized-svg-content-in-local-files-and-iconify-on-demand-responses",
+      "published_at": "2026-06-19T00:00:00Z",
+      "cves": [
+        "CVE-2026-55877"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "7d17ea3dddbea1bae761",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Thursday, June 18, 2026 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases",
+      "published_at": "2026-06-18T04:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "3acab20fcd5bcb97f480",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2026-48041 · Temporary Signed URL Path Confusion",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-crmm-hgp2-wgrp",
+      "published_at": "2026-06-08T10:17:19Z",
+      "cves": [
+        "CVE-2026-48041"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "7875320f49c5c1fd4aa4",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2026-48019 · CRLF injection in default email rule",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-5vg9-5847-vvmq",
+      "published_at": "2026-06-01T08:23:09Z",
+      "cves": [
+        "CVE-2026-48019"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "9ad1787816e54fd171c4",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-49208 Format-less date LiveProps parsed with the permissive DateTime constructor",
+      "url": "https://symfony.com/blog/cve-2026-49208-format-less-date-liveprops-parsed-with-the-permissive-datetime-constructor",
+      "published_at": "2026-05-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-49208"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "8b281c25299a1eb78428",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-49212 LiveComponentHydrator HMAC checksum lacks component and slot binding",
+      "url": "https://symfony.com/blog/cve-2026-49212-livecomponenthydrator-hmac-checksum-lacks-component-and-slot-binding",
+      "published_at": "2026-05-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-49212"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "5896236e8418601b6b86",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-49211 Information exposure via unescaped LIKE wildcards in EntitySearchUtil",
+      "url": "https://symfony.com/blog/cve-2026-49211-information-exposure-via-unescaped-like-wildcards-in-entitysearchutil",
+      "published_at": "2026-05-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-49211"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "4304e8831c7146ab3975",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-49210 XSS in symfony/ux-live-component via attacker-controlled child component tag",
+      "url": "https://symfony.com/blog/cve-2026-49210-xss-in-symfony-ux-live-component-via-attacker-controlled-child-component-tag",
+      "published_at": "2026-05-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-49210"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "34bd5f8732092a2e8112",
+      "source": "symfony",
+      "category": "advisory",
+      "title": "CVE-2026-49209 Denial of service in symfony/ux-live-component via unbounded batch action requests",
+      "url": "https://symfony.com/blog/cve-2026-49209-denial-of-service-in-symfony-ux-live-component-via-unbounded-batch-action-requests",
+      "published_at": "2026-05-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-49209"
+      ],
+      "date_precision": "day"
+    },
+    {
+      "id": "6fb84e63782240a9c89f",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8",
+      "url": "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos",
+      "published_at": "2026-03-24T20:50:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "bc2d2a84746eb3193e39",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Tuesday, March 24, 2026 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases",
+      "published_at": "2026-03-24T03:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "1875e9cbd6665fd9f766",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "OpenSSL Security Advisory Assessment, January 2026",
+      "url": "https://nodejs.org/en/blog/vulnerability/openssl-fixes-in-regular-releases-jan2026",
+      "published_at": "2026-01-28T17:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "2ec77025f60602008b9f",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Mitigating Denial-of-Service Vulnerability from Unrecoverable Stack Space Exhaustion for React, Next.js, and APM Users",
+      "url": "https://nodejs.org/en/blog/vulnerability/january-2026-dos-mitigation-async-hooks",
+      "published_at": "2026-01-13T17:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "bb2f2f5bd5fc245a3e1e",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Tuesday, January 13, 2026 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "published_at": "2026-01-13T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "c39a5ee371b4d1f7f0c6",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Tuesday, July 15, 2025 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2025-security-releases",
+      "published_at": "2025-07-15T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "4b87609a31a690ae5b9d",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday, May 14, 2025 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/may-2025-security-releases",
+      "published_at": "2025-05-14T03:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "dbc51cc22f924f9e68a9",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Node.js Test CI Security Incident",
+      "url": "https://nodejs.org/en/blog/vulnerability/march-2025-ci-incident",
+      "published_at": "2025-04-23T16:30:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "779db370906987474f70",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Updates on CVE for End-of-Life Versions",
+      "url": "https://nodejs.org/en/blog/vulnerability/updates-cve-for-end-of-life",
+      "published_at": "2025-03-07T16:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "edf89b34c6eefe11983c",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2025-27515 · File Validation Bypass",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-78fx-h6xr-vch4",
+      "published_at": "2025-03-05T15:24:06Z",
+      "cves": [
+        "CVE-2025-27515"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "fed29843971f0c898559",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Tuesday, January 21, 2025 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/january-2025-security-releases",
+      "published_at": "2025-01-21T03:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "7ffce14e313a3690c1ce",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Upcoming CVE for End-of-Life Node.js Versions",
+      "url": "https://nodejs.org/en/blog/vulnerability/upcoming-cve-for-eol-versions",
+      "published_at": "2025-01-06T16:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "93c1a17c501519484f55",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2024-52301 · Environment manipulation via query string",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-gv7v-rgg6-548h",
+      "published_at": "2024-11-12T18:19:39Z",
+      "cves": [
+        "CVE-2024-52301"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "f904adedbd681b5d9861",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Monday, July 8, 2024 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases",
+      "published_at": "2024-07-08T03:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "6f6caea4847dfbfad60f",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday, April 10, 2024 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases-2",
+      "published_at": "2024-04-10T00:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "1cd72851cb4b0781afaa",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday, April 3, 2024 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases",
+      "published_at": "2024-04-03T03:00:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "34da04860646e8399a1d",
+      "source": "nodejs",
+      "category": "advisory",
+      "title": "Wednesday February 14 2024 Security Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases",
+      "published_at": "2024-02-14T15:30:00Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "423f93e5b07386541739",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2021-43808 · Blade `@parent` Exploitation Leading To Possible XSS",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-66hf-2p6w-jqfw",
+      "published_at": "2021-12-07T19:38:45Z",
+      "cves": [
+        "CVE-2021-43808"
+      ],
+      "date_precision": "time"
+    },
+    {
+      "id": "a237d01776d5b12f5efa",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "GHSA-4mg9-vhxq-vm7j · SQL Server LIMIT / OFFSET SQL Injection",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-4mg9-vhxq-vm7j",
+      "published_at": "2021-04-28T14:44:43Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "e25648426ca73aeb82ac",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "GHSA-x7p5-p2c9-phvg · Unexpected database bindings via requests (follow-up)",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-x7p5-p2c9-phvg",
+      "published_at": "2021-02-02T13:54:55Z",
+      "cves": [],
+      "date_precision": "time"
+    },
+    {
+      "id": "397ca0cbe4eb8d3f8c72",
+      "source": "laravel",
+      "category": "advisory",
+      "title": "CVE-2021-21263 · Query Binding Exploitation",
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-3p32-j457-pg5x",
+      "published_at": "2021-01-15T15:41:20Z",
+      "cves": [
+        "CVE-2021-21263"
+      ],
       "date_precision": "time"
     }
   ]

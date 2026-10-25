@@ -19,6 +19,7 @@ The site uses plain HTML, CSS, and JavaScript. The page has no package dependenc
 - `site.js`: accessible mobile navigation, keyboard-operated collection tabs, and command copying.
 - `signal-feed.css`, `signal-feed.js`: security news cards, source filters, CVE/topic search, freshness indicators, and published-snapshot refresh.
 - `update_news.py`, `test_update_news.py`: bounded feed retrieval, metadata normalization, cached fallback, and parser tests.
+- `source-catalog.json`: canonical source names, groups, original links, and optional feed/parser settings. It generates the source selector and directory during the build.
 - `security-feed.json`: initial public snapshot; scheduled deployments generate a fresh copy without writing commits.
 - `.github/workflows/security-feed.yml`: scheduled source refresh and GitHub Pages deployment.
 - `*.woff2` and `*-OFL.txt`: self-hosted Google Fonts with their SIL Open Font License notices.
@@ -40,6 +41,16 @@ Edit copy and links in `index.html`. When collection counts change, update both 
 No analytics, trackers, remote JavaScript, cookies, or contact-data collection are included. Font files are served by the site; the page does not contact Google Fonts at runtime.
 
 ## Public security feed
+
+The Sources directory contains **41 original sources** in six groups: servers and infrastructure, operating systems, languages and runtimes, frameworks, vulnerability databases, and news and research. It includes every Apache, Windows, Linux, PHP, Python, Node.js, Java, .NET, Go, Rust, Ruby, framework, and vulnerability database link in the requested collection. Existing sources are preserved and CISA KEV is included once.
+
+**33 sources have configured automated collection.** The source selector contains these feeds, grouped by technology. The directory also includes eight reference destinations: all Apache projects, Tomcat, NGINX, OpenSSL, Red Hat, Oracle/Java, OSV, and NVD. These are clearly labelled Reference and do not inflate the synchronized-feed count. Availability is reported separately under Feed status; a configured feed is not a guarantee of a successful current fetch.
+
+Additional automated sources include Apache HTTP Server, Microsoft MSRC, Linux kernel CVE announcements, Ubuntu, Debian, PHP releases, Python security announcements, PyPA database updates, Node.js security releases, .NET security announcements, Go, RustSec, Ruby, Next.js, Django, Spring, Laravel, Symfony, and the GitHub Advisory Database. See `source-catalog.json` for their exact endpoints.
+
+Apache HTTP Server cards use the vendor's public fix release date and retain distinct CVE anchor links. Debian RSS 1.0 dates retain day precision. PHP release cards link to release notes, never downloadable archives. PHP's feed includes release notices, not exclusively security releases. Ruby and Django feeds are filtered for security-related metadata. Symfony cards use dated entries from its dedicated security category. PyPA cards are explicitly labelled database updates; their dates refer to repository changes, not vulnerability disclosure. Go retrieves at most 18 recently modified OSV records with four concurrent detail requests and displays their original publication dates. GitHub advisories exclude withdrawn records and retain original publication dates. .NET entries use the creation date of security-labelled announcement issues.
+
+The source selector and directory are generated from the catalog when assembling the public directory. The checked-in HTML includes the same directory for local preview and no-JavaScript access. Keep its catalog markers when editing the page.
 
 - The Hacker News: https://feeds.feedburner.com/TheHackersNews
 - Exploit-DB: https://www.exploit-db.com/rss.xml

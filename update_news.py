@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 import hashlib
-from html import unescape
+from html import escape, unescape
 from html.parser import HTMLParser
 import ipaddress
 import json
@@ -21,22 +21,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent
 MAX_BYTES = 5_000_000
 LIMIT = 18
-SOURCES = [
-    {"id": "thn", "name": "The Hacker News", "category": "news", "website": "https://thehackernews.com/", "feed": "https://feeds.feedburner.com/TheHackersNews"},
-    {"id": "edb", "name": "Exploit-DB", "category": "exploit", "website": "https://www.exploit-db.com/", "feed": "https://www.exploit-db.com/rss.xml"},
-    {"id": "kev", "name": "CISA KEV", "category": "exploited", "website": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "feed": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"},
-    {"id": "aikido", "name": "Aikido Blog", "category": "news", "website": "https://www.aikido.dev/blog", "feed": "https://www.aikido.dev/blog/rss.xml"},
-    {"id": "netsec", "name": "Reddit r/netsec", "category": "community", "website": "https://www.reddit.com/r/netsec/", "feed": "https://www.reddit.com/r/netsec/new/.rss?limit=25"},
-    {"id": "devto", "name": "DEV Community", "category": "development", "website": "https://dev.to/", "feed": "https://dev.to/feed"},
-    {"id": "wiz", "name": "Wiz Blog", "category": "news", "website": "https://www.wiz.io/blog", "feed": "https://www.wiz.io/feed/rss.xml"},
-    {"id": "securityweek", "name": "SecurityWeek", "category": "news", "website": "https://www.securityweek.com/", "feed": "https://www.securityweek.com/feed/"},
-    {"id": "bleeping", "name": "BleepingComputer", "category": "news", "website": "https://www.bleepingcomputer.com/", "feed": "https://www.bleepingcomputer.com/feed/"},
-    {"id": "wired", "name": "WIRED Security", "category": "news", "website": "https://www.wired.com/category/security/", "feed": "https://www.wired.com/feed/category/security/latest/rss"},
-    {"id": "sophos", "name": "Sophos Blog", "category": "news", "website": "https://www.sophos.com/en-us/blog", "feed": "https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242"},
-    {"id": "checkpoint", "name": "Check Point Blog", "category": "news", "website": "https://blog.checkpoint.com/", "feed": "https://blog.checkpoint.com/feed/"},
-    {"id": "darkwebinformer", "name": "Dark Web Informer", "category": "news", "website": "https://darkwebinformer.com/", "feed": "https://darkwebinformer.com/rss/"},
-    {"id": "sentinelone", "name": "SentinelOne", "category": "vulnerability", "website": "https://www.sentinelone.com/vulnerability-database/", "feed": "https://www.sentinelone.com/vulnerability-database/"},
-]
+CATALOG = json.loads((ROOT / "source-catalog.json").read_text())
+SOURCES = [source for source in CATALOG if source.get("feed")]
 
 
 class TextOnly(HTMLParser):
@@ -69,9 +55,10 @@ def safe_url(value):
             pass
         if len(value) > 1800 or any(ord(c) < 32 for c in value):
             return None
-        if parts.scheme == "http" and host not in {"thehackernews.com", "www.exploit-db.com", "exploit-db.com"}:
+        if parts.scheme == "http" and host not in {"thehackernews.com", "www.exploit-db.com", "exploit-db.com", "php.net", "www.php.net"}:
             return None
-        return urlunsplit(("https", parts.netloc, parts.path, parts.query, ""))
+        fragment = parts.fragment if re.fullmatch(r"CVE-\d{4}-\d{4,10}", parts.fragment) else ""
+        return urlunsplit(("https", parts.netloc, parts.path, parts.query, fragment))
     except (TypeError, ValueError):
         return None
 
@@ -114,23 +101,113 @@ def item(source, title, url, date, **fields):
 
 
 def parse_rss(data, source):
-    """Read headline metadata from RSS 2.0 or Atom 1.0 feeds."""
+    """Read headline metadata from RSS 2.0, RSS 1.0/RDF, or Atom feeds."""
     if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
         raise ValueError("XML entities are not accepted")
     root = ET.fromstring(data)
     parsed = []
-    for entry in root.findall(".//item")[:100]:
-        url = entry.findtext("{http://rssnamespace.org/feedburner/ext/1.0}origLink") or entry.findtext("link")
-        record = item(source, entry.findtext("title"), url, entry.findtext("pubDate"), date_precision="time", cve_text=entry.findtext("description") or "")
+    rdf = "{http://purl.org/rss/1.0/}"
+    dc = "{http://purl.org/dc/elements/1.1/}"
+    for entry in (root.findall(".//item") + root.findall(".//" + rdf + "item"))[:100]:
+        title = entry.findtext("title") or entry.findtext(rdf + "title")
+        description = entry.findtext("description") or entry.findtext(rdf + "description") or ""
+        if source.get("match") and not re.search(source["match"], str(title) + " " + description, re.I):
+            continue
+        url = entry.findtext("{http://rssnamespace.org/feedburner/ext/1.0}origLink") or entry.findtext("link") or entry.findtext(rdf + "link")
+        date = entry.findtext("pubDate") or entry.findtext(dc + "date")
+        record = item(source, title, url, date, date_precision="day" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(date)) else "time", cve_text=description)
         if record:
             parsed.append(record)
     atom = "{http://www.w3.org/2005/Atom}"
     for entry in root.findall(atom + "entry")[:100]:
-        url = next((link.get("href") for link in entry.findall(atom + "link") if link.get("rel", "alternate") == "alternate"), None)
-        record = item(source, entry.findtext(atom + "title"), url, entry.findtext(atom + "published") or entry.findtext(atom + "updated"), date_precision="time", cve_text=entry.findtext(atom + "summary") or entry.findtext(atom + "content") or "")
+        title = entry.findtext(atom + "title")
+        description = entry.findtext(atom + "summary") or entry.findtext(atom + "content") or ""
+        if source.get("match") and not re.search(source["match"], str(title) + " " + description, re.I):
+            continue
+        url = next((link.get("href") for link in entry.findall(atom + "link") if link.get("rel", "alternate") == "alternate"), None) or entry.findtext(atom + "id")
+        record = item(source, title, url, entry.findtext(atom + "published") or entry.findtext(atom + "updated"), date_precision="time", cve_text=description)
         if record:
             parsed.append(record)
     return parsed
+
+
+def parse_github(data, source):
+    """Read published advisories or security-labelled announcement issues."""
+    entries = json.loads(data)
+    if not isinstance(entries, list):
+        raise ValueError("Expected a GitHub result list")
+    records = []
+    for entry in entries[:100]:
+        if not isinstance(entry, dict) or entry.get("withdrawn_at") or entry.get("pull_request"):
+            continue
+        advisory = source.get("parser") == "github_advisories"
+        title = entry.get("summary") if advisory else entry.get("title")
+        identifier = entry.get("cve_id") or entry.get("ghsa_id")
+        if advisory and identifier:
+            title = str(identifier) + " · " + str(title or "")
+        record = item(source, title, entry.get("html_url"), entry.get("published_at") if advisory else entry.get("created_at"), date_precision="time", cve_text=entry.get("description") or entry.get("body") or "")
+        if record:
+            records.append(record)
+    return records
+
+
+def parse_httpd(data, source):
+    """Use the vendor's update release date, never the private report date."""
+    document = data.decode("utf-8", errors="replace")
+    records = []
+    pattern = r'<h3\b[^>]*\bid="(CVE-\d{4}-\d{4,10})"[^>]*>(.*?)</h3>\s*</dt>\s*<dd>(.*?)</dd>'
+    for cve, heading, details in re.findall(pattern, document, flags=re.S | re.I):
+        released = None
+        for row in re.findall(r'<tr\b[^>]*>(.*?)</tr>', details, flags=re.S | re.I):
+            cells = [plain(cell) for cell in re.findall(r'<td\b[^>]*>(.*?)</td>', row, flags=re.S | re.I)]
+            if len(cells) == 2 and cells[0].startswith("Update ") and "released" in cells[0]:
+                released = cells[1]
+                break
+        record = item(source, plain(heading).rstrip(" ¶"), source["website"] + "#" + cve.upper(), released, date_precision="day", product="Apache HTTP Server")
+        if record:
+            records.append(record)
+    return records
+
+
+def parse_go(data, source, fetcher):
+    """Fetch a bounded set of official OSV records; preserve disclosure dates."""
+    index = json.loads(data)
+    if not isinstance(index, list):
+        raise ValueError("Expected the Go vulnerability index")
+    entries = [entry for entry in index if isinstance(entry, dict) and re.fullmatch(r"GO-\d{4}-\d{4,10}", str(entry.get("id", ""))) and parse_date(entry.get("modified"))]
+    entries.sort(key=lambda entry: parse_date(entry["modified"]), reverse=True)
+
+    def read_record(entry):
+        try:
+            document = json.loads(fetcher("https://vuln.go.dev/ID/" + entry["id"] + ".json"))
+            if document.get("withdrawn") or document.get("id") != entry["id"]:
+                return None
+            title = document["id"] + " · " + str(document.get("summary") or "Go vulnerability advisory")
+            return item(source, title, "https://pkg.go.dev/vuln/" + document["id"], document.get("published"), date_precision="time", cve_text=" ".join(str(alias) for alias in document.get("aliases", [])))
+        except (OSError, ValueError, TypeError, KeyError):
+            return None
+
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        return [record for record in executor.map(read_record, entries[:LIMIT]) if record]
+
+
+def parse_symfony(data, source):
+    """Read dated posts from the vendor's dedicated security category."""
+    document = data.decode("utf-8", errors="replace")
+    records = []
+    for heading, details in re.findall(r'<h2\b[^>]*>(.*?)</h2>(.*?)(?=<h2\b|</main>)', document, flags=re.S | re.I):
+        link = re.search(r'<a\b[^>]*href="([^"]+)"', heading, flags=re.I)
+        date = re.search(r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b', plain(details, 5000))
+        if not link or not date:
+            continue
+        url = safe_url(urljoin(source["website"], unescape(link[1])))
+        if not url or urlsplit(url).hostname != "symfony.com" or not urlsplit(url).path.startswith("/blog/cve-"):
+            continue
+        published = datetime.strptime(date[0], "%B %d, %Y").replace(tzinfo=timezone.utc)
+        record = item(source, heading, url, utc_stamp(published), date_precision="day")
+        if record:
+            records.append(record)
+    return records
 
 
 def parse_kev(data, source):
@@ -252,6 +329,14 @@ def collect_source(source, previous, now, fetcher=fetch_bytes):
             records = parse_kev(data, source)
         elif source["id"] == "sentinelone":
             records = parse_sentinel(data, source)
+        elif source.get("parser") in {"github_advisories", "github_issues"}:
+            records = parse_github(data, source)
+        elif source.get("parser") == "go":
+            records = parse_go(data, source, fetcher)
+        elif source.get("parser") == "httpd":
+            records = parse_httpd(data, source)
+        elif source.get("parser") == "symfony":
+            records = parse_symfony(data, source)
         else:
             records = parse_rss(data, source)
         records = sorted({r["id"]: r for r in records}.values(), key=lambda r: (r["published_at"], r["title"]), reverse=True)[:LIMIT]
@@ -285,12 +370,41 @@ def read_previous(path, previous_url=None):
 
 def collect(previous):
     now = utc_stamp()
-    with ThreadPoolExecutor(max_workers=len(SOURCES)) as executor:
+    with ThreadPoolExecutor(max_workers=min(12, len(SOURCES))) as executor:
         results = list(executor.map(lambda source: collect_source(source, previous, now), SOURCES))
     items = sorted([record for _, records in results for record in records], key=lambda r: (r["published_at"], r["id"]), reverse=True)
     if not items:
         raise RuntimeError("All feeds unavailable without cached items; refusing to replace the published site")
     return {"schema_version": 1, "generated_at": now, "refresh_minutes": 60, "sources": [metadata for metadata, _ in results], "items": items}
+
+
+def render_source_catalog(document):
+    """Keep the accessible source directory and feed selector in sync."""
+    groups = ["Servers & infrastructure", "Operating systems", "Languages & runtimes", "Frameworks", "Vulnerability databases", "News & research"]
+    options = ['<label class="signal-source-select"><span>Filter by source</span><select id="signal-source-select"><option value="all">All sources</option>']
+    directory = ['<details class="signal-source-directory" id="sources" open><summary>Sources <span>' + str(len(CATALOG)) + ' sources · ' + str(len(SOURCES)) + ' automated feeds</span></summary><p>Browse the original sources below. Automated feeds contribute headlines; reference links open the full advisory index or search database.</p><div class="signal-directory-grid">']
+    for group in groups:
+        sources = [source for source in CATALOG if source["group"] == group]
+        feeds = [source for source in sources if source.get("feed")]
+        if feeds:
+            options.append('<optgroup label="' + escape(group, quote=True) + '">')
+        directory.append('<section class="signal-directory-group"><h3>' + escape(group) + '</h3>')
+        for source in sources:
+            name, website, key = escape(source["name"]), escape(source["website"], quote=True), escape(source["id"], quote=True)
+            if source.get("feed"):
+                options.append('<option value="' + key + '" data-category="' + escape(source["category"], quote=True) + '">' + name + '</option>')
+            directory.append('<a data-source-id="' + key + '" href="' + website + '" target="_blank" rel="noopener noreferrer"><span>' + name + ' ↗</span><small>' + ('Automated feed' if source.get("feed") else 'Reference') + '</small></a>')
+        directory.append('</section>')
+        if feeds:
+            options.append('</optgroup>')
+    options.append('</select></label>')
+    directory.append('</div></details>')
+    for name, content in [("SOURCE_FILTERS", "".join(options)), ("SOURCE_DIRECTORY", "".join(directory))]:
+        start, end = '<!-- ' + name + '_START -->', '<!-- ' + name + '_END -->'
+        document, count = re.subn(re.escape(start) + r'.*?' + re.escape(end), lambda _: start + content + end, document, flags=re.S)
+        if count != 1:
+            raise ValueError("Missing or duplicate source catalog marker: " + name)
+    return document
 
 
 def build_public_directory(destination):
@@ -302,6 +416,8 @@ def build_public_directory(destination):
         if path.is_symlink() or not path.is_file():
             raise ValueError("Invalid public asset: " + name)
         shutil.copyfile(path, destination / name)
+    index = destination / "index.html"
+    index.write_text(render_source_catalog(index.read_text()))
 
 
 def main():

@@ -10,9 +10,11 @@
   const search = section.querySelector('#signal-search');
   const refresh = section.querySelector('#signal-refresh');
   const more = section.querySelector('#signal-more');
-  const filters = [...section.querySelectorAll('[data-signal-source]')];
-  const names = { thn: 'The Hacker News', edb: 'Exploit-DB', kev: 'CISA KEV', aikido: 'Aikido Blog', netsec: 'Reddit r/netsec', devto: 'DEV Community', wiz: 'Wiz Blog', securityweek: 'SecurityWeek', bleeping: 'BleepingComputer', wired: 'WIRED Security', sophos: 'Sophos Blog', checkpoint: 'Check Point Blog', darkwebinformer: 'Dark Web Informer', sentinelone: 'SentinelOne' };
-  const labels = { thn: 'SECURITY NEWS', edb: 'PUBLIC EXPLOIT', kev: 'EXPLOITED CVE', aikido: 'SECURITY BLOG', netsec: 'COMMUNITY POST', devto: 'DEVELOPER POST', wiz: 'SECURITY BLOG', securityweek: 'SECURITY NEWS', bleeping: 'SECURITY NEWS', wired: 'SECURITY NEWS', sophos: 'SECURITY BLOG', checkpoint: 'SECURITY BLOG', darkwebinformer: 'THREAT REPORT', sentinelone: 'CVE DATABASE' };
+  const sourceSelect = section.querySelector('#signal-source-select');
+  const sourceOptions = [...sourceSelect.options].filter(option => option.value !== 'all');
+  const names = Object.fromEntries(sourceOptions.map(option => [option.value, option.textContent]));
+  const categoryLabels = { news: 'SECURITY NEWS', exploit: 'PUBLIC EXPLOIT', exploited: 'EXPLOITED CVE', community: 'COMMUNITY POST', development: 'DEVELOPER POST', vulnerability: 'CVE DATABASE', advisory: 'SECURITY ADVISORY', release: 'RELEASE NOTICE', database_update: 'DATABASE UPDATE' };
+  const labels = Object.fromEntries(sourceOptions.map(option => [option.value, categoryLabels[option.dataset.category] || 'SECURITY UPDATE']));
   const maxItems = Object.keys(names).length * 25;
   const recentWindow = 24 * 60 * 60 * 1000;
   let snapshot;
@@ -65,7 +67,7 @@
     const top = node('div', 'signal-card-top');
     const badge = node('span', 'signal-new', 'NEW');
     badge.hidden = true;
-    badge.title = item.source === 'kev' ? 'Added to KEV within the last 24 hours' : 'Published within the last 24 hours';
+    badge.title = item.source === 'kev' ? 'Added to KEV within the last 24 hours' : item.source === 'pypa' ? 'Database updated within the last 24 hours' : 'Published within the last 24 hours';
     top.append(badge, node('span', 'signal-type', labels[item.source]), node('span', 'signal-card-source', names[item.source]));
     const heading = node('h3');
     const link = node('a', '', item.title.slice(0, 240));
@@ -81,13 +83,13 @@
     const bottom = node('div', 'signal-card-bottom');
     const date = node('time', '', formatDate(item.published_at, item.date_precision === 'day'));
     date.dateTime = item.published_at;
-    bottom.append(node('span', '', item.source === 'kev' ? 'Added to KEV' : 'Published'), date);
+    bottom.append(node('span', '', item.source === 'kev' ? 'Added to KEV' : item.source === 'pypa' ? 'Database updated' : item.source === 'httpd' ? 'Fix released' : 'Published'), date);
     article.append(top, heading, details, bottom);
     return article;
   }
   function render() {
     const query = search.value.trim().toLowerCase();
-    const entries = snapshot.items.filter(item => (active === 'all' || item.source === active) && [item.title, item.vendor, item.product, ...(Array.isArray(item.cves) ? item.cves : [])].filter(Boolean).join(' ').toLowerCase().includes(query));
+    const entries = snapshot.items.filter(item => (active === 'all' || item.source === active) && [item.title, names[item.source], item.vendor, item.product, ...(Array.isArray(item.cves) ? item.cves : [])].filter(Boolean).join(' ').toLowerCase().includes(query));
     cards.replaceChildren();
     entries.slice(0, limit).forEach(item => cards.append(makeCard(item)));
     if (!entries.length) cards.append(node('p', 'signal-empty', 'No matching headlines. Try a different CVE, vendor, topic, or source.'));
@@ -140,12 +142,11 @@
       section.setAttribute('aria-busy', 'false');
     }
   }
-  filters.forEach(button => button.addEventListener('click', () => {
-    active = button.dataset.signalSource;
+  sourceSelect.addEventListener('change', () => {
+    active = sourceSelect.value;
     limit = 6;
-    filters.forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
     if (snapshot) render();
-  }));
+  });
   search.addEventListener('input', () => {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => { limit = 6; if (snapshot) render(); }, 150);
