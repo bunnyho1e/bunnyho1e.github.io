@@ -1,4 +1,5 @@
 [
+  {"id":"anthropic-research","name":"Anthropic Research — Claude vulnerability discovery","group":"News & research","category":"research","website":"https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"},
   {"id":"thn","name":"The Hacker News","group":"News & research","category":"news","website":"https://thehackernews.com/","feed":"https://feeds.feedburner.com/TheHackersNews"},
   {"id":"edb","name":"Exploit-DB","group":"Vulnerability databases","category":"exploit","website":"https://www.exploit-db.com/","feed":"https://www.exploit-db.com/rss.xml"},
   {"id":"kev","name":"CISA KEV","group":"Vulnerability databases","category":"exploited","website":"https://www.cisa.gov/known-exploited-vulnerabilities-catalog","feed":"https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"},
