@@ -13,6 +13,7 @@
   {"id":"sophos","name":"Sophos Blog","group":"News & research","category":"news","website":"https://www.sophos.com/en-us/blog","feed":"https://www.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242"},
   {"id":"checkpoint","name":"Check Point Blog","group":"News & research","category":"news","website":"https://blog.checkpoint.com/","feed":"https://blog.checkpoint.com/feed/"},
   {"id":"darkwebinformer","name":"Dark Web Informer","group":"News & research","category":"news","website":"https://darkwebinformer.com/","feed":"https://darkwebinformer.com/rss/"},
+  {"id":"opensourcemalware","name":"OpenSourceMalware Blog","group":"News & research","category":"news","website":"https://opensourcemalware.com/blog/","feed":"https://opensourcemalware.com/rss.xml"},
   {"id":"sentinelone","name":"SentinelOne","group":"Vulnerability databases","category":"vulnerability","website":"https://www.sentinelone.com/vulnerability-database/","feed":"https://www.sentinelone.com/vulnerability-database/"},
   {"id":"apache","name":"Apache — all projects","group":"Servers & infrastructure","category":"advisory","website":"https://security.apache.org/projects/"},
   {"id":"httpd","name":"Apache HTTP Server","group":"Servers & infrastructure","category":"advisory","website":"https://httpd.apache.org/security/vulnerabilities_24.html","feed":"https://httpd.apache.org/security/vulnerabilities_24.html","parser":"httpd"},
